@@ -1,37 +1,44 @@
-## Welcome to GitHub Pages
+## Welcome to zBritva's portfolio
 
-You can use the [editor on GitHub](https://github.com/zBritva/zbritva.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## About me
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Experience
 
-```markdown
-Syntax highlighted code block
+### BARS Group (http://www.bars.group/)
 
-# Header 1
-## Header 2
-### Header 3
+#### Project's in BARS Group
 
-- Bulleted
-- List
+### Other projects
 
-1. Numbered
-2. List
+There are my projects, which I started to learn something. Not all projects are finished today
 
-**Bold** and _Italic_ and `Code` text
+#### LandmarkRecognition
 
-[Link](url) and ![Image](src)
-```
+URL to source: https://github.com/zBritva/LandmarkRecognition
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+It's project for realize one of the autopilot features, in special automatic landing of quadrocopter to helipad
+This project was realised by mini team: me, Alina Garaeva (https://github.com/crazyalin92), Nikita Aslanyan.
+There is mini research paper https://zbritva.github.io/Projects/LandmarkRecognition/paper.pdf where was describen main idea of realization
+Project was developed by using Python (and OpenCV library)
 
-### Jekyll Themes
+#### InformixNetSQL
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zBritva/zbritva.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+URL to source: https://github.com/zBritva/InformixNetSQL
 
-### Support or Contact
+#### SteamControllerCopterControl
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+URL to source: https://github.com/zBritva/SteamControllerCopterControl
+
+#### AirsoftPointsCounter
+
+URL to source: https://github.com/zBritva/AirsoftPointsCounter
+
+#### SparkCUBE
+
+URL to source: https://github.com/zBritva/SparkCUBE
+
+#### ReformaGKHBot
+
+URL to source: https://bitbucket.org/zBritva/reformagkhbot
