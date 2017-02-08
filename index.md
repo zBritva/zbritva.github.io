@@ -3,6 +3,26 @@
 
 ## About me
 
+Software development engineer with almost 4 years practical experience in the development of web business applications.
+Has knowledge of the full-stack technologies in frontend, backend and Stored Procedure Language (Database).
+
+### Technology summary
+
+**Languages:**    C#, JavaScript (ExtJS lib.), Python, Scala, PowerShell 1.3, Java, C++(Qt)
+
+**DBMS:**	IBM Infomrix, PostqreSQL
+
+**Backend:**	ASP.NET (MVC), Windows Forms, WCF
+
+**Frontend:**	JavaScript, jQuery, ExtJS
+
+**Methodologies:**	Scrum, Continuous Integration, Design patterns, Object-oriented programming,
+
+**Version Control:**	Git, Visual SourceSafe
+
+**Platforms:**  Docker on Windows
+
+**Others:** Apache Spark, TeamCity, Android, FastReport .Net
 
 ## Experience
 
