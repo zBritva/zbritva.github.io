@@ -22,13 +22,21 @@ Client side developed by using Sencha ExtJS 4.1 JS library.
 
 **Personal results:**
 +	Developed reports by using FastReport .Net library
+
 +	Developed views, triggers, difficult stored procedures and functions for databases using SQL and PL/SQL (SPL)
+
 +	Managed development process in one of three projects described above (Technical Project Manager)
+
 +    Decomposing task to several developments tasks and assign them to developers, control developing process.
+
 +    Verification of result of developments
+
 +	Analyze technical requirements for the project (process business  analyze results)
+
 +	Configure Docker images for deploying copy of production environment for testing software.
+
 +	Developed data migration from SDS application to Integration Application
+
 +	Development of methodology to migrate data and SP to PostgreSQL
 
 
@@ -45,14 +53,23 @@ Client side developed by using Sencha ExtJS 4.1 JS library.
 
 **Personal results:**
 +	Developed module for construction social benefit receivers list and aggregate sum of benefit.
+
 +	Developed reports by using FastReport .Net library
+
 +	Developed views, triggers, difficult stored procedures and functions for databases using SQL and PL/SQL (SPL)
+
 +	Managed development process in one of three projects described above (Technical Project Manager)
+
 +   Decomposing task to several developments tasks and assign them to developers, control developing process.
+
 +   Verification of result of developments
+
 +	Analyze technical requirements for the project (process business  analyze results)
+
 +	Developed PowerShell script to automatically deploying to production new updates of application
+
 +	Developed Google Docs app to aggregate information from JIRA about development state of projects (Calculate loading of developers, requirement time for developing all planned tasks).
+
 +	Configure Docker images for deploying copy of production environment for testing software.
 
 ##### SIN CSR: State Social Service (ГИС СРН: Социальное Обслуживание Населения)
@@ -66,11 +83,17 @@ Client side developed by using Sencha ExtJS 4.1 JS library.
 
 Personal results:
 +	Developed module for construction social benefit receivers list and aggregate sum of benefit.
+
 +	Developed reports by using FastReport .Net library
+
 +	Developed views, triggers, difficult stored procedures and functions for databases using SQL and PL/SQL (SPL)
+
 +	Verification of developed tasks
+
 +	Analyze technical requirements for the project (process business  analyze results)
+
 +	Developed PowerShell script to automatically deploying to production new updates of application
+
 +	Configure Docker images for deploying copy of production environment for testing software.
 
 ##### State Information Network Citizens Socail Registry (SIN CSR/Государственная Информационная Сеть Социальный Регистр Населения)
@@ -85,9 +108,13 @@ Client side developed by using Sencha ExtJS 4.1 JS library.
 
 **Personal results:**
 +	Analyze technical requirements for the project (process business analyze results)
+
 +	Developed Google Docs app to aggregate information from JIRA about development state of projects (Calculate loading of developers, requirement time for developing all planned tasks).
+
 +	Configure Docker images for deploying copy of production environment for testing software.
+
 +	Developing core functionality (user access management, dictionary management, SMPP-client integration)
+
 +	Developed Stored procedure for aggregate data to list of citizens in social dangerous state with debt for housing
 
 
