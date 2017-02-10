@@ -41,15 +41,16 @@ It application uses IBM Informix 11.50 for store data and business logic develop
 Client side developed by using Sencha ExtJS 4.1 JS library.
 
 **Personal results:**
+
 +	Developed reports by using FastReport .Net library
 
 +	Developed views, triggers, difficult stored procedures and functions for databases using SQL and PL/SQL (SPL)
 
 +	Managed development process in one of three projects described above (Technical Project Manager)
 
-+    Decomposing task to several developments tasks and assign them to developers, control developing process.
++   Decomposing task to several developments tasks and assign them to developers, control developing process.
 
-+    Verification of result of developments
++   Verification of result of developments
 
 +	Analyze technical requirements for the project (process business  analyze results)
 
@@ -72,6 +73,7 @@ It application uses IBM Informix 11.50 for store data and business logic develop
 Client side developed by using Sencha ExtJS 4.1 JS library.
 
 **Personal results:**
+
 +	Developed module for construction social benefit receivers list and aggregate sum of benefit.
 
 +	Developed reports by using FastReport .Net library
@@ -151,12 +153,20 @@ Project was developed by using Python (and OpenCV library)
 
 #### [InformixNetSQL](https://github.com/zBritva/InformixNetSQL)
 
+This project was began to test SQL/SPL queries by Informix .Net Data provider.
+Because different behaviours were found in call of SPL (or SQL queries with SPL) in using eSQLEditor and ASP.NET application.
+Well worked SPL's in eSQlEditor not were worked in .Net, and we got error in Informix .Net data provider.
+It was required review of SQL/SPL.
 
 #### [SteamControllerCopterControl](https://github.com/zBritva/SteamControllerCopterControl)
 
 
 #### [AirsoftPointsCounter](https://github.com/zBritva/AirsoftPointsCounter)
 
+There is Arduino Pro mini project for using [airsoft](https://en.wikipedia.org/wiki/Airsoft) games.
+This device can be used as point, which a players from two different team's must capture the point to earn score points.
+Or it can be used as "bomb", which players of one team must plant in some point.
+It's like classical game mode of [Counter-Strike](https://en.wikipedia.org/wiki/Counter-Strike_(video_game)) - famous computer game.
 
 #### [SparkCUBE](https://github.com/zBritva/SparkCUBE)
 
