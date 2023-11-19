@@ -17,7 +17,7 @@ I forked the Charticulator source to my repository on GitHub, which is used inte
 
 It already contains fixes and features that were not included in the original.
 
-Editor is avialable for preview on [http://zbritva.click/](http://zbritva.click/).
+Editor is avialable for preview on [https://ilfat-galiev.im/charticulator/](https://ilfat-galiev.im/charticulator/).
 
 **And, yes, there is no httpS. Do not use for production**
 
