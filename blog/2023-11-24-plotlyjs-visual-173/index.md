@@ -3,7 +3,7 @@ slug: plotlyjs-visuals-172
 title: PlotlyJS Visual by Akvelon 
 authors: [ilfat]
 tags: [powerbi, plotly, datavisualization]
-unlisted: true
+unlisted: false
 ---
 
 # PlotlyJS Visual by Akvelon
