@@ -8,7 +8,7 @@ unlisted: false
 
 # PlotlyJS Visual by Akvelon
 
-Today the 1.7.3 update for PlotlyJS Visual by Akvelon has been approved by Appsource. Here I want to tell you about some small but important changes.
+Today the 1.7.3 update for [PlotlyJS Visual by Akvelon](https://appsource.microsoft.com/en-us/product/power-bi-visuals/akvelon.plotlyjsvisualbyakvelon?tab=DetailsAndSupport) has been approved by Appsource. Here I want to tell you about some small but important changes.
 
 ## Internal refactoring the code of the visual
 
