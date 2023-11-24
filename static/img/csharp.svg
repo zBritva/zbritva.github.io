@@ -1,0 +1,22 @@
+<svg viewBox="0.7 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        text {
+            font-family: "Space Grotesk",Helvetica,Arial,sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            text-decoration: none;
+            text-transform: none;
+            background-clip: text;
+            linear-gradient(128.87deg,#9780e5 14.05%,#e666cc 89.3%)
+        }
+    </style>
+    <defs>
+    <linearGradient id="textC" gradientTransform="rotate(130)">
+      <stop offset="14%" stop-color="#9780e5" />
+      <stop offset="90%" stop-color="#e666cc" />
+    </linearGradient>
+  </defs>
+    <text x="0" y="12" fill="url('#textC')">
+        C#
+    </text>
+</svg>

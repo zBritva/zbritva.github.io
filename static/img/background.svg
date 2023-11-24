@@ -1,0 +1,15 @@
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+    <linearGradient id="bg" gradientTransform="rotate(40)">
+      <stop offset="50%" stop-color="#222730" />
+      <stop offset="80%" stop-color="#0a2966" />
+    </linearGradient>
+  </defs>
+    <rect width="800" height="200" fill="url('#bg')"/>
+    <image x="275" y="65" width="70" height="70" href="react.svg" />
+    <image x="350" y="65" width="70" height="70" href="angular.svg" />
+    <image x="425" y="65" width="70" height="70" href="d3.svg" />
+    <image x="500" y="65" width="70" height="70" href="csharp.svg" />
+    <image x="575" y="65" width="70" height="70" href="charticulator.svg" />
+    <image x="650" y="65" width="70" height="70" href="plotly.svg" />
+</svg>
