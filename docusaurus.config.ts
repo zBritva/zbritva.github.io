@@ -99,7 +99,7 @@ const config: Config = {
           items: [
             {
               label: 'Visual documentations',
-              to: '/docs/intro',
+              to: '/docs/index',
             },
           ],
         },
