@@ -7,7 +7,7 @@ tags: [powerbi, handlebars, datavisualization, html, svg]
 
 # HTML/SVG/Handlebars Visual
 
-Here's a brief description of what I want to offer to the Power BI community. There may be a need for a visual that would allow the use of HTML and SVG to layout content in Power BI reports using data. Yes, Appsource already has visuals that offer these solutions. But all of them load HTML content through data.
+Here's a brief description of what I want to offer to the Power BI community. There may be a need for a visual that would allow the use of HTML and SVG to layout content in Power BI reports using data from Power BI. Yes, Appsource already has visuals that offer these solutions. But all of them load HTML content through data.
 
 The video shows the process of using two visual objects to create a simple table.
 

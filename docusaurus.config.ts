@@ -40,7 +40,18 @@ const config: Config = {
         //   editUrl:
         //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         // },
-        docs: false,
+        docs: {
+          routeBasePath: '/docs',
+          // sidebarPath: './sidebars.js',
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          exclude: [
+            'tutorial-extras',
+            'tutorial-basics'
+          ]
+        },
         blog: {
           routeBasePath: '/',
           showReadingTime: true,
@@ -48,9 +59,6 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           // editUrl:
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          exclude: [
-            '2023-11-23-plotlyjs-visual-172/index.md'
-          ]
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -75,7 +83,7 @@ const config: Config = {
         //   position: 'left',
         //   label: 'Tutorial',
         // },
-        // {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/docs', label: 'Visual documentations', position: 'left'},
         {
           href: 'https://github.com/zbritva',
           label: 'GitHub',
@@ -85,47 +93,47 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      // links: [
-      //   {
-      //     title: 'Docs',
-      //     items: [
-      //       {
-      //         label: 'Tutorial',
-      //         to: '/docs/intro',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'Community',
-      //     items: [
-      //       {
-      //         label: 'Stack Overflow',
-      //         href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-      //       },
-      //       {
-      //         label: 'Discord',
-      //         href: 'https://discordapp.com/invite/docusaurus',
-      //       },
-      //       {
-      //         label: 'Twitter',
-      //         href: 'https://twitter.com/docusaurus',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'More',
-      //     items: [
-      //       {
-      //         label: 'Blog',
-      //         to: '/blog',
-      //       },
-      //       {
-      //         label: 'GitHub',
-      //         href: 'https://github.com/facebook/docusaurus',
-      //       },
-      //     ],
-      //   },
-      // ],
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Visual documentations',
+              to: '/docs/intro',
+            },
+          ],
+        },
+        // {
+        //   title: 'Community',
+        //   items: [
+        //     {
+        //       label: 'Stack Overflow',
+        //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+        //     },
+        //     {
+        //       label: 'Discord',
+        //       href: 'https://discordapp.com/invite/docusaurus',
+        //     },
+        //     {
+        //       label: 'Twitter',
+        //       href: 'https://twitter.com/docusaurus',
+        //     },
+        //   ],
+        // },
+        // {
+        //   title: 'More',
+        //   items: [
+        //     {
+        //       label: 'Blog',
+        //       to: '/blog',
+        //     },
+        //     {
+        //       label: 'GitHub',
+        //       href: 'https://github.com/facebook/docusaurus',
+        //     },
+        //   ],
+        // },
+      ],
       copyright: `Copyright © ${new Date().getFullYear()} Ilfat Galiev. Built with Docusaurus.`,
     },
     prism: {
