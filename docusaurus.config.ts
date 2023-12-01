@@ -85,6 +85,11 @@ const config: Config = {
         // },
         {to: '/docs', label: 'Visual documentations', position: 'left'},
         {
+          href: 'https://www.linkedin.com/in/ilfat-galiev/',
+          label: 'LinkedIn',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/zbritva',
           label: 'GitHub',
           position: 'right',
