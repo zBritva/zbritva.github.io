@@ -49,7 +49,7 @@ You can customize the position, size, and docking status of the *Glyph Editor*, 
 
 ### Help Menu
 
-Click the help icon in the top right corner to reveal links to several resources, including a link to this Getting Started page, the <a href="/gallery/index.html">Example Gallery</a>, a link to <a href="https://github.com/Microsoft/charticulator/issues/new">create an issue</a> in our Github repository, the <a href="https://charticulator.com">Charticulator main website</a>, and a link to <a href="mailto:charticulator@microsoft.com">contact us</a> via email.
+Click the help icon in the top right corner to reveal links to several resources, including a link to this Getting Started page, the <a href="/gallery/index.html">Example Gallery</a>, a link to <a href="https://github.com/zbritva/charticulator/issues/new">create an issue</a> in Github repository.
 
 ![Help Menu](/images/docs/help.png)
 
