@@ -41,6 +41,8 @@ For the date type data value (e.g., "02/24/2021"), Charticulator automatically e
 
 ## Creating a Chart with Links
 
+[Original documentation source](https://charticulator.com/docs/using-in-power-bi.html)
+
 To draw a chart with the links between glyphs in Charticulator, you need two data tables: one for nodes (or entities) and another for links (or relationships) between nodes. Because Power BI visuals expects a single table, you need to create a relationship between these two tables, by following these steps:
 1. Select **Modeling** from the main menu.
 2. Select **Manage relationships** from the ribbon.
