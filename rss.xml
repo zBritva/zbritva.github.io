@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Ilfat Galiev Blog</title>
+        <link>http://ilfat-galiev.im/</link>
+        <description>Ilfat Galiev Blog</description>
+        <lastBuildDate>Mon, 27 Nov 2023 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[HTML/SVG/Handlebars Visual]]></title>
+            <link>http://ilfat-galiev.im/</link>
+            <guid>http://ilfat-galiev.im/</guid>
+            <pubDate>Mon, 27 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Here's a brief description of what I want to offer to the Power BI community. There may be a need for a visual that would allow the use of HTML and SVG to layout content in Power BI reports using data from Power BI. Yes, Appsource already has visuals that offer these solutions. But all of them load HTML content through data.]]></description>
+            <content:encoded><![CDATA[<p>Welcome to my blog!</p>
+<p>Here I will be talking about my journey into the world of software development. Even though I started working in the Tech field a long time ago, I think it's never too late to start telling my story.</p>
+<p>I'm 10+ year experience implementing UI with JavaScript/TypeScript, HTML/CSS and frameworks (React.js, Redux, ExtJS,Angular), moreover experienced in C#, .Net and Node.js for backend development.</p>
+<ul>
+<li>Certified LookerML Developer and Power BI Data Analyst Associate</li>
+<li>Led the entire project as project manager and solution architect with a 6-person development team.</li>
+<li>Implemented a converter of query results into .Net objects, which accelerated code writing by 50%.</li>
+<li>Implemented 3 complex Power BI plugins for data visualization.</li>
+</ul>
+<p>And I'm obsessed with developing Power BI visualization.</p>]]></content:encoded>
+            <category>powerbi</category>
+            <category>handlebars</category>
+            <category>datavisualization</category>
+            <category>html</category>
+            <category>svg</category>
+        </item>
+        <item>
+            <title><![CDATA[PlotlyJS Visual by Akvelon]]></title>
+            <link>http://ilfat-galiev.im/plotlyjs-visuals-172</link>
+            <guid>http://ilfat-galiev.im/plotlyjs-visuals-172</guid>
+            <pubDate>Fri, 24 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Today the 1.7.3 update for PlotlyJS Visual by Akvelon has been approved by Appsource. Here I want to tell you about some small but important changes.]]></description>
+            <content:encoded><![CDATA[<p>Today the 1.7.3 update for <a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/akvelon.plotlyjsvisualbyakvelon?tab=DetailsAndSupport" target="_blank" rel="noopener noreferrer">PlotlyJS Visual by Akvelon</a> has been approved by Appsource. Here I want to tell you about some small but important changes.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="internal-refactoring-the-code-of-the-visual">Internal refactoring the code of the visual<a href="http://ilfat-galiev.im/plotlyjs-visuals-172#internal-refactoring-the-code-of-the-visual" class="hash-link" aria-label="Direct link to Internal refactoring the code of the visual" title="Direct link to Internal refactoring the code of the visual">​</a></h2>
+<p>The first version was developed in a tight timeframe of 2 weeks. Since the idea was only to combine Chart Studio and Plotly.js visualization library, the internal code was very hard to read. The useState provided by the React library was used for state management, <a href="https://learn.microsoft.com/en-us/power-bi/developer/visuals/power-bi-visuals-concept" target="_blank" rel="noopener noreferrer">changes passed by Power BI to the <code>update</code></a> function were passed to the React component via <a href="https://react.dev/reference/react/forwardRef" target="_blank" rel="noopener noreferrer"><code>forwardRef</code></a>.</p>
+<p>In version 1.7.3, the Redux Toolkit was added for state management, making the code much easier to understand and maintain.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="save-button-moved-to-left-panel">Save button moved to left panel<a href="http://ilfat-galiev.im/plotlyjs-visuals-172#save-button-moved-to-left-panel" class="hash-link" aria-label="Direct link to Save button moved to left panel" title="Direct link to Save button moved to left panel">​</a></h2>
+<p>The "Save" button has been moved to the left panel next to the "Get In Touch" button. Initially, after making changes through the visual editor, it was always necessary to go to the text editor to save the changes</p>
+<p><img loading="lazy" alt="PlotlyJS visual save button screenshot on the left panel" src="http://ilfat-galiev.im/assets/images/save_button-2960302ded8903c9032dfe0ff78947b3.png" width="613" height="558" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="button-to-save-current-position-of-camera">Button to save current position of camera<a href="http://ilfat-galiev.im/plotlyjs-visuals-172#button-to-save-current-position-of-camera" class="hash-link" aria-label="Direct link to Button to save current position of camera" title="Direct link to Button to save current position of camera">​</a></h2>
+<p>Added "Save Camera" button to copy current camera coordinates to JSON schema.</p>
+<p><img loading="lazy" alt="The &amp;quot;Save camera&amp;quot; button on the visual" src="http://ilfat-galiev.im/assets/images/save_camera-6ab6e1d656a7dfc774ce1398373fe3e5.png" width="795" height="665" class="img_ev3q"></p>
+<p>This makes it faster and easier to set coordinates for the camera, and the camera does not return to the default position during the next visualization.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="license-error-notification-banner-added">License error notification banner added<a href="http://ilfat-galiev.im/plotlyjs-visuals-172#license-error-notification-banner-added" class="hash-link" aria-label="Direct link to License error notification banner added" title="Direct link to License error notification banner added">​</a></h2>
+<p>Added a descriptive notification banner with a link to a paid visualization feature.</p>
+<p>You can remove the banner by turning off the paid functionality in the viewer's settings (Settings =&gt; Plotly.js properties =&gt; Power BI tooltips) or by <a href="https://appsource.microsoft.com/en-us/marketplace/checkout/akvelon.plotlyjsvisualbyakvelon?tab=Overview" target="_blank" rel="noopener noreferrer">purchasing a subscription</a> on Microsoft Office 365 page.</p>
+<p><img loading="lazy" alt="License error notification banner" src="http://ilfat-galiev.im/assets/images/license_error-f96f3410f7dbc9112267395a1e209914.png" width="762" height="302" class="img_ev3q"></p>
+<p>You buy Power BI's tooltip functionality, while the visualization itself is free.</p>
+<p>You must purchase a license for each report user, regardless of role (report author or consumer).</p>
+<p>There are only 2 subscription options at the moment:</p>
+<ul>
+<li>Annual plan</li>
+<li>Monthly plan</li>
+</ul>
+<p>The paid feature is available to everyone in the following environments:</p>
+<ul>
+<li>Embedded - Publish To Web, PaaS embed</li>
+<li>National/Regional clouds (Depends on general support for transactability in national/regional clouds)</li>
+<li>RS Server</li>
+<li>Exporting (PDF\PPT) using REST API</li>
+</ul>
+<p>If you still have questions, <a href="https://akvelon.com/contact-us/?category=Power+BI+Custom+Visuals&amp;product=PlotlyJS+visual+(PBI+certified)" target="_blank" rel="noopener noreferrer">please contact Akvelon Inc. support</a>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="add-loading-segments-by-30k-rows-instead-loading-all-data-per-update">Add loading segments by 30k rows instead loading all data per update<a href="http://ilfat-galiev.im/plotlyjs-visuals-172#add-loading-segments-by-30k-rows-instead-loading-all-data-per-update" class="hash-link" aria-label="Direct link to Add loading segments by 30k rows instead loading all data per update" title="Direct link to Add loading segments by 30k rows instead loading all data per update">​</a></h2>
+<p>Visuals supports visualization of one thousand data points by default. But this can be changed by the developer in the settings to load thirty thousand data points.</p>
+<p>But if even that isn't enough, Power BI provides a <a href="https://learn.microsoft.com/en-us/power-bi/developer/visuals/fetch-more-data" target="_blank" rel="noopener noreferrer">Fetch more data API</a> for visuals that allows you to download more data (but no more than 100MB).</p>
+<p>Power BI can provide data:</p>
+<ul>
+<li>All at once, each time increasing the data portion by thirty thousand (30k, 60k, 90k e.t.c.).</li>
+<li>By segments, shifting window of 30k data points</li>
+</ul>
+<p>The first approach was already supported by this visual, starting with this version the second option is also supported</p>
+<p>To use the new features, set the following settings:</p>
+<p><img loading="lazy" alt="Aggregaate segmetns settings" src="http://ilfat-galiev.im/assets/images/aggregate_segments-a1da7429cc3374aafccf532a396ddbf4.png" width="224" height="255" class="img_ev3q"></p>
+<p>And add buttons to shift the segments into <code>layout</code> settings of JSON schema:</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "layout": {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    "updatemenus": [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        "buttons": [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            "args": [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">              {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                "aggregateSegments": false</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">              }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            "label": "Previous",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            "method": "loadPrevSegment",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            "name": "loadPrevSegment"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            "args": [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">              {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                "aggregateSegments": false</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">              }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            "label": "Next",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            "method": "loadNextSegment",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            "name": "loadNextSegment"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        "type": "buttons"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Example of a chart with buttons to shift segments:</p>
+<p><img loading="lazy" alt="Rendering 30k data points segments by segments" src="http://ilfat-galiev.im/assets/images/data-pagination-a7626e24c66aad1b10e6fe3061ff7694.gif" width="1266" height="232" class="img_ev3q"></p>
+<p>I hope these changes find applications in providing reports in Power BI for you and your clients.</p>]]></content:encoded>
+            <category>powerbi</category>
+            <category>plotly</category>
+            <category>datavisualization</category>
+        </item>
+        <item>
+            <title><![CDATA[Charticulator app deployment]]></title>
+            <link>http://ilfat-galiev.im/charticulator-deployment</link>
+            <guid>http://ilfat-galiev.im/charticulator-deployment</guid>
+            <pubDate>Tue, 14 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Since the version of Charticulator from Microsoft is retiring, I decided to deploy to GitHub Pages the latest version with fixes and some new functionality. Unfortunately all this new stuff is not included in the Power BI Visual. In the next 2 months I plan to prepare alternative versions of visuals.]]></description>
+            <content:encoded><![CDATA[<p>Since the version of Charticulator from Microsoft is retiring, I decided to deploy to <a href="https://zbritva.github.io/charticulator/" target="_blank" rel="noopener noreferrer">GitHub Pages</a> the latest version with fixes and some new functionality. Unfortunately all this new stuff is not included in the Power BI Visual. In the next 2 months I plan to prepare alternative versions of visuals.</p>
+<p><img loading="lazy" alt="Charticulator app" src="http://ilfat-galiev.im/assets/images/charticulator-app-c3010b4922d2e29cfb5bb79083168398.png" width="1920" height="885" class="img_ev3q"></p>
+<p>The first stage is practically accomplished. In which I upgrade the UI library to Fluent UI 9. Since the first version doesn't work with React 18+ fully.</p>
+<p>The upcoming work is fixing critical bugs in the current version of the visual, which block the implementation of the full cycle of chart development in the Power BI report.</p>]]></content:encoded>
+            <category>powerbi</category>
+            <category>charticulator</category>
+            <category>datavisualization</category>
+        </item>
+        <item>
+            <title><![CDATA[Charticulator visual]]></title>
+            <link>http://ilfat-galiev.im/charticulator-visual</link>
+            <guid>http://ilfat-galiev.im/charticulator-visual</guid>
+            <pubDate>Mon, 06 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[It past a year after the first attemp to give breath Charticulator visual. I didn't get any feedback on the first version at the time, neither bad, good, or error message, but they were there.]]></description>
+            <content:encoded><![CDATA[<p>It past a year after the first attemp to give breath Charticulator visual. I didn't get any feedback on the first version at the time, neither bad, good, or error message, but they were there.</p>
+<p>Here's a second attempt. I will have the opportunity to publish a version on Appsource, I think it should help to find the old audience.</p>
+<p>I forked the Charticulator source to my repository on GitHub, which is used internally by the new visual.</p>
+<p><a href="https://github.com/zbritva/charticulator" target="_blank" rel="noopener noreferrer">https://github.com/zbritva/charticulator</a></p>
+<p>It already contains fixes and features that were not included in the original.</p>
+<p>Editor is avialable for preview on <a href="https://ilfat-galiev.im/charticulator/" target="_blank" rel="noopener noreferrer">https://ilfat-galiev.im/charticulator/</a>.</p>
+<p><strong>And, yes, there is no httpS. Do not use for production</strong></p>
+<p>The source code for the new visual has been published on Github:</p>
+<p><a href="https://github.com/zBritva/charticulator-visual-community" target="_blank" rel="noopener noreferrer">https://github.com/zBritva/charticulator-visual-community</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-main-difference-from-orginal-charticulator">The main difference from orginal Charticulator<a href="http://ilfat-galiev.im/charticulator-visual#the-main-difference-from-orginal-charticulator" class="hash-link" aria-label="Direct link to The main difference from orginal Charticulator" title="Direct link to The main difference from orginal Charticulator">​</a></h2>
+<p>The visual will be split into two parts. The first includes the Charticulator editor UI. The second includes only engine to render charts.</p>
+<p>Report authors will have to use one visual to edit the chart and switch to the second visual before saving the report.</p>
+<p>This approach allows:</p>
+<ul>
+<li>significantly decrease the package size.</li>
+<li>easier to obtain certification for the second, because less code for review.</li>
+<li>Keeping the first (editorial) version uncertified opens your hands for more technical possibilities, (downloading from the gallery or moving part of the editor code to CDN and so on).</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="community">Community<a href="http://ilfat-galiev.im/charticulator-visual#community" class="hash-link" aria-label="Direct link to Community" title="Direct link to Community">​</a></h2>
+<p>Fell free to open any <a href="https://github.com/zBritva/charticulator-visual-community/discussions" target="_blank" rel="noopener noreferrer">discussion on GitHub</a>, even it is about closing.</p>
+<p>The road map is stabilization and close workflow of the visual. Then submitting the first versions to Appsource.</p>]]></content:encoded>
+            <category>powerbi</category>
+            <category>charticulator</category>
+            <category>datavisualization</category>
+        </item>
+        <item>
+            <title><![CDATA[Welcome]]></title>
+            <link>http://ilfat-galiev.im/</link>
+            <guid>http://ilfat-galiev.im/</guid>
+            <pubDate>Fri, 03 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Welcome to my blog!]]></description>
+            <content:encoded><![CDATA[<p>Welcome to my blog!</p>
+<p>Here I will be talking about my journey into the world of software development. Even though I started working in the Tech field a long time ago, I think it's never too late to start telling my story.</p>
+<p>I'm 10+ year experience implementing UI with JavaScript/TypeScript, HTML/CSS and frameworks (React.js, Redux, ExtJS,Angular), moreover experienced in C#, .Net and Node.js for backend development.</p>
+<ul>
+<li>Certified LookerML Developer and Power BI Data Analyst Associate</li>
+<li>Led the entire project as project manager and solution architect with a 6-person development team.</li>
+<li>Implemented a converter of query results into .Net objects, which accelerated code writing by 50%.</li>
+<li>Implemented 3 complex Power BI plugins for data visualization.</li>
+</ul>
+<p>And I'm obsessed with developing Power BI visualization.</p>]]></content:encoded>
+            <category>hello</category>
+            <category>experience</category>
+            <category>development</category>
+        </item>
+    </channel>
+</rss>

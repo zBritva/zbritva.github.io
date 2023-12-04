@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkilfatgaliev=self.webpackChunkilfatgaliev||[]).push([[2604],{8869:a=>{a.exports=JSON.parse('{"label":"handlebars","permalink":"/tags/handlebars","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);

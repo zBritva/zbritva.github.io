@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkilfatgaliev=self.webpackChunkilfatgaliev||[]).push([[6855],{2729:e=>{e.exports=JSON.parse('{"label":"development","permalink":"/tags/development","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);

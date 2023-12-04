@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkilfatgaliev=self.webpackChunkilfatgaliev||[]).push([[6626],{6320:l=>{l.exports=JSON.parse('{"label":"plotly","permalink":"/tags/plotly","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);
