@@ -12,6 +12,8 @@ The Visual allows you to edit JSON schemas of Deneb, PlotlyJS, HTML/SVG/Handleba
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6hYdS2tPx1A?si=hU-_WewFD3a3Dbjm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+[Power BI Visual Editor (AppSource)](https://appsource.microsoft.com/en-US/product/PowerBIVisuals/ilfatgaliev1696579877540.editorvisual)
+
 [Read more about Power BI Visual Editor](./visual-editor/)
 
 ## HTML/SVG/Handlebars Visual

@@ -15,7 +15,7 @@ The visual powered by Monaco Editor and loads JSON schema to provide autocomplet
 ## How to use
 
 * Select one of the visual above. Don't create the new instance of the Power BI Visual Editor
-* Switch the visual to 'Power BI Visual Editor'. The current seleccted visual should switch to Power BI Visual Editor.
+* Switch the visual to 'Power BI Visual Editor'. The current selected visual should switch to Power BI Visual Editor.
 * In visual formatting options switch 'Target visual for editing' to correspond visual to load a visual JSON schema.
 * Make changes in JSON to modify chart in visual.
 * Click on 'Save' button to save JSON schema.

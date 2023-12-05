@@ -9,7 +9,7 @@ tags: [powerbi, charticulator, datavisualization]
 
 It past a year after the first attemp to give breath Charticulator visual. I didn't get any feedback on the first version at the time, neither bad, good, or error message, but they were there.
 
-Here's a second attempt. I will have the opportunity to publish a version on Appsource, I think it should help to find the old audience.
+Here's a second attempt. I will have the opportunity to publish a version on AppSource, I think it should help to find the old audience.
 
 I forked the Charticulator source to my repository on GitHub, which is used internally by the new visual.
 
@@ -41,4 +41,4 @@ This approach allows:
 
 Fell free to open any [discussion on GitHub](https://github.com/zBritva/charticulator-visual-community/discussions), even it is about closing.
 
-The road map is stabilization and close workflow of the visual. Then submitting the first versions to Appsource.
+The road map is stabilization and close workflow of the visual. Then submitting the first versions to AppSource.

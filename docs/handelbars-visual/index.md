@@ -6,11 +6,11 @@ sidebar_position: 2
 
 The visual uses Handlebars.js to render template and bind data from Power BI. Read mode about [Handlebars.js](https://handlebarsjs.com/guide/) before start.
 
-Download the visual or smaple report file.
+Download the visual or sample report file.
 
 [HTML/SVG/Handlebars Visual file](./handlebarsVisual.1.0.1.0.pbiviz)
 
-[Power BI Visual Editor](./powerBIEditorVisual.1.0.4.0.pbiviz)
+[Power BI Visual Editor](https://appsource.microsoft.com/en-US/product/PowerBIVisuals/ilfatgaliev1696579877540.editorvisual)
 
 [HTML/SVG/Handlebars Visual sample report](./handlebarsVisual.1.0.1.0.pbix)
 
