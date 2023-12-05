@@ -12,8 +12,8 @@
         <id>http://ilfat-galiev.im/</id>
         <link href="http://ilfat-galiev.im/"/>
         <updated>2023-11-27T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Here's a brief description of what I want to offer to the Power BI community. There may be a need for a visual that would allow the use of HTML and SVG to layout content in Power BI reports using data from Power BI. Yes, Appsource already has visuals that offer these solutions. But all of them load HTML content through data.]]></summary>
-        <content type="html"><![CDATA[<p>Here's a brief description of what I want to offer to the Power BI community. There may be a need for a visual that would allow the use of HTML and SVG to layout content in Power BI reports using data from Power BI. Yes, Appsource already has visuals that offer these solutions. But all of them load HTML content through data.</p>
+        <summary type="html"><![CDATA[Here's a brief description of what I want to offer to the Power BI community. There may be a need for a visual that would allow the use of HTML and SVG to layout content in Power BI reports using data from Power BI. Yes, AppSource already has visuals that offer these solutions. But all of them load HTML content through data.]]></summary>
+        <content type="html"><![CDATA[<p>Here's a brief description of what I want to offer to the Power BI community. There may be a need for a visual that would allow the use of HTML and SVG to layout content in Power BI reports using data from Power BI. Yes, AppSource already has visuals that offer these solutions. But all of them load HTML content through data.</p>
 <p>The video shows the process of using two visual objects to create a simple table.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QpSfZvts_FE?si=T3rcsc328fOYFZbi" title="HTML/SVG/Handlebars Visual demo on YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 <p>The idea is very simple, I already have a visual that has the Monaco editor built in, with syntax highlighting and autocomplete. The second visual will display the <a href="https://handlebarsjs.com/" target="_blank" rel="noopener noreferrer">handlebarsjs</a> template, which is created using the editor. The templateizer allows you use <a href="https://handlebarsjs.com/guide/#what-is-handlebars" target="_blank" rel="noopener noreferrer">handlebars expressions</a> to use the data in the resulting output.</p>
@@ -30,10 +30,10 @@
 <p>Output of template:</p>
 <p><img loading="lazy" alt="Template output with formatted numbers and dates" src="http://ilfat-galiev.im/assets/images/visual_output-f6a8f95f29ce59022d1bddb01070d877.png" width="340" height="192" class="img_ev3q"></p>
 <p>Try it for yourself:</p>
-<p><a target="_blank" href="http://ilfat-galiev.im/assets/files/powerBIEditorVisual.1.0.3.0-2eee5cf2d8c2195289827acf053351f7.pbiviz">Power BI Visual Editor</a></p>
+<p><a href="https://appsource.microsoft.com/en-US/product/PowerBIVisuals/ilfatgaliev1696579877540.editorvisual" target="_blank" rel="noopener noreferrer">Power BI Visual Editor</a></p>
 <p><a target="_blank" href="http://ilfat-galiev.im/assets/files/handlebarsVisual.1.0.0.0-5702c725263fc7a5c2fbebfaf99cb780.pbiviz">HTML/SVG/Handlebars Visual</a></p>
 <p>HTML/SVG/Handlebars Visual is not 100% ready, there is no error output in the UI, to understand what is wrong you need to use browser DevTools if your template is not working.</p>
-<p>Don't forget swtich the target visual and schema for Power BI Visual Editor:</p>
+<p>Don't forget switch the target visual and schema for Power BI Visual Editor:</p>
 <p><img loading="lazy" alt="Editor settings" src="http://ilfat-galiev.im/assets/images/editor-77d63242cbb34692bbfc7e9b31439ca2.png" width="1222" height="556" class="img_ev3q"></p>
 <p>I'm currently experimenting with adding functions from D3.js, such as scale and axes.</p>
 <p>Would love to hear your opinion, you can connect with me on <a href="https://www.linkedin.com/in/ilfat-galiev/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>]]></content>
@@ -52,8 +52,8 @@
         <id>http://ilfat-galiev.im/plotlyjs-visuals-172</id>
         <link href="http://ilfat-galiev.im/plotlyjs-visuals-172"/>
         <updated>2023-11-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Today the 1.7.3 update for PlotlyJS Visual by Akvelon has been approved by Appsource. Here I want to tell you about some small but important changes.]]></summary>
-        <content type="html"><![CDATA[<p>Today the 1.7.3 update for <a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/akvelon.plotlyjsvisualbyakvelon?tab=DetailsAndSupport" target="_blank" rel="noopener noreferrer">PlotlyJS Visual by Akvelon</a> has been approved by Appsource. Here I want to tell you about some small but important changes.</p>
+        <summary type="html"><![CDATA[Today the 1.7.3 update for PlotlyJS Visual by Akvelon has been approved by AppSource. Here I want to tell you about some small but important changes.]]></summary>
+        <content type="html"><![CDATA[<p>Today the 1.7.3 update for <a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/akvelon.plotlyjsvisualbyakvelon?tab=DetailsAndSupport" target="_blank" rel="noopener noreferrer">PlotlyJS Visual by Akvelon</a> has been approved by AppSource. Here I want to tell you about some small but important changes.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="internal-refactoring-the-code-of-the-visual">Internal refactoring the code of the visual<a href="http://ilfat-galiev.im/plotlyjs-visuals-172#internal-refactoring-the-code-of-the-visual" class="hash-link" aria-label="Direct link to Internal refactoring the code of the visual" title="Direct link to Internal refactoring the code of the visual">​</a></h2>
 <p>The first version was developed in a tight timeframe of 2 weeks. Since the idea was only to combine Chart Studio and Plotly.js visualization library, the internal code was very hard to read. The useState provided by the React library was used for state management, <a href="https://learn.microsoft.com/en-us/power-bi/developer/visuals/power-bi-visuals-concept" target="_blank" rel="noopener noreferrer">changes passed by Power BI to the <code>update</code></a> function were passed to the React component via <a href="https://react.dev/reference/react/forwardRef" target="_blank" rel="noopener noreferrer"><code>forwardRef</code></a>.</p>
 <p>In version 1.7.3, the Redux Toolkit was added for state management, making the code much easier to understand and maintain.</p>
@@ -132,7 +132,7 @@
         <updated>2023-11-06T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[It past a year after the first attemp to give breath Charticulator visual. I didn't get any feedback on the first version at the time, neither bad, good, or error message, but they were there.]]></summary>
         <content type="html"><![CDATA[<p>It past a year after the first attemp to give breath Charticulator visual. I didn't get any feedback on the first version at the time, neither bad, good, or error message, but they were there.</p>
-<p>Here's a second attempt. I will have the opportunity to publish a version on Appsource, I think it should help to find the old audience.</p>
+<p>Here's a second attempt. I will have the opportunity to publish a version on AppSource, I think it should help to find the old audience.</p>
 <p>I forked the Charticulator source to my repository on GitHub, which is used internally by the new visual.</p>
 <p><a href="https://github.com/zbritva/charticulator" target="_blank" rel="noopener noreferrer">https://github.com/zbritva/charticulator</a></p>
 <p>It already contains fixes and features that were not included in the original.</p>
@@ -151,7 +151,7 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="community">Community<a href="http://ilfat-galiev.im/charticulator-visual#community" class="hash-link" aria-label="Direct link to Community" title="Direct link to Community">​</a></h2>
 <p>Fell free to open any <a href="https://github.com/zBritva/charticulator-visual-community/discussions" target="_blank" rel="noopener noreferrer">discussion on GitHub</a>, even it is about closing.</p>
-<p>The road map is stabilization and close workflow of the visual. Then submitting the first versions to Appsource.</p>]]></content>
+<p>The road map is stabilization and close workflow of the visual. Then submitting the first versions to AppSource.</p>]]></content>
         <author>
             <name>Ilfat Galiev</name>
             <uri>https://www.linkedin.com/in/ilfat-galiev/</uri>
@@ -166,7 +166,7 @@
         <link href="http://ilfat-galiev.im/"/>
         <updated>2023-11-03T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Welcome to my blog!]]></summary>
-        <content type="html"><![CDATA[<p>Here's a brief description of what I want to offer to the Power BI community. There may be a need for a visual that would allow the use of HTML and SVG to layout content in Power BI reports using data from Power BI. Yes, Appsource already has visuals that offer these solutions. But all of them load HTML content through data.</p>
+        <content type="html"><![CDATA[<p>Here's a brief description of what I want to offer to the Power BI community. There may be a need for a visual that would allow the use of HTML and SVG to layout content in Power BI reports using data from Power BI. Yes, AppSource already has visuals that offer these solutions. But all of them load HTML content through data.</p>
 <p>The video shows the process of using two visual objects to create a simple table.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QpSfZvts_FE?si=T3rcsc328fOYFZbi" title="HTML/SVG/Handlebars Visual demo on YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 <p>The idea is very simple, I already have a visual that has the Monaco editor built in, with syntax highlighting and autocomplete. The second visual will display the <a href="https://handlebarsjs.com/" target="_blank" rel="noopener noreferrer">handlebarsjs</a> template, which is created using the editor. The templateizer allows you use <a href="https://handlebarsjs.com/guide/#what-is-handlebars" target="_blank" rel="noopener noreferrer">handlebars expressions</a> to use the data in the resulting output.</p>
@@ -183,10 +183,10 @@
 <p>Output of template:</p>
 <p><img loading="lazy" alt="Template output with formatted numbers and dates" src="http://ilfat-galiev.im/assets/images/visual_output-f6a8f95f29ce59022d1bddb01070d877.png" width="340" height="192" class="img_ev3q"></p>
 <p>Try it for yourself:</p>
-<p><a target="_blank" href="http://ilfat-galiev.im/assets/files/powerBIEditorVisual.1.0.3.0-2eee5cf2d8c2195289827acf053351f7.pbiviz">Power BI Visual Editor</a></p>
+<p><a href="https://appsource.microsoft.com/en-US/product/PowerBIVisuals/ilfatgaliev1696579877540.editorvisual" target="_blank" rel="noopener noreferrer">Power BI Visual Editor</a></p>
 <p><a target="_blank" href="http://ilfat-galiev.im/assets/files/handlebarsVisual.1.0.0.0-5702c725263fc7a5c2fbebfaf99cb780.pbiviz">HTML/SVG/Handlebars Visual</a></p>
 <p>HTML/SVG/Handlebars Visual is not 100% ready, there is no error output in the UI, to understand what is wrong you need to use browser DevTools if your template is not working.</p>
-<p>Don't forget swtich the target visual and schema for Power BI Visual Editor:</p>
+<p>Don't forget switch the target visual and schema for Power BI Visual Editor:</p>
 <p><img loading="lazy" alt="Editor settings" src="http://ilfat-galiev.im/assets/images/editor-77d63242cbb34692bbfc7e9b31439ca2.png" width="1222" height="556" class="img_ev3q"></p>
 <p>I'm currently experimenting with adding functions from D3.js, such as scale and axes.</p>
 <p>Would love to hear your opinion, you can connect with me on <a href="https://www.linkedin.com/in/ilfat-galiev/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>]]></content>
