@@ -84,6 +84,7 @@ const config: Config = {
         //   label: 'Tutorial',
         // },
         {to: '/docs', label: 'Visual documentations', position: 'left'},
+        {to: 'https://ilfat-galiev.im/charticulator', label: 'Charticulator app', position: 'left'},
         {
           href: 'https://www.linkedin.com/in/ilfat-galiev/',
           label: 'LinkedIn',
