@@ -1,5 +1,5 @@
 ---
-slug: /
+slug: handlebars-powerbi-01
 title: HTML/SVG/Handlebars Visual
 authors: [ilfat]
 tags: [powerbi, handlebars, datavisualization, html, svg]
