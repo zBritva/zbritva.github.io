@@ -324,7 +324,7 @@ The HTML/SVG/Handlebars Visual supports interactivity.
 Add `{{{ useSelectionClear }}}` to SVG element to handle click on background element for clear selection: 
 
 ```html
-<svg width="{{ val 'width' }}" height="{{ val 'height' }}" {{{ useSelectionClear }}}>
+<svg width="{{ val 'svgWidth' }}" height="{{ val 'svgHeight' }}" {{{ useSelectionClear }}}>
 ```
 
 Add `{{{ useSelection @index}}}` to each rectangle element to handle click on bars for selection:
@@ -370,7 +370,7 @@ The full template:
 {{ setupScale 'Scale Y' 'paddingInner' 0.1 }}
 {{ setupAxis 'axisMeasure' 'tickFormat' '~s' }}
 {{ setupAxis 'axisMeasure' 'ticks' 5 }}
-<svg width="{{ val 'width'}}" height="{{ val 'height' }}" {{{ useSelectionClear }}}>
+<svg width="{{ val 'svgWidth'}}" height="{{ val 'svgHeight' }}" {{{ useSelectionClear }}}>
     <g transform="translate({{ val 'margin'}}, {{ val 'margin'}})">
         <g>
             {{#each table.rows}}
