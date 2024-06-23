@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkilfatgaliev=self.webpackChunkilfatgaliev||[]).push([[7393],{1838:e=>{e.exports=JSON.parse('{"blogBasePath":"/","blogTitle":"Blog"}')}}]);

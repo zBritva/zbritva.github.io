@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkilfatgaliev=self.webpackChunkilfatgaliev||[]).push([[9869],{1705:a=>{a.exports=JSON.parse('{"label":"svg","permalink":"/tags/svg","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);

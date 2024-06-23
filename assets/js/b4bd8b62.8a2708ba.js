@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkilfatgaliev=self.webpackChunkilfatgaliev||[]).push([[8107],{9429:a=>{a.exports=JSON.parse('{"label":"charticulator","permalink":"/tags/charticulator","allTagsPath":"/tags","count":3,"unlisted":false}')}}]);

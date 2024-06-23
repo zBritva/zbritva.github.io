@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkilfatgaliev=self.webpackChunkilfatgaliev||[]).push([[6944],{1479:a=>{a.exports=JSON.parse('{"label":"powerbi","permalink":"/tags/powerbi","allTagsPath":"/tags","count":5,"unlisted":false}')}}]);
