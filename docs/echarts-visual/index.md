@@ -234,4 +234,59 @@ The visual supports data binding by `<another property name>src` property:
         }
       ]
     }
-  ```
+```
+
+## Resource loader
+
+The resource loader handles file uploads and convert them base64 string.
+
+![Resource loader](./resource_loader.png)
+
+All loaded resources have resource name. The data of resources can be used by `val` helper:
+
+```handlebarsjs
+{{ val '<resource name>' }}'
+```
+
+Example:
+
+Uploaded [world.topo.bathy.200401.jpg](https://raw.githubusercontent.com/zBritva/zbritva.github.io/master/static/images/visuals/world.topo.bathy.200401.jpg) (texture) resource has `world_topo_bathy_200401_jpg` name.
+
+Then `world_topo_bathy_200401_jpg` value binds to `baseTexture` and `heightTexture` properties.
+
+Uploaded [starfield.jpg](https://raw.githubusercontent.com/zBritva/zbritva.github.io/master/static/images/visuals/starfield.jpg) resource has `starfield_jpg` (texture) name.
+
+Then `starfield_jpg` value binds to `environment` property.
+
+```json5
+{
+  "backgroundColor": '#000',
+  "globe": {
+      // HBT "baseTexture": '{{ val 'world_topo_bathy_200401_jpg' }}',
+      // HBT "heightTexture": '{{ val 'world_topo_bathy_200401_jpg' }}',
+      "displacementScale": 0.04,
+      "shading": "realistic",
+      // HBT "environment": '{{ val 'starfield_jpg'}}',
+      "realisticMaterial": {
+        "roughness": 0.9
+      },
+      "postEffect": {
+        "enable": true
+      },
+      "light": {
+        "main": {
+          "intensity": 5,
+          "shadow": true
+        },
+        "ambientCubemap": {
+          "diffuseIntensity": 0.2
+        }
+      }
+  }
+}
+```
+
+The result:
+
+![Globe map with textures](./globe.png)
+
