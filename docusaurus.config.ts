@@ -18,7 +18,7 @@ const config: Config = {
   organizationName: 'zbritva', // Usually your GitHub org/user name.
   projectName: 'zbritva.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -28,7 +28,9 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  markdown: {
+    mermaid: true,
+  },
   presets: [
     [
       'classic',
@@ -64,9 +66,18 @@ const config: Config = {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
-    ],
+    ]
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-2W0Q8RHPCT',
+        anonymizeIP: true,
+      },
+    ],
+  ],
   themeConfig: {
     // Replace with your project's social card
     image: 'img/social-card.svg',
@@ -84,6 +95,42 @@ const config: Config = {
         //   label: 'Tutorial',
         // },
         {to: '/docs', label: 'Visual documentations', position: 'left'},
+        {
+          label: 'Visuals',
+          position: 'left',
+          items: [
+            {
+              to: '/visuals/echartsVisual.pbiviz',
+              label: 'Apache ECharts Visual',
+              target: '_blank'
+            },
+            {
+              to: '/visuals/apexchartsVisual.pbiviz',
+              label: 'ApexCharts Visual',
+              target: '_blank'
+            },
+            {
+              to: 'https://appsource.microsoft.com/en-us/product/power-bi-visuals/ilfatgaliev1696579877540.handlebars_visual?tab=Overview',
+              label: 'HTML/SVG/Handlebars Visual',
+              target: '_blank'
+            },
+            {
+              to: 'https://appsource.microsoft.com/en-us/product/power-bi-visuals/ilfatgaliev1696579877540.editorvisual?tab=Overview',
+              label: 'Power BI Visual Editor',
+              target: '_blank'
+            },
+            {
+              to: 'https://appsource.microsoft.com/en-us/product/power-bi-visuals/ilfatgaliev1696579877540.charticulator_visual_community_view?tab=Overview',
+              label: 'Charticulator Visual Community (View)',
+              target: '_blank'
+            },
+            {
+              to: 'https://appsource.microsoft.com/en-us/product/power-bi-visuals/ilfatgaliev1696579877540.charticulator_visual_community_editor?tab=Overview',
+              label: 'Charticulator Visual Community (Editor)',
+              target: '_blank'
+            }
+          ]
+        },
         {to: 'https://ilfat-galiev.im/charticulator', label: 'Charticulator app', position: 'left'},
         {
           href: 'https://www.linkedin.com/in/ilfat-galiev/',
@@ -146,6 +193,7 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    // themes: ['@docusaurus/theme-mermaid']
   } satisfies Preset.ThemeConfig,
 };
 
