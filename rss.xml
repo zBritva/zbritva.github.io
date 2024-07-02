@@ -4,10 +4,22 @@
         <title>Ilfat Galiev Blog</title>
         <link>http://ilfat-galiev.im/</link>
         <description>Ilfat Galiev Blog</description>
-        <lastBuildDate>Mon, 11 Dec 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 01 Jul 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Charticulator documentation]]></title>
+            <link>http://ilfat-galiev.im/</link>
+            <guid>http://ilfat-galiev.im/</guid>
+            <pubDate>Mon, 01 Jul 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[The Charticulator documentation has been partially moved to the doc section of the website.]]></description>
+            <content:encoded><![CDATA[<p>The Charticulator documentation has been partially moved to <a href="http://ilfat-galiev.im/docs/category/charticulator/">the doc section of the website</a>.</p>
+<p>The original source documentation is available in the github repository. It was deployed to <a href="https://charticulator.com/docs/" target="_blank" rel="noopener noreferrer">https://charticulator.com/docs/</a>, which is now unavailable.</p>]]></content:encoded>
+            <category>Charticulator</category>
+            <category>documentation</category>
+            <category>development</category>
+        </item>
         <item>
             <title><![CDATA[Charticulator Visual (View)]]></title>
             <link>http://ilfat-galiev.im/charticulator-view</link>
@@ -183,16 +195,8 @@
             <guid>http://ilfat-galiev.im/</guid>
             <pubDate>Fri, 03 Nov 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Welcome to my blog!]]></description>
-            <content:encoded><![CDATA[<p>Welcome to my blog!</p>
-<p>Here I will be talking about my journey into the world of software development. Even though I started working in the Tech field a long time ago, I think it's never too late to start telling my story.</p>
-<p>I'm 10+ year experience implementing UI with JavaScript/TypeScript, HTML/CSS and frameworks (React.js, Redux, ExtJS,Angular), moreover experienced in C#, .Net and Node.js for backend development.</p>
-<ul>
-<li>Certified LookerML Developer and Power BI Data Analyst Associate</li>
-<li>Led the entire project as project manager and solution architect with a 6-person development team.</li>
-<li>Implemented a converter of query results into .Net objects, which accelerated code writing by 50%.</li>
-<li>Implemented 3 complex Power BI plugins for data visualization.</li>
-</ul>
-<p>And I'm obsessed with developing Power BI visualization.</p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>The Charticulator documentation has been partially moved to <a href="http://ilfat-galiev.im/docs/category/charticulator/">the doc section of the website</a>.</p>
+<p>The original source documentation is available in the github repository. It was deployed to <a href="https://charticulator.com/docs/" target="_blank" rel="noopener noreferrer">https://charticulator.com/docs/</a>, which is now unavailable.</p>]]></content:encoded>
             <category>hello</category>
             <category>experience</category>
             <category>development</category>
