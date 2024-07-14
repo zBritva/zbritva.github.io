@@ -2,7 +2,6 @@ import Mermaid from '@theme/Mermaid';
 import React from 'react';
 
 export const EChartVisualDiagram = ({children}) => {
-    debugger;
     return (
         <>
         <p>EChartVisualDiagram</p>

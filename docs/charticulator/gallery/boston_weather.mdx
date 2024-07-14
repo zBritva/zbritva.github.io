@@ -1,0 +1,30 @@
+---
+title: "Boston Weather in a Year"
+description: "Boston weather in a year"
+image: /images/gallery/boston_weather.png
+video: /videos/gallery/boston_weather.mp4
+data: /data/boston_weather_2015.csv
+dataset: boston_weather
+sidebar_position: 5
+sidebar_image: /images/gallery/boston_weather.png
+---
+
+import { Player } from '@site/src/components/Player';
+
+![Boston Weather in a Year](/images/gallery/boston_weather.png)
+
+Here we use Charticulator to create a [Weather Radial](http://www.weather-radials.com/) visualization, designed by Raureif GmbH.
+
+A radial chart displaying the temperature and rainfall in Boston over the course of a year.
+Each line represents a single day's minimum and maximum temperature. Lines are colored by the average temperature.
+The blue circles represents the amount of rainfall.
+
+<Player url="/videos/gallery/boston_weather.mp4"/>
+
+## Dataset
+
+Boston daily weather data in 2015 including temperature and precipitation
+
+Data collected from the [National Centers for Environmental Information](https://www.ncdc.noaa.gov/cdo-web/search?datasetid=GHCND); accessed May. 3th, 2018; 
+
+[boston_weather_2015.csv](/data/boston_weather_2015.csv)

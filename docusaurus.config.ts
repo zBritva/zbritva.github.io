@@ -43,6 +43,7 @@ const config: Config = {
         //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         // },
         docs: {
+          id: 'docs',
           routeBasePath: '/docs',
           // sidebarPath: './sidebars.js',
           // Please change this to your repo.
@@ -52,9 +53,13 @@ const config: Config = {
           exclude: [
             'tutorial-extras',
             'tutorial-basics'
-          ]
+          ],
+          sidebarPath: require.resolve("./sidebars.js"),
+          // docCategoryGeneratedIndexComponent:
+          //   "@site/src/components/CategoryIndexPage",
         },
         blog: {
+          blogSidebarCount: 'ALL',
           routeBasePath: '/',
           showReadingTime: true,
           // Please change this to your repo.
@@ -100,8 +105,13 @@ const config: Config = {
           position: 'left',
           items: [
             {
-              to: '/visuals/echartsVisual.pbiviz',
+              to: 'https://appsource.microsoft.com/en-us/product/power-bi-visuals/ilfatgaliev1696579877540.echartsvisual?',
               label: 'Apache ECharts Visual',
+              target: '_blank'
+            },
+            {
+              to: '/visuals/echartsVisual.pbiviz',
+              label: 'Apache ECharts Visual (DEV VERSION)',
               target: '_blank'
             },
             {
@@ -120,18 +130,28 @@ const config: Config = {
               target: '_blank'
             },
             {
-              to: 'https://appsource.microsoft.com/en-us/product/power-bi-visuals/ilfatgaliev1696579877540.charticulator_visual_community_view?tab=Overview',
-              label: 'Charticulator Visual Community (View)',
+              to: 'https://appsource.microsoft.com/en-us/marketplace/apps?search=Charticulator%20Visual%20Community&page=1',
+              label: 'Charticulator Visual Community',
               target: '_blank'
             },
             {
-              to: 'https://appsource.microsoft.com/en-us/product/power-bi-visuals/ilfatgaliev1696579877540.charticulator_visual_community_editor?tab=Overview',
-              label: 'Charticulator Visual Community (Editor)',
+              to: '/visuals/charticulatorVisualCommunity_VIEW_DEV.pbiviz',
+              label: 'Charticulator Visual Community (View) DEV VERSION',
+              target: '_blank'
+            },
+            {
+              to: '/visuals/charticulatorVisualCommunity_EDITOR_DEV.pbiviz',
+              label: 'Charticulator Visual Community (Editor) DEV VERSION',
               target: '_blank'
             }
           ]
         },
         {to: 'https://ilfat-galiev.im/charticulator', label: 'Charticulator app', position: 'left'},
+        {
+          href: 'https://github.com/sponsors/zBritva',
+          label: 'DONATE',
+          position: 'right',
+        },
         {
           href: 'https://www.linkedin.com/in/ilfat-galiev/',
           label: 'LinkedIn',
