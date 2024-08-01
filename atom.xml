@@ -2,11 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://ilfat-galiev.im/</id>
     <title>Ilfat Galiev Blog</title>
-    <updated>2024-07-05T00:00:00.000Z</updated>
+    <updated>2024-08-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://ilfat-galiev.im/"/>
     <subtitle>Ilfat Galiev Blog</subtitle>
     <icon>http://ilfat-galiev.im/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Markdown and Mermaid Visual]]></title>
+        <id>http://ilfat-galiev.im/markdown-mermaid-01</id>
+        <link href="http://ilfat-galiev.im/markdown-mermaid-01"/>
+        <updated>2024-08-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Markdown and Mermaid Visual]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="markdown-and-mermaid-visual">Markdown and Mermaid Visual<a class="hash-link" aria-label="Direct link to Markdown and Mermaid Visual" title="Direct link to Markdown and Mermaid Visual" href="http://ilfat-galiev.im/markdown-mermaid-01#markdown-and-mermaid-visual">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="Visual editor preview" src="http://ilfat-galiev.im/assets/images/editor-preview-5987b73fd0aa6673e5ce49802c029d92.png" width="1622" height="742" class="img_ev3q"></p>
+<p>There is POC of the visual for rendering Markdown layout and Mermaid diagrams in Power BI reports.</p>
+<p>The visual has built in editor powered by <a href="https://github.com/uiwjs/react-md-editor" target="_blank" rel="noopener noreferrer">react-md-editor</a> with preview feature.</p>
+<p>Diagrams rendering powered by <a href="https://mermaid.js.org/" target="_blank" rel="noopener noreferrer">Mermaid</a></p>
+<p>Future work:</p>
+<ul>
+<li>Implement click handlers on nodes</li>
+<li>Power BI Data binding to nodes</li>
+</ul>
+<p>The preview version of the visual available in Visuals menu (above)</p>]]></content>
+        <author>
+            <name>Ilfat Galiev</name>
+            <uri>https://www.linkedin.com/in/ilfat-galiev/</uri>
+        </author>
+        <category label="Mermaid" term="Mermaid"/>
+        <category label="development" term="development"/>
+        <category label="markdown" term="markdown"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Charticulator upcoming updates]]></title>
         <id>http://ilfat-galiev.im/charticulator-updates-01</id>

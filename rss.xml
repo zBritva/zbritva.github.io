@@ -4,10 +4,31 @@
         <title>Ilfat Galiev Blog</title>
         <link>http://ilfat-galiev.im/</link>
         <description>Ilfat Galiev Blog</description>
-        <lastBuildDate>Fri, 05 Jul 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 Aug 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Markdown and Mermaid Visual]]></title>
+            <link>http://ilfat-galiev.im/markdown-mermaid-01</link>
+            <guid>http://ilfat-galiev.im/markdown-mermaid-01</guid>
+            <pubDate>Thu, 01 Aug 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Markdown and Mermaid Visual]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="markdown-and-mermaid-visual">Markdown and Mermaid Visual<a class="hash-link" aria-label="Direct link to Markdown and Mermaid Visual" title="Direct link to Markdown and Mermaid Visual" href="http://ilfat-galiev.im/markdown-mermaid-01#markdown-and-mermaid-visual">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="Visual editor preview" src="http://ilfat-galiev.im/assets/images/editor-preview-5987b73fd0aa6673e5ce49802c029d92.png" width="1622" height="742" class="img_ev3q"></p>
+<p>There is POC of the visual for rendering Markdown layout and Mermaid diagrams in Power BI reports.</p>
+<p>The visual has built in editor powered by <a href="https://github.com/uiwjs/react-md-editor" target="_blank" rel="noopener noreferrer">react-md-editor</a> with preview feature.</p>
+<p>Diagrams rendering powered by <a href="https://mermaid.js.org/" target="_blank" rel="noopener noreferrer">Mermaid</a></p>
+<p>Future work:</p>
+<ul>
+<li>Implement click handlers on nodes</li>
+<li>Power BI Data binding to nodes</li>
+</ul>
+<p>The preview version of the visual available in Visuals menu (above)</p>]]></content:encoded>
+            <category>Mermaid</category>
+            <category>development</category>
+            <category>markdown</category>
+        </item>
         <item>
             <title><![CDATA[Charticulator upcoming updates]]></title>
             <link>http://ilfat-galiev.im/charticulator-updates-01</link>
