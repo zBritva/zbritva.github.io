@@ -24,7 +24,9 @@
 <li>Implement click handlers on nodes</li>
 <li>Power BI Data binding to nodes</li>
 </ul>
-<p>The preview version of the visual available in Visuals menu (above)</p>]]></content:encoded>
+<p>The preview version of the visual available in Visuals menu (above)</p>
+<p>Demo:</p>
+<p><img decoding="async" loading="lazy" alt="Preview" src="http://ilfat-galiev.im/assets/images/markdown-mermaid-demo-17446dc851f31ba4f1a68af32a4280ca.gif" width="1386" height="734" class="img_ev3q"></p>]]></content:encoded>
             <category>Mermaid</category>
             <category>development</category>
             <category>markdown</category>
