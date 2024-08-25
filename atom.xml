@@ -21,7 +21,6 @@
 <ul>
 <li>The mark doesn't have internal constraints (no middle points like in line mark)</li>
 <li>Rendering in polar coordinates has not implemented yet</li>
-<li>The feature has issue with snapping one polygon to another</li>
 </ul>]]></content>
         <author>
             <name>Ilfat Galiev</name>
