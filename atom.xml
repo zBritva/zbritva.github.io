@@ -2,11 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://ilfat-galiev.im/</id>
     <title>Ilfat Galiev Blog</title>
-    <updated>2024-08-01T00:00:00.000Z</updated>
+    <updated>2024-08-24T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://ilfat-galiev.im/"/>
     <subtitle>Ilfat Galiev Blog</subtitle>
     <icon>http://ilfat-galiev.im/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Polygon mark in Charticulator]]></title>
+        <id>http://ilfat-galiev.im/polygon-mark</id>
+        <link href="http://ilfat-galiev.im/polygon-mark"/>
+        <updated>2024-08-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The new feature for Charticulator]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-new-feature-for-charticulator">The new feature for Charticulator<a class="hash-link" aria-label="Direct link to The new feature for Charticulator" title="Direct link to The new feature for Charticulator" href="http://ilfat-galiev.im/polygon-mark#the-new-feature-for-charticulator">​</a></h3>
+<p>This is one of the most significant updates for Charticulator. The mark allows to draw arbitrary shape for data visualization. The polygon support snapping to other marks or parent objects and supports basic styling like rectangle, ellipsis or triangle marks.</p>
+<p><img decoding="async" loading="lazy" alt="polygon" src="http://ilfat-galiev.im/assets/images/polygon-4230e7ddd9079332f42871e4cdd6e44e.png" width="1918" height="868" class="img_ev3q"></p>
+<p>The mark doesn't have a icon yet. But already available for testing in application on <a href="https://ilfat-galiev.im/charticulator/" target="_blank" rel="noopener noreferrer">https://ilfat-galiev.im/charticulator/</a> page.</p>
+<p>Current limitations:</p>
+<ul>
+<li>The mark doesn't have internal constraints (no middle points like in line mark)</li>
+<li>Rendering in polar coordinates has not implemented yet</li>
+<li>The feature has issue with snapping one polygon to another</li>
+</ul>]]></content>
+        <author>
+            <name>Ilfat Galiev</name>
+            <uri>https://www.linkedin.com/in/ilfat-galiev/</uri>
+        </author>
+        <category label="charticulator" term="charticulator"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Markdown and Mermaid Visual]]></title>
         <id>http://ilfat-galiev.im/markdown-mermaid-01</id>

@@ -4,10 +4,28 @@
         <title>Ilfat Galiev Blog</title>
         <link>http://ilfat-galiev.im/</link>
         <description>Ilfat Galiev Blog</description>
-        <lastBuildDate>Thu, 01 Aug 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 24 Aug 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Polygon mark in Charticulator]]></title>
+            <link>http://ilfat-galiev.im/polygon-mark</link>
+            <guid>http://ilfat-galiev.im/polygon-mark</guid>
+            <pubDate>Sat, 24 Aug 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[The new feature for Charticulator]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-new-feature-for-charticulator">The new feature for Charticulator<a class="hash-link" aria-label="Direct link to The new feature for Charticulator" title="Direct link to The new feature for Charticulator" href="http://ilfat-galiev.im/polygon-mark#the-new-feature-for-charticulator">​</a></h3>
+<p>This is one of the most significant updates for Charticulator. The mark allows to draw arbitrary shape for data visualization. The polygon support snapping to other marks or parent objects and supports basic styling like rectangle, ellipsis or triangle marks.</p>
+<p><img decoding="async" loading="lazy" alt="polygon" src="http://ilfat-galiev.im/assets/images/polygon-4230e7ddd9079332f42871e4cdd6e44e.png" width="1918" height="868" class="img_ev3q"></p>
+<p>The mark doesn't have a icon yet. But already available for testing in application on <a href="https://ilfat-galiev.im/charticulator/" target="_blank" rel="noopener noreferrer">https://ilfat-galiev.im/charticulator/</a> page.</p>
+<p>Current limitations:</p>
+<ul>
+<li>The mark doesn't have internal constraints (no middle points like in line mark)</li>
+<li>Rendering in polar coordinates has not implemented yet</li>
+<li>The feature has issue with snapping one polygon to another</li>
+</ul>]]></content:encoded>
+            <category>charticulator</category>
+        </item>
         <item>
             <title><![CDATA[Markdown and Mermaid Visual]]></title>
             <link>http://ilfat-galiev.im/markdown-mermaid-01</link>
