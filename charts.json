@@ -8,11 +8,27 @@
             "name": "Population of OECD Countries in 2018",
             "thumbnail": "https://ilfat-galiev.im/images/gallery/oecd_population_2018.png",
             "timeCreated": 1724554194242,
-            "timeModified": 1724556972145
+            "timeModified": 1724556972145,
+            "allowDelete": false
         },
         "author": {
-            "name": "Microsoft",
-            "contact": ""
+            "name": "Microsoft"
+        }
+    },
+    {
+        "id": "miles_vs_gasprices_1724554194242",
+        "url": "https://ilfat-galiev.im/charts/connected_scatterplot.chart",
+        "type": "chart",
+        "source": "cdn",
+        "metadata": {
+            "name": "Miles Driven vs. Gas Prices",
+            "thumbnail": "https://ilfat-galiev.im/images/gallery/miles_vs_gasprices.png",
+            "timeCreated": 1724554194242,
+            "timeModified": 1724556972145,
+            "allowDelete": false
+        },
+        "author": {
+            "name": "Microsoft"
         }
     }
 ]
