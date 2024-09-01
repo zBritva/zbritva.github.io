@@ -110,13 +110,13 @@ const config: Config = {
               target: '_blank'
             },
             {
-              to: '/visuals/echartsVisual.pbiviz',
-              label: 'Apache ECharts Visual (DEV VERSION)',
+              to: '/visuals/apexchartsVisual.pbiviz',
+              label: 'ApexCharts Visual',
               target: '_blank'
             },
             {
-              to: '/visuals/apexchartsVisual.pbiviz',
-              label: 'ApexCharts Visual',
+              to: 'https://appsource.microsoft.com/en-us/product/power-bi-visuals/ilfatgaliev1696579877540.markdown_mermaid_visual?tab=Overview',
+              label: 'Markdown/Mermaid Visual',
               target: '_blank'
             },
             {
@@ -133,20 +133,14 @@ const config: Config = {
               to: 'https://appsource.microsoft.com/en-us/marketplace/apps?search=Charticulator%20Visual%20Community&page=1',
               label: 'Charticulator Visual Community',
               target: '_blank'
-            },
-            {
-              to: '/visuals/charticulatorVisualCommunity_VIEW_DEV.pbiviz',
-              label: 'Charticulator Visual Community (View) DEV VERSION',
-              target: '_blank'
-            },
-            {
-              to: '/visuals/charticulatorVisualCommunity_EDITOR_DEV.pbiviz',
-              label: 'Charticulator Visual Community (Editor) DEV VERSION',
-              target: '_blank'
             }
           ]
         },
-        {to: 'https://ilfat-galiev.im/charticulator', label: 'Charticulator app', position: 'left'},
+        {
+          icon: 'fa-github',
+          to: 'https://ilfat-galiev.im/charticulator',
+          label: 'Charticulator app',
+          position: 'left'},
         {
           href: 'https://github.com/sponsors/zBritva',
           label: 'DONATE',
