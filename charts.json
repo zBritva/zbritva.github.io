@@ -1,10 +1,15 @@
 [
     {
-        "id": "",
-        "name": "Population of OECD Countries in 2018",
+        "id": "oecd_population_2018_1725220272068",
         "url": "https://ilfat-galiev.im/charts/bubble_chart.chart",
-        "img": "https://ilfat-galiev.im/images/gallery/oecd_population_2018.png",
         "type": "chart",
+        "source": "cdn",
+        "metadata": {
+            "name": "Population of OECD Countries in 2018",
+            "thumbnail": "https://ilfat-galiev.im/images/gallery/oecd_population_2018.png",
+            "timeCreated": 1724554194242,
+            "timeModified": 1724556972145
+        },
         "author": {
             "name": "Microsoft",
             "contact": ""
