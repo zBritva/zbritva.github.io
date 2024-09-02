@@ -2,11 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://ilfat-galiev.im/</id>
     <title>Ilfat Galiev Blog</title>
-    <updated>2024-08-24T00:00:00.000Z</updated>
+    <updated>2024-09-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://ilfat-galiev.im/"/>
     <subtitle>Ilfat Galiev Blog</subtitle>
     <icon>http://ilfat-galiev.im/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Charticulator Gallery]]></title>
+        <id>http://ilfat-galiev.im/charticulator-gallery</id>
+        <link href="http://ilfat-galiev.im/charticulator-gallery"/>
+        <updated>2024-09-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Charticulator Gallery]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="charticulator-gallery">Charticulator Gallery<a class="hash-link" aria-label="Direct link to Charticulator Gallery" title="Direct link to Charticulator Gallery" href="http://ilfat-galiev.im/charticulator-gallery#charticulator-gallery">​</a></h3>
+<p>The <a href="https://ilfat-galiev.im/charticulator/" target="_blank" rel="noopener noreferrer">Charticulator App</a> now has a built-in list of charts (gallery) that can be imported with a single click.</p>
+<p><img decoding="async" loading="lazy" alt="Gallery" src="http://ilfat-galiev.im/assets/images/chart-examples-ba6c39e53550e6b1a56c8cd59c68a5d1.png" width="621" height="345" class="img_ev3q"></p>
+<p>There are only two examples in the diagram list so far, but it will be updated soon, and will also support importing templates. If you want to add your own examples, feel free to contact me.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="chart-filter">Chart filter<a class="hash-link" aria-label="Direct link to Chart filter" title="Direct link to Chart filter" href="http://ilfat-galiev.im/charticulator-gallery#chart-filter">​</a></h3>
+<p>The list of charts has a filter of charts by name and type (private, charts that are stored in the browser's indexed database, and public, which are downloaded from a CDN).</p>]]></content>
+        <author>
+            <name>Ilfat Galiev</name>
+            <uri>https://www.linkedin.com/in/ilfat-galiev/</uri>
+        </author>
+        <category label="Charticulator" term="Charticulator"/>
+        <category label="development" term="development"/>
+        <category label="CharticulatorUpdates" term="CharticulatorUpdates"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Polygon mark in Charticulator]]></title>
         <id>http://ilfat-galiev.im/polygon-mark</id>
