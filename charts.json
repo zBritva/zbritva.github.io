@@ -30,5 +30,53 @@
         "author": {
             "name": "Microsoft"
         }
+    },
+    {
+        "id": "nightingale_chart_1724554194242",
+        "url": "https://ilfat-galiev.im/charts/nightingale_chart.chart",
+        "type": "chart",
+        "source": "cdn",
+        "metadata": {
+            "name": "The Causes of Mortality in the Army in the East",
+            "thumbnail": "https://ilfat-galiev.im/images/gallery/nightingale.png",
+            "timeCreated": 1724554194242,
+            "timeModified": 1724556972145,
+            "allowDelete": false
+        },
+        "author": {
+            "name": "Microsoft"
+        }
+    },
+    {
+        "id": "weather_radial_chart_1724554194242",
+        "url": "https://ilfat-galiev.im/charts/weather_radial_chart.chart",
+        "type": "chart",
+        "source": "cdn",
+        "metadata": {
+            "name": "Boston weather",
+            "thumbnail": "https://ilfat-galiev.im/images/gallery/boston_weather.png",
+            "timeCreated": 1724554194242,
+            "timeModified": 1724556972145,
+            "allowDelete": false
+        },
+        "author": {
+            "name": "Microsoft"
+        }
+    },
+    {
+        "id": "weather_radial_chart_1724554194242",
+        "url": "https://ilfat-galiev.im/charts/oecd_population_2018_lollipop.chart",
+        "type": "chart",
+        "source": "cdn",
+        "metadata": {
+            "name": "Population of OECD Countries in 2018",
+            "thumbnail": "https://ilfat-galiev.im/images/gallery/oecd_population_2018_lollipop.png",
+            "timeCreated": 1724554194242,
+            "timeModified": 1724556972145,
+            "allowDelete": false
+        },
+        "author": {
+            "name": "Microsoft"
+        }
     }
 ]
