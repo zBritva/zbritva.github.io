@@ -8,6 +8,7 @@
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <copyright>Copyright © 2024 Ilfat Galiev.</copyright>
         <item>
             <title><![CDATA[Charticulator Gallery]]></title>
             <link>http://ilfat-galiev.im/charticulator-gallery</link>
@@ -290,34 +291,6 @@ Data can be bind to properties on Attributes panel. It's not necessary to have D
             <category>powerbi</category>
             <category>charticulator</category>
             <category>datavisualization</category>
-        </item>
-        <item>
-            <title><![CDATA[Welcome]]></title>
-            <link>http://ilfat-galiev.im/</link>
-            <guid>http://ilfat-galiev.im/</guid>
-            <pubDate>Fri, 03 Nov 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[Welcome to my blog!]]></description>
-            <content:encoded><![CDATA[<p>Welcome to my blog!</p>
-<p>Here I will be talking about my journey into the world of software development. Even though I started working in the Tech field a long time ago, I think it's never too late to start telling my story.</p>
-<p>I'm 10+ year experience implementing UI with JavaScript/TypeScript, HTML/CSS and frameworks (React.js, Redux, ExtJS,Angular), moreover experienced in C#, .Net and Node.js for backend development.</p>
-<ul>
-<li>Certified LookerML Developer and Power BI Data Analyst Associate</li>
-<li>Led the entire project as project manager and solution architect with a 6-person development team.</li>
-<li>Implemented a converter of query results into .Net objects, which accelerated code writing by 50%.</li>
-<li>Implemented 5 complex Power BI plugins for data visualization.</li>
-</ul>
-<p>And I'm obsessed with developing Power BI visualization.</p>
-<p>I hope you find the blog useful.</p>
-<p>Short content overview:</p>
-<ul>
-<li><a href="http://ilfat-galiev.im/charticulator-updates-01">Recent updates about Charticulator visual</a></li>
-<li><a href="http://ilfat-galiev.im/docs/charticulator/intro.md">Charticulator documentation</a></li>
-<li><a href="http://ilfat-galiev.im/docs/echarts-visual/">Apache EChart Visual documentation</a></li>
-<li><a href="http://ilfat-galiev.im/docs/handelbars-visual/">HTML/SVG/Handlebars Visual documentation</a></li>
-</ul>]]></content:encoded>
-            <category>hello</category>
-            <category>experience</category>
-            <category>development</category>
         </item>
     </channel>
 </rss>
