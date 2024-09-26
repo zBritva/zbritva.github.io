@@ -5,6 +5,23 @@
     "description": "Ilfat Galiev Blog",
     "items": [
         {
+            "id": "http://ilfat-galiev.im/charticulator-data-editor",
+            "content_html": "<p>The <a href=\"https://ilfat-galiev.im/charticulator/\" target=\"_blank\" rel=\"noopener noreferrer\">Charticulator App</a> can allow to import data from *.csv files, but there is no opportunities to pre edit, ender or edit data on chart development phase.</p>\n<h3 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"charticulator-data-editor\">Charticulator data editor<a class=\"hash-link\" aria-label=\"Direct link to Charticulator data editor\" title=\"Direct link to Charticulator data editor\" href=\"http://ilfat-galiev.im/charticulator-data-editor#charticulator-data-editor\">​</a></h3>\n<p>The <a href=\"https://github.com/zBritva/charticulator/pull/48\" target=\"_blank\" rel=\"noopener noreferrer\">PR48</a> closes this gap. Powered by <a href=\"https://reactgrid.com/\" target=\"_blank\" rel=\"noopener noreferrer\">ReactGrid component</a> brings feature to edit current data, creating table from scratch, inserting rows and columns.</p>\n<p><img decoding=\"async\" loading=\"lazy\" alt=\"Table editor\" src=\"http://ilfat-galiev.im/assets/images/table-editor-b3d25af1e4d9535bfa6a074e0288ebde.png\" width=\"814\" height=\"860\" class=\"img_ev3q\"></p>\n<h3 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"wide-view\">Wide view<a class=\"hash-link\" aria-label=\"Direct link to Wide view\" title=\"Direct link to Wide view\" href=\"http://ilfat-galiev.im/charticulator-data-editor#wide-view\">​</a></h3>\n<p>The layout of current charts are changed from vertical list to grid to display private and publicly available charts.</p>\n<p><img decoding=\"async\" loading=\"lazy\" alt=\"Charts list\" src=\"http://ilfat-galiev.im/assets/images/charts-ae0470abc6362646e8ba0b81077662f0.png\" width=\"1919\" height=\"911\" class=\"img_ev3q\"></p>\n<p>On <a href=\"https://github.com/zBritva/charticulator/pull/48\" target=\"_blank\" rel=\"noopener noreferrer\">PR48</a> page you can find link to deployment of the latest development branch.</p>",
+            "url": "http://ilfat-galiev.im/charticulator-data-editor",
+            "title": "Charticulator data editor",
+            "summary": "The Charticulator App can allow to import data from *.csv files, but there is no opportunities to pre edit, ender or edit data on chart development phase.",
+            "date_modified": "2024-09-25T00:00:00.000Z",
+            "author": {
+                "name": "Ilfat Galiev",
+                "url": "https://www.linkedin.com/in/ilfat-galiev/"
+            },
+            "tags": [
+                "Charticulator",
+                "development",
+                "CharticulatorUpdates"
+            ]
+        },
+        {
             "id": "http://ilfat-galiev.im/charticulator-gallery",
             "content_html": "<h3 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"charticulator-gallery\">Charticulator Gallery<a class=\"hash-link\" aria-label=\"Direct link to Charticulator Gallery\" title=\"Direct link to Charticulator Gallery\" href=\"http://ilfat-galiev.im/charticulator-gallery#charticulator-gallery\">​</a></h3>\n<p>The <a href=\"https://ilfat-galiev.im/charticulator/\" target=\"_blank\" rel=\"noopener noreferrer\">Charticulator App</a> now has a built-in list of charts (gallery) that can be imported with a single click.</p>\n<p><img decoding=\"async\" loading=\"lazy\" alt=\"Gallery\" src=\"http://ilfat-galiev.im/assets/images/chart-examples-f1e2715c76f74a7aa734770626820842.png\" width=\"621\" height=\"592\" class=\"img_ev3q\"></p>\n<p>There are only few examples in the diagram list so far, but it will be updated soon, and will also support importing templates. If you want to add your own examples, feel free to contact me.</p>\n<h3 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"chart-filter\">Chart filter<a class=\"hash-link\" aria-label=\"Direct link to Chart filter\" title=\"Direct link to Chart filter\" href=\"http://ilfat-galiev.im/charticulator-gallery#chart-filter\">​</a></h3>\n<p>The list of charts has a filter of charts by name and type (private, charts that are stored in the browser's indexed database, and public, which are downloaded from a CDN).</p>",
             "url": "http://ilfat-galiev.im/charticulator-gallery",
@@ -33,7 +50,8 @@
                 "url": "https://www.linkedin.com/in/ilfat-galiev/"
             },
             "tags": [
-                "charticulator"
+                "charticulator",
+                "development"
             ]
         },
         {
@@ -147,23 +165,6 @@
             "title": "Charticulator app deployment",
             "summary": "Since the version of Charticulator from Microsoft is retiring, I decided to deploy to GitHub Pages the latest version with fixes and some new functionality. Unfortunately all this new stuff is not included in the Power BI Visual. In the next 2 months I plan to prepare alternative versions of visuals.",
             "date_modified": "2023-11-14T00:00:00.000Z",
-            "author": {
-                "name": "Ilfat Galiev",
-                "url": "https://www.linkedin.com/in/ilfat-galiev/"
-            },
-            "tags": [
-                "powerbi",
-                "charticulator",
-                "datavisualization"
-            ]
-        },
-        {
-            "id": "http://ilfat-galiev.im/charticulator-visual",
-            "content_html": "<p>It past a year after the first attemp to give breath Charticulator visual. I didn't get any feedback on the first version at the time, neither bad, good, or error message, but they were there.</p>\n<p>Here's a second attempt. I will have the opportunity to publish a version on AppSource, I think it should help to find the old audience.</p>\n<p>I forked the Charticulator source to my repository on GitHub, which is used internally by the new visual.</p>\n<p><a href=\"https://github.com/zbritva/charticulator\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/zbritva/charticulator</a></p>\n<p>It already contains fixes and features that were not included in the original.</p>\n<p>Editor is avialable for preview on <a href=\"https://ilfat-galiev.im/charticulator/\" target=\"_blank\" rel=\"noopener noreferrer\">https://ilfat-galiev.im/charticulator/</a>.</p>\n<p><strong>And, yes, there is no httpS. Do not use for production</strong></p>\n<p>The source code for the new visual has been published on Github:</p>\n<p><a href=\"https://github.com/zBritva/charticulator-visual-community\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/zBritva/charticulator-visual-community</a></p>\n<h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"the-main-difference-from-orginal-charticulator\">The main difference from orginal Charticulator<a class=\"hash-link\" aria-label=\"Direct link to The main difference from orginal Charticulator\" title=\"Direct link to The main difference from orginal Charticulator\" href=\"http://ilfat-galiev.im/charticulator-visual#the-main-difference-from-orginal-charticulator\">​</a></h2>\n<p>The visual will be split into two parts. The first includes the Charticulator editor UI. The second includes only engine to render charts.</p>\n<p>Report authors will have to use one visual to edit the chart and switch to the second visual before saving the report.</p>\n<p>This approach allows:</p>\n<ul>\n<li>significantly decrease the package size.</li>\n<li>easier to obtain certification for the second, because less code for review.</li>\n<li>Keeping the first (editorial) version uncertified opens your hands for more technical possibilities, (downloading from the gallery or moving part of the editor code to CDN and so on).</li>\n</ul>\n<h2 class=\"anchor anchorWithStickyNavbar_LWe7\" id=\"community\">Community<a class=\"hash-link\" aria-label=\"Direct link to Community\" title=\"Direct link to Community\" href=\"http://ilfat-galiev.im/charticulator-visual#community\">​</a></h2>\n<p>Fell free to open any <a href=\"https://github.com/zBritva/charticulator-visual-community/discussions\" target=\"_blank\" rel=\"noopener noreferrer\">discussion on GitHub</a>, even it is about closing.</p>\n<p>The road map is stabilization and close workflow of the visual. Then submitting the first versions to AppSource.</p>",
-            "url": "http://ilfat-galiev.im/charticulator-visual",
-            "title": "Charticulator visual",
-            "summary": "It past a year after the first attemp to give breath Charticulator visual. I didn't get any feedback on the first version at the time, neither bad, good, or error message, but they were there.",
-            "date_modified": "2023-11-06T00:00:00.000Z",
             "author": {
                 "name": "Ilfat Galiev",
                 "url": "https://www.linkedin.com/in/ilfat-galiev/"

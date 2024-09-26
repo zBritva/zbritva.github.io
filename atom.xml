@@ -2,12 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://ilfat-galiev.im/</id>
     <title>Ilfat Galiev Blog</title>
-    <updated>2024-09-01T00:00:00.000Z</updated>
+    <updated>2024-09-25T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://ilfat-galiev.im/"/>
     <subtitle>Ilfat Galiev Blog</subtitle>
     <icon>http://ilfat-galiev.im/img/favicon.ico</icon>
     <rights>Copyright © 2024 Ilfat Galiev.</rights>
+    <entry>
+        <title type="html"><![CDATA[Charticulator data editor]]></title>
+        <id>http://ilfat-galiev.im/charticulator-data-editor</id>
+        <link href="http://ilfat-galiev.im/charticulator-data-editor"/>
+        <updated>2024-09-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Charticulator App can allow to import data from *.csv files, but there is no opportunities to pre edit, ender or edit data on chart development phase.]]></summary>
+        <content type="html"><![CDATA[<p>The <a href="https://ilfat-galiev.im/charticulator/" target="_blank" rel="noopener noreferrer">Charticulator App</a> can allow to import data from *.csv files, but there is no opportunities to pre edit, ender or edit data on chart development phase.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="charticulator-data-editor">Charticulator data editor<a class="hash-link" aria-label="Direct link to Charticulator data editor" title="Direct link to Charticulator data editor" href="http://ilfat-galiev.im/charticulator-data-editor#charticulator-data-editor">​</a></h3>
+<p>The <a href="https://github.com/zBritva/charticulator/pull/48" target="_blank" rel="noopener noreferrer">PR48</a> closes this gap. Powered by <a href="https://reactgrid.com/" target="_blank" rel="noopener noreferrer">ReactGrid component</a> brings feature to edit current data, creating table from scratch, inserting rows and columns.</p>
+<p><img decoding="async" loading="lazy" alt="Table editor" src="http://ilfat-galiev.im/assets/images/table-editor-b3d25af1e4d9535bfa6a074e0288ebde.png" width="814" height="860" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="wide-view">Wide view<a class="hash-link" aria-label="Direct link to Wide view" title="Direct link to Wide view" href="http://ilfat-galiev.im/charticulator-data-editor#wide-view">​</a></h3>
+<p>The layout of current charts are changed from vertical list to grid to display private and publicly available charts.</p>
+<p><img decoding="async" loading="lazy" alt="Charts list" src="http://ilfat-galiev.im/assets/images/charts-ae0470abc6362646e8ba0b81077662f0.png" width="1919" height="911" class="img_ev3q"></p>
+<p>On <a href="https://github.com/zBritva/charticulator/pull/48" target="_blank" rel="noopener noreferrer">PR48</a> page you can find link to deployment of the latest development branch.</p>]]></content>
+        <author>
+            <name>Ilfat Galiev</name>
+            <uri>https://www.linkedin.com/in/ilfat-galiev/</uri>
+        </author>
+        <category label="Charticulator" term="Charticulator"/>
+        <category label="development" term="development"/>
+        <category label="CharticulatorUpdates" term="CharticulatorUpdates"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Charticulator Gallery]]></title>
         <id>http://ilfat-galiev.im/charticulator-gallery</id>
@@ -48,6 +70,7 @@
             <uri>https://www.linkedin.com/in/ilfat-galiev/</uri>
         </author>
         <category label="charticulator" term="charticulator"/>
+        <category label="development" term="development"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Markdown and Mermaid Visual]]></title>
@@ -288,41 +311,6 @@ Data can be bind to properties on Attributes panel. It's not necessary to have D
 <p><img decoding="async" loading="lazy" alt="Charticulator app" src="http://ilfat-galiev.im/assets/images/charticulator-app-c3010b4922d2e29cfb5bb79083168398.png" width="1920" height="885" class="img_ev3q"></p>
 <p>The first stage is practically accomplished. In which I upgrade the UI library to Fluent UI 9. Since the first version doesn't work with React 18+ fully.</p>
 <p>The upcoming work is fixing critical bugs in the current version of the visual, which block the implementation of the full cycle of chart development in the Power BI report.</p>]]></content>
-        <author>
-            <name>Ilfat Galiev</name>
-            <uri>https://www.linkedin.com/in/ilfat-galiev/</uri>
-        </author>
-        <category label="powerbi" term="powerbi"/>
-        <category label="charticulator" term="charticulator"/>
-        <category label="datavisualization" term="datavisualization"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Charticulator visual]]></title>
-        <id>http://ilfat-galiev.im/charticulator-visual</id>
-        <link href="http://ilfat-galiev.im/charticulator-visual"/>
-        <updated>2023-11-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[It past a year after the first attemp to give breath Charticulator visual. I didn't get any feedback on the first version at the time, neither bad, good, or error message, but they were there.]]></summary>
-        <content type="html"><![CDATA[<p>It past a year after the first attemp to give breath Charticulator visual. I didn't get any feedback on the first version at the time, neither bad, good, or error message, but they were there.</p>
-<p>Here's a second attempt. I will have the opportunity to publish a version on AppSource, I think it should help to find the old audience.</p>
-<p>I forked the Charticulator source to my repository on GitHub, which is used internally by the new visual.</p>
-<p><a href="https://github.com/zbritva/charticulator" target="_blank" rel="noopener noreferrer">https://github.com/zbritva/charticulator</a></p>
-<p>It already contains fixes and features that were not included in the original.</p>
-<p>Editor is avialable for preview on <a href="https://ilfat-galiev.im/charticulator/" target="_blank" rel="noopener noreferrer">https://ilfat-galiev.im/charticulator/</a>.</p>
-<p><strong>And, yes, there is no httpS. Do not use for production</strong></p>
-<p>The source code for the new visual has been published on Github:</p>
-<p><a href="https://github.com/zBritva/charticulator-visual-community" target="_blank" rel="noopener noreferrer">https://github.com/zBritva/charticulator-visual-community</a></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-main-difference-from-orginal-charticulator">The main difference from orginal Charticulator<a class="hash-link" aria-label="Direct link to The main difference from orginal Charticulator" title="Direct link to The main difference from orginal Charticulator" href="http://ilfat-galiev.im/charticulator-visual#the-main-difference-from-orginal-charticulator">​</a></h2>
-<p>The visual will be split into two parts. The first includes the Charticulator editor UI. The second includes only engine to render charts.</p>
-<p>Report authors will have to use one visual to edit the chart and switch to the second visual before saving the report.</p>
-<p>This approach allows:</p>
-<ul>
-<li>significantly decrease the package size.</li>
-<li>easier to obtain certification for the second, because less code for review.</li>
-<li>Keeping the first (editorial) version uncertified opens your hands for more technical possibilities, (downloading from the gallery or moving part of the editor code to CDN and so on).</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="community">Community<a class="hash-link" aria-label="Direct link to Community" title="Direct link to Community" href="http://ilfat-galiev.im/charticulator-visual#community">​</a></h2>
-<p>Fell free to open any <a href="https://github.com/zBritva/charticulator-visual-community/discussions" target="_blank" rel="noopener noreferrer">discussion on GitHub</a>, even it is about closing.</p>
-<p>The road map is stabilization and close workflow of the visual. Then submitting the first versions to AppSource.</p>]]></content>
         <author>
             <name>Ilfat Galiev</name>
             <uri>https://www.linkedin.com/in/ilfat-galiev/</uri>
