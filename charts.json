@@ -4,6 +4,7 @@
         "url": "https://ilfat-galiev.im/charts/bubble_chart.chart",
         "type": "chart",
         "source": "cdn",
+        "hidden": true,
         "metadata": {
             "name": "Population of OECD Countries in 2018",
             "thumbnail": "https://ilfat-galiev.im/images/gallery/oecd_population_2018.png",
