@@ -1,0 +1,40 @@
+[
+    {
+        "name": "DatasetName",
+        "description": "Dataset description",
+        "tables": [
+            {
+                "name": "TableName",
+                "type": "csv/tsv",
+                "url": "relative/absolute url to the file"
+            }
+        ]
+    },
+    {
+        "name": "DatasetName",
+        "description": "Dataset description",
+        "tables": [
+            {
+                "name": "TableName",
+                "type": "csv/tsv",
+                "url": "relative/absolute url to the file"
+            },
+            {
+                "name": "TableName",
+                "type": "csv/tsv",
+                "url": "relative/absolute url to the file"
+            }
+        ]
+    },
+    {
+        "name": "DatasetName",
+        "description": "Dataset description",
+        "tables": [
+            {
+                "name": "TableName",
+                "type": "csv/tsv",
+                "url": "relative/absolute url to the file"
+            }
+        ]
+    }
+]
