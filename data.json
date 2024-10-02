@@ -11,7 +11,7 @@
         ]
     },
     {
-        "name": "DatasetName",
+        "name": "DatasetName 2",
         "description": "Dataset description",
         "tables": [
             {
@@ -27,7 +27,84 @@
         ]
     },
     {
-        "name": "DatasetName",
+        "name": "DatasetName 3",
+        "description": "Dataset description",
+        "tables": [
+            {
+                "name": "TableName",
+                "type": "csv/tsv",
+                "url": "relative/absolute url to the file"
+            }
+        ]
+    },
+    {
+        "name": "DatasetName 4",
+        "description": "Dataset description",
+        "tables": [
+            {
+                "name": "TableName",
+                "type": "csv/tsv",
+                "url": "relative/absolute url to the file"
+            }
+        ]
+    },
+    {
+        "name": "DatasetName 5",
+        "description": "Dataset description",
+        "tables": [
+            {
+                "name": "TableName",
+                "type": "csv/tsv",
+                "url": "relative/absolute url to the file"
+            }
+        ]
+    },
+    {
+        "name": "DatasetName 6",
+        "description": "Dataset description",
+        "tables": [
+            {
+                "name": "TableName",
+                "type": "csv/tsv",
+                "url": "relative/absolute url to the file"
+            }
+        ]
+    },
+    {
+        "name": "DatasetName 7",
+        "description": "Dataset description",
+        "tables": [
+            {
+                "name": "TableName",
+                "type": "csv/tsv",
+                "url": "relative/absolute url to the file"
+            }
+        ]
+    },
+    {
+        "name": "DatasetName 8",
+        "description": "Dataset description",
+        "tables": [
+            {
+                "name": "TableName",
+                "type": "csv/tsv",
+                "url": "relative/absolute url to the file"
+            }
+        ]
+    },
+    {
+        "name": "DatasetName 9",
+        "description": "Dataset description",
+        "tables": [
+            {
+                "name": "TableName",
+                "type": "csv/tsv",
+                "url": "relative/absolute url to the file"
+            }
+        ]
+    },
+    {
+        "name": "DatasetName 10",
         "description": "Dataset description",
         "tables": [
             {
