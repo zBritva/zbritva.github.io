@@ -122,5 +122,20 @@
             "name": "StatCounter Global Stats",
             "contact": "https://gs.statcounter.com/browser-market-share"
         }
+    },
+    {
+        "name": "Mushrooms",
+        "description": "This chart displays the characteristics of mushrooms sampled from the UCI mushroom dataset. Each circle represents a single mushroom sample, colored according to whether it is poisonous. Odors are grouped along the X axis, while cap surface chartacteristics are grouped along the Y axis.",
+        "tables": [
+            {
+                "name": "browser_ww_monthly_200901_202409",
+                "type": "csv/tsv",
+                "url": "https://ilfat-galiev.im/data/mushrooms.csv"
+            }
+        ],
+        "author": {
+            "name": "The Audubon Society Field Guide to North American Mushrooms (1981). G. H. Lincoff (Pres.), New York: Alfred A. Knopf",
+            "contact": "https://archive.ics.uci.edu/dataset/73/mushroom"
+        }
     }
 ]
