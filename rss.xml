@@ -4,11 +4,25 @@
         <title>Ilfat Galiev Blog</title>
         <link>http://ilfat-galiev.im/</link>
         <description>Ilfat Galiev Blog</description>
-        <lastBuildDate>Fri, 27 Sep 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 02 Oct 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>Copyright © 2024 Ilfat Galiev.</copyright>
+        <item>
+            <title><![CDATA[Charticulator dataset list]]></title>
+            <link>http://ilfat-galiev.im/charticulator-dataset</link>
+            <guid>http://ilfat-galiev.im/charticulator-dataset</guid>
+            <pubDate>Wed, 02 Oct 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[The Charticulator application has a new dataset list that allows you to import datasets with a single click to create a chart from scratch.]]></description>
+            <content:encoded><![CDATA[<p>The Charticulator application has a new dataset list that allows you to import datasets with a single click to create a chart from scratch.</p>
+<p><img decoding="async" loading="lazy" alt="Dataset list" src="http://ilfat-galiev.im/assets/images/dataset-1d6cb156d82087ed12334e5729df55e1.png" width="1582" height="750" class="img_ev3q"></p>
+<p>The chart list view also supports quick filtering of datasets by name.</p>
+<p>If you want to see data samples on list, contact with me. But make sure that dataset is allowed to copy and using doesn't breaks laws or agreements.</p>]]></content:encoded>
+            <category>Charticulator</category>
+            <category>development</category>
+            <category>CharticulatorUpdates</category>
+        </item>
         <item>
             <title><![CDATA[Charticulator Visual charts list]]></title>
             <link>http://ilfat-galiev.im/charticulator-updates-02</link>
@@ -224,62 +238,6 @@ Data can be bind to properties on Attributes panel. It's not necessary to have D
             <category>datavisualization</category>
             <category>html</category>
             <category>svg</category>
-        </item>
-        <item>
-            <title><![CDATA[PlotlyJS Visual by Akvelon]]></title>
-            <link>http://ilfat-galiev.im/plotlyjs-visuals-172</link>
-            <guid>http://ilfat-galiev.im/plotlyjs-visuals-172</guid>
-            <pubDate>Fri, 24 Nov 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[Today the 1.7.3 update for PlotlyJS Visual by Akvelon has been approved by AppSource. Here I want to tell you about some small but important changes.]]></description>
-            <content:encoded><![CDATA[<p>Today the 1.7.3 update for <a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/akvelon.plotlyjsvisualbyakvelon?tab=DetailsAndSupport" target="_blank" rel="noopener noreferrer">PlotlyJS Visual by Akvelon</a> has been approved by AppSource. Here I want to tell you about some small but important changes.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="internal-refactoring-the-code-of-the-visual">Internal refactoring the code of the visual<a class="hash-link" aria-label="Direct link to Internal refactoring the code of the visual" title="Direct link to Internal refactoring the code of the visual" href="http://ilfat-galiev.im/plotlyjs-visuals-172#internal-refactoring-the-code-of-the-visual">​</a></h2>
-<p>The first version was developed in a tight timeframe of 2 weeks. Since the idea was only to combine Chart Studio and Plotly.js visualization library, the internal code was very hard to read. The useState provided by the React library was used for state management, <a href="https://learn.microsoft.com/en-us/power-bi/developer/visuals/power-bi-visuals-concept" target="_blank" rel="noopener noreferrer">changes passed by Power BI to the <code>update</code></a> function were passed to the React component via <a href="https://react.dev/reference/react/forwardRef" target="_blank" rel="noopener noreferrer"><code>forwardRef</code></a>.</p>
-<p>In version 1.7.3, the Redux Toolkit was added for state management, making the code much easier to understand and maintain.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="save-button-moved-to-left-panel">Save button moved to left panel<a class="hash-link" aria-label="Direct link to Save button moved to left panel" title="Direct link to Save button moved to left panel" href="http://ilfat-galiev.im/plotlyjs-visuals-172#save-button-moved-to-left-panel">​</a></h2>
-<p>The "Save" button has been moved to the left panel next to the "Get In Touch" button. Initially, after making changes through the visual editor, it was always necessary to go to the text editor to save the changes</p>
-<p><img decoding="async" loading="lazy" alt="PlotlyJS visual save button screenshot on the left panel" src="http://ilfat-galiev.im/assets/images/save_button-2960302ded8903c9032dfe0ff78947b3.png" width="613" height="558" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="button-to-save-current-position-of-camera">Button to save current position of camera<a class="hash-link" aria-label="Direct link to Button to save current position of camera" title="Direct link to Button to save current position of camera" href="http://ilfat-galiev.im/plotlyjs-visuals-172#button-to-save-current-position-of-camera">​</a></h2>
-<p>Added "Save Camera" button to copy current camera coordinates to JSON schema.</p>
-<p><img decoding="async" loading="lazy" alt="The &amp;quot;Save camera&amp;quot; button on the visual" src="http://ilfat-galiev.im/assets/images/save_camera-6ab6e1d656a7dfc774ce1398373fe3e5.png" width="795" height="665" class="img_ev3q"></p>
-<p>This makes it faster and easier to set coordinates for the camera, and the camera does not return to the default position during the next visualization.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="license-error-notification-banner-added">License error notification banner added<a class="hash-link" aria-label="Direct link to License error notification banner added" title="Direct link to License error notification banner added" href="http://ilfat-galiev.im/plotlyjs-visuals-172#license-error-notification-banner-added">​</a></h2>
-<p>Added a descriptive notification banner with a link to a paid visualization feature.</p>
-<p>You can remove the banner by turning off the paid functionality in the viewer's settings (Settings =&gt; Plotly.js properties =&gt; Power BI tooltips) or by <a href="https://appsource.microsoft.com/en-us/marketplace/checkout/akvelon.plotlyjsvisualbyakvelon?tab=Overview" target="_blank" rel="noopener noreferrer">purchasing a subscription</a> on Microsoft Office 365 page.</p>
-<p><img decoding="async" loading="lazy" alt="License error notification banner" src="http://ilfat-galiev.im/assets/images/license_error-f96f3410f7dbc9112267395a1e209914.png" width="762" height="302" class="img_ev3q"></p>
-<p>You buy Power BI's tooltip functionality, while the visualization itself is free.</p>
-<p>You must purchase a license for each report user, regardless of role (report author or consumer).</p>
-<p>There are only 2 subscription options at the moment:</p>
-<ul>
-<li>Annual plan</li>
-<li>Monthly plan</li>
-</ul>
-<p>The paid feature is available to everyone in the following environments:</p>
-<ul>
-<li>Embedded - Publish To Web, PaaS embed</li>
-<li>National/Regional clouds (Depends on general support for transactability in national/regional clouds)</li>
-<li>RS Server</li>
-<li>Exporting (PDF\PPT) using REST API</li>
-</ul>
-<p>If you still have questions, <a href="https://akvelon.com/contact-us/?category=Power+BI+Custom+Visuals&amp;product=PlotlyJS+visual+(PBI+certified)" target="_blank" rel="noopener noreferrer">please contact Akvelon Inc. support</a>.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="add-loading-segments-by-30k-rows-instead-loading-all-data-per-update">Add loading segments by 30k rows instead loading all data per update<a class="hash-link" aria-label="Direct link to Add loading segments by 30k rows instead loading all data per update" title="Direct link to Add loading segments by 30k rows instead loading all data per update" href="http://ilfat-galiev.im/plotlyjs-visuals-172#add-loading-segments-by-30k-rows-instead-loading-all-data-per-update">​</a></h2>
-<p>Visuals supports visualization of one thousand data points by default. But this can be changed by the developer in the settings to load thirty thousand data points.</p>
-<p>But if even that isn't enough, Power BI provides a <a href="https://learn.microsoft.com/en-us/power-bi/developer/visuals/fetch-more-data" target="_blank" rel="noopener noreferrer">Fetch more data API</a> for visuals that allows you to download more data (but no more than 100MB).</p>
-<p>Power BI can provide data:</p>
-<ul>
-<li>All at once, each time increasing the data portion by thirty thousand (30k, 60k, 90k e.t.c.).</li>
-<li>By segments, shifting window of 30k data points</li>
-</ul>
-<p>The first approach was already supported by this visual, starting with this version the second option is also supported</p>
-<p>To use the new features, set the following settings:</p>
-<p><img decoding="async" loading="lazy" alt="Aggregaate segmetns settings" src="http://ilfat-galiev.im/assets/images/aggregate_segments-a1da7429cc3374aafccf532a396ddbf4.png" width="224" height="255" class="img_ev3q"></p>
-<p>And add buttons to shift the segments into <code>layout</code> settings of JSON schema:</p>
-<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "layout": {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    "updatemenus": [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        "buttons": [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            "args": [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">              {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                "aggregateSegments": false</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">              }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            "label": "Previous",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            "method": "loadPrevSegment",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            "name": "loadPrevSegment"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            "args": [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">              {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                "aggregateSegments": false</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">              }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            "label": "Next",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            "method": "loadNextSegment",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            "name": "loadNextSegment"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        "type": "buttons"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<p>Example of a chart with buttons to shift segments:</p>
-<p><img decoding="async" loading="lazy" alt="Rendering 30k data points segments by segments" src="http://ilfat-galiev.im/assets/images/data-pagination-a7626e24c66aad1b10e6fe3061ff7694.gif" width="1266" height="232" class="img_ev3q"></p>
-<p>I hope these changes find applications in providing reports in Power BI for you and your clients.</p>]]></content:encoded>
-            <category>powerbi</category>
-            <category>plotly</category>
-            <category>datavisualization</category>
         </item>
     </channel>
 </rss>
