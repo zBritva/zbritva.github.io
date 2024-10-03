@@ -77,5 +77,50 @@
             "name": "Chatham House (2024), ‘resourcetrade.earth’, https://resourcetrade.earth/",
             "contact": "https://resourcetrade.earth/"
         }
+    },
+    {
+        "name": "Mobile, Tablet & Console Operating System Market Share Worldwide",
+        "description": "The market share of mobile operating systems from 2009 to 2024",
+        "tables": [
+            {
+                "name": "os_combined_ww_monthly",
+                "type": "csv/tsv",
+                "url": "https://ilfat-galiev.im/data/os_combined_ww_monthly_200901_202409.csv"
+            }
+        ],
+        "author": {
+            "name": "StatCounter Global Stats",
+            "contact": "https://gs.statcounter.com/os-market-share"
+        }
+    },
+    {
+        "name": "Mobile os market share (2009-2016)",
+        "description": "The market share of mobile operating systems from 2009 to 2016",
+        "tables": [
+            {
+                "name": "mobile_os_market_share",
+                "type": "csv/tsv",
+                "url": "https://ilfat-galiev.im/data/mobile_os_market_share.csv"
+            }
+        ],
+        "author": {
+            "name": "StatCounter Global Stats",
+            "contact": "https://gs.statcounter.com/os-market-share"
+        }
+    },
+    {
+        "name": "Mobile Browser Market Share Worldwide - September 2024",
+        "description": "The market share of mobile browsers from January 2009 to September 2024",
+        "tables": [
+            {
+                "name": "browser_ww_monthly_200901_202409",
+                "type": "csv/tsv",
+                "url": "https://ilfat-galiev.im/data/browser_ww_monthly_200901_202409.csv"
+            }
+        ],
+        "author": {
+            "name": "StatCounter Global Stats",
+            "contact": "https://gs.statcounter.com/browser-market-share"
+        }
     }
 ]
