@@ -57,5 +57,25 @@
             "name": "Gapminder",
             "contact": "https://www.gapminder.org/data/"
         }
+    },
+    {
+        "name": "International trade in natural resources",
+        "description": "resourcetrade.earth has been developed by Chatham House to enable users to explore the fast-evolving dynamics of international trade in natural resources, the sustainability implications of such trade, and the related interdependencies that emerge between importing and exporting countries and regions.",
+        "tables": [
+            {
+                "name": "global_resource_trade_nodes",
+                "type": "csv/tsv",
+                "url": "https://ilfat-galiev.im/data/global_resource_trade_nodes.csv"
+            },
+            {
+                "name": "global_resource_trade_links",
+                "type": "csv/tsv",
+                "url": "https://ilfat-galiev.im/data/global_resource_trade_links.csv"
+            }
+        ],
+        "author": {
+            "name": "Chatham House (2024), ‘resourcetrade.earth’, https://resourcetrade.earth/",
+            "contact": "https://resourcetrade.earth/"
+        }
     }
 ]
