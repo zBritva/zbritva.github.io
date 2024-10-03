@@ -1,14 +1,18 @@
 [
     {
-        "name": "DatasetName",
-        "description": "Boston Weather 2015",
+        "name": "Boston Weather 2015",
+        "description": "Data collected from the National Centers for Environmental Information; accessed May. 3th, 2018",
         "tables": [
             {
                 "name": "boston_weather_2015",
                 "type": "csv/tsv",
                 "url": "https://ilfat-galiev.im/data/boston_weather_2015.csv"
             }
-        ]
+        ],
+        "author": {
+            "name": "National Centers for Environmental Information",
+            "contact": "https://www.ncdc.noaa.gov/cdo-web/search?datasetid=GHCND"
+        }
     },
     {
         "name": "DatasetName 2",
