@@ -1,12 +1,12 @@
 [
     {
         "name": "DatasetName",
-        "description": "Dataset description",
+        "description": "Boston Weather 2015",
         "tables": [
             {
-                "name": "TableName",
+                "name": "boston_weather_2015",
                 "type": "csv/tsv",
-                "url": "relative/absolute url to the file"
+                "url": "https://ilfat-galiev.im/data/boston_weather_2015.csv"
             }
         ]
     },
