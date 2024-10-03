@@ -62,10 +62,26 @@ const config: Config = {
           blogSidebarCount: 'ALL',
           routeBasePath: '/',
           showReadingTime: true,
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} Ilfat Galiev.`,
+            createFeedItems: async (params) => {
+              const {blogPosts, defaultCreateFeedItems, ...rest} = params;
+              return defaultCreateFeedItems({
+                // keep only the 10 most recent blog posts in the feed
+                blogPosts: blogPosts.filter((item, index) => index < 10),
+                ...rest,
+              });
+            },
+          },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
+        pages: {
+          path: "./pages",
+          routeBasePath: '/pages',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -133,6 +149,11 @@ const config: Config = {
               to: 'https://appsource.microsoft.com/en-us/marketplace/apps?search=Charticulator%20Visual%20Community&page=1',
               label: 'Charticulator Visual Community',
               target: '_blank'
+            },
+            {
+              to: "https://github.com/zBritva/charticulator-visual-community/actions/runs/11085759748",
+              label: 'Charticulator Visual Community (Editor/View) DEV',
+              target: '_blank'
             }
           ]
         },
@@ -141,9 +162,14 @@ const config: Config = {
           to: 'https://ilfat-galiev.im/charticulator',
           label: 'Charticulator app',
           position: 'left'},
+        // {
+        //   href: 'https://github.com/sponsors/zBritva',
+        //   label: 'DONATE',
+        //   position: 'right',
+        // },
         {
-          href: 'https://github.com/sponsors/zBritva',
-          label: 'DONATE',
+          href: '/pages/privacy',
+          label: 'Privacy',
           position: 'right',
         },
         {
@@ -154,6 +180,11 @@ const config: Config = {
         {
           href: 'https://github.com/zbritva',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          href: '/pages/about',
+          label: 'About me',
           position: 'right',
         },
       ],

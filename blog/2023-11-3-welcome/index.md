@@ -1,5 +1,5 @@
 ---
-slug: /
+slug: /welcome
 title: Welcome
 authors: [ilfat]
 tags: [hello, experience, development]
@@ -23,6 +23,6 @@ I hope you find the blog useful.
 Short content overview:
 
 * [Recent updates about Charticulator visual](/charticulator-updates-01)
-* [Charticulator documentation](/docs/charticulator/intro.md)
+* [Charticulator documentation](/docs/charticulator/intro)
 * [Apache EChart Visual documentation](/docs/echarts-visual/)
 * [HTML/SVG/Handlebars Visual documentation](/docs/handelbars-visual/)

@@ -1,0 +1,81 @@
+[
+    {
+        "name": "Boston Weather 2015",
+        "description": "Data collected from the National Centers for Environmental Information; accessed May. 3th, 2018",
+        "tables": [
+            {
+                "name": "boston_weather_2015",
+                "type": "csv/tsv",
+                "url": "https://ilfat-galiev.im/data/boston_weather_2015.csv"
+            }
+        ],
+        "author": {
+            "name": "National Centers for Environmental Information",
+            "contact": "https://www.ncdc.noaa.gov/cdo-web/search?datasetid=GHCND"
+        }
+    },
+    {
+        "name": "World Population Pyramid of 2017",
+        "description": "United Nations, Department of Economic and Social Affairs, Population Division (2017). World Population Prospects: The 2017 Revision, custom data acquired via website.",
+        "tables": [
+            {
+                "name": "world_population_2017",
+                "type": "csv/tsv",
+                "url": "https://ilfat-galiev.im/data/world_population_2017.csv"
+            }
+        ],
+        "author": {
+            "name": "United Nations, Department of Economic and Social Affairs",
+            "contact": "https://desapublications.un.org/publications/world-population-prospects-2017-revision"
+        }
+    },
+    {
+        "name": "Causes of Mortality over Time",
+        "description": "Nightingale, F., Farr, W., & Smith, A. (1859). A contribution to the sanitary history of the British army during the late war with Russia.",
+        "tables": [
+            {
+                "name": "nightingale",
+                "type": "csv/tsv",
+                "url": "https://ilfat-galiev.im/data/nightingale.csv"
+            }
+        ],
+        "author": {
+            "name": "John W. Parker and Son."
+        }
+    },
+    {
+        "name": "Gapminder",
+        "description": "Fertility rate, life expectancy, and population of countries in six world regions",
+        "tables": [
+            {
+                "name": "gapminder",
+                "type": "csv/tsv",
+                "url": "https://ilfat-galiev.im/data/gapminder.csv"
+            }
+        ],
+        "author": {
+            "name": "Gapminder",
+            "contact": "https://www.gapminder.org/data/"
+        }
+    },
+    {
+        "name": "International trade in natural resources",
+        "description": "resourcetrade.earth has been developed by Chatham House to enable users to explore the fast-evolving dynamics of international trade in natural resources, the sustainability implications of such trade, and the related interdependencies that emerge between importing and exporting countries and regions.",
+        "tables": [
+            {
+                "name": "global_resource_trade_nodes",
+                "type": "csv/tsv",
+                "url": "https://ilfat-galiev.im/data/global_resource_trade_nodes.csv"
+            },
+            {
+                "name": "global_resource_trade_links",
+                "type": "csv/tsv",
+                "url": "https://ilfat-galiev.im/data/global_resource_trade_links.csv"
+            }
+        ],
+        "author": {
+            "name": "Chatham House (2024), ‘resourcetrade.earth’, https://resourcetrade.earth/",
+            "contact": "https://resourcetrade.earth/"
+        }
+    }
+]

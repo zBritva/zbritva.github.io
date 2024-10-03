@@ -64,7 +64,7 @@
         }
     },
     {
-        "id": "weather_radial_chart_1724554194242",
+        "id": "oecd_population_2018_lollipop_1724554194242",
         "url": "https://ilfat-galiev.im/charts/oecd_population_2018_lollipop.chart",
         "type": "chart",
         "source": "cdn",
@@ -77,6 +77,41 @@
         },
         "author": {
             "name": "Microsoft"
+        }
+    },
+    {
+        "id": "fantail_chart_1636761600",
+        "url": "https://raw.githubusercontent.com/PowerBI-tips/Charticulator-Templates/main/templates/Kerry%20Kolosko%20-%20Fantail%20Chart.tmplt",
+        "type": "tmplt",
+        "hidden": true,
+        "source": "cdn",
+        "metadata": {
+            "name": "Fantail chart",
+            "thumbnail": "",
+            "timeCreated": 1636761600,
+            "timeModified": 1636761600,
+            "allowDelete": false
+        },
+        "author": {
+            "name": "Kerry Kolosko",
+            "contact": "https://kerrykolosko.com/"
+        }
+    },
+    {
+        "id": "arc_diagram_1636761600",
+        "url": "https://raw.githubusercontent.com/PowerBI-tips/Charticulator-Templates/main/templates/Arc%20Diagram/arc_diagram.tmplt",
+        "type": "tmplt",
+        "source": "cdn",
+        "metadata": {
+            "name": "Arc diagram",
+            "thumbnail": "",
+            "timeCreated": 1636027200,
+            "timeModified": 1636027200,
+            "allowDelete": false
+        },
+        "author": {
+            "name": "Mike Carlo",
+            "contact": "http://powerbi.tips/"
         }
     }
 ]

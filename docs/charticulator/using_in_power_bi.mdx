@@ -1,15 +1,34 @@
 ---
 sidebar_position: 2
 ---
+import { Player } from '@site/src/components/Player';
+import { Icon } from '@site/src/components/Icon';
 
 # Using in Power BI
 
-You can import the chart design, exported as a Power BI Custom Visual, into Power BI. Once its required data fields are filled, you can see the chart within Power BI.
+## Difference from Original version of the visual
+
+The visual was split into two different visual (VIEW and EDITOR). The Editor has built in editor that allows to create charts from scratch. The View doesn't have built in editor and support only importing templates and mapping data.
+
+Reasons for that:
+
+* The View is Power BI certified. And cannot access external resources.
+* The View contains less code than the Editor version and size of package is significantly smaller. It speeds up loading reports.
+* The Editor is not certified and there is no plans for certification.
+* The Editor is going to have public gallery of charts that will allow easily import charts made by community.
+
+**Don't use Editor version of the visual on the final reports for consumers**.
+
+## Getting started
+
+You can import the chart design, exported as template, into Power BI. Once its required data fields are filled and mapped, you can see the chart within Power BI.
 <!-- ({% include videocallout.html src="/videos/tutorials/tutorial8.mp4" timeRange="32.87,48.00" openTutorial="tutorial8" %}) -->
 In addition, the chart reacts to the event from other charts or slicers. For example, you can create a slicer using the Month value of the `DATE` value so that you can interactively choose the desired month to be shown.
 
 <!-- ({% include videocallout.html src="/videos/tutorials/tutorial8.mp4" timeRange="52.70,61.00" openTutorial="tutorial8" %}) -->
+<Player url="/videos/tutorials/tutorial8.mp4" timeToStart={52.70} timeToStop={61.00} />
 
+On Power BI report:
 <!-- {% include image.html src="/images/docs/power-bi.png" alt="Power BI" %} -->
 ![Power BI](/images/docs/power-bi.png)
 
