@@ -148,5 +148,60 @@
                 "url": "https://raw.githubusercontent.com/vega/vega/refs/heads/main/docs/data/cars.json"
             }
         ]
+    },
+    {
+        "name": "airports.csv",
+        "description": "Data sample from Vega source code on https://github.com/vega/vega/tree/main/docs/data",
+        "tables": [
+            {
+                "name": "airports",
+                "type": "json",
+                "url": "https://raw.githubusercontent.com/vega/vega/refs/heads/main/docs/data/airports.csv"
+            }
+        ]
+    },
+    {
+        "name": "barley.json",
+        "description": "Data sample from Vega source code on https://github.com/vega/vega/tree/main/docs/data",
+        "tables": [
+            {
+                "name": "barley",
+                "type": "json",
+                "url": "https://raw.githubusercontent.com/vega/vega/refs/heads/main/docs/data/barley.json"
+            }
+        ]
+    },
+    {
+        "name": "countries.json",
+        "description": "Data sample from Vega source code on https://github.com/vega/vega/tree/main/docs/data",
+        "tables": [
+            {
+                "name": "countries",
+                "type": "json",
+                "url": "https://raw.githubusercontent.com/vega/vega/refs/heads/main/docs/data/countries.json"
+            }
+        ]
+    },
+    {
+        "name": "disasters.csv",
+        "description": "Data sample from Vega source code on https://github.com/vega/vega/tree/main/docs/data",
+        "tables": [
+            {
+                "name": "disasters",
+                "type": "json",
+                "url": "https://raw.githubusercontent.com/vega/vega/refs/heads/main/docs/data/disasters.csv"
+            }
+        ]
+    },
+    {
+        "name": "football.csv",
+        "description": "Data sample from Vega source code on https://github.com/vega/vega/tree/main/docs/data",
+        "tables": [
+            {
+                "name": "football",
+                "type": "json",
+                "url": "https://raw.githubusercontent.com/vega/vega/refs/heads/main/docs/data/football.json"
+            }
+        ]
     }
 ]
