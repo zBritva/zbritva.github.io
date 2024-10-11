@@ -137,5 +137,16 @@
             "name": "The Audubon Society Field Guide to North American Mushrooms (1981). G. H. Lincoff (Pres.), New York: Alfred A. Knopf",
             "contact": "https://archive.ics.uci.edu/dataset/73/mushroom"
         }
+    },
+    {
+        "name": "Cars.json",
+        "description": "Data sample from Vega source code on https://github.com/vega/vega/tree/main/docs/data",
+        "tables": [
+            {
+                "name": "cars",
+                "type": "json",
+                "url": "https://raw.githubusercontent.com/vega/vega/refs/heads/main/docs/data/cars.json"
+            }
+        ]
     }
 ]
