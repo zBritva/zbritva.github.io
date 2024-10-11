@@ -139,7 +139,7 @@
         }
     },
     {
-        "name": "Cars.json",
+        "name": "cars.json",
         "description": "Data sample from Vega source code on https://github.com/vega/vega/tree/main/docs/data",
         "tables": [
             {
@@ -155,7 +155,7 @@
         "tables": [
             {
                 "name": "airports",
-                "type": "json",
+                "type": "csv",
                 "url": "https://raw.githubusercontent.com/vega/vega/refs/heads/main/docs/data/airports.csv"
             }
         ]
@@ -194,13 +194,35 @@
         ]
     },
     {
-        "name": "football.csv",
+        "name": "football.json",
         "description": "Data sample from Vega source code on https://github.com/vega/vega/tree/main/docs/data",
         "tables": [
             {
                 "name": "football",
                 "type": "json",
                 "url": "https://raw.githubusercontent.com/vega/vega/refs/heads/main/docs/data/football.json"
+            }
+        ]
+    },
+    {
+        "name": "birdstrikes.csv",
+        "description": "Data sample from Vega source code on https://github.com/vega/vega/tree/main/docs/data",
+        "tables": [
+            {
+                "name": "birdstrikes",
+                "type": "csv",
+                "url": "https://raw.githubusercontent.com/vega/vega/refs/heads/main/docs/data/birdstrikes.csv"
+            }
+        ]
+    },
+    {
+        "name": "stocks.csv",
+        "description": "Data sample from Vega source code on https://github.com/vega/vega/tree/main/docs/data",
+        "tables": [
+            {
+                "name": "stocks",
+                "type": "csv",
+                "url": "https://raw.githubusercontent.com/vega/vega/refs/heads/main/docs/data/stocks.csv"
             }
         ]
     }
