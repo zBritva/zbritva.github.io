@@ -2,12 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ilfat-galiev.im/</id>
     <title>Ilfat Galiev Blog</title>
-    <updated>2024-10-28T00:00:00.000Z</updated>
+    <updated>2024-11-03T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ilfat-galiev.im/"/>
     <subtitle>Ilfat Galiev Blog</subtitle>
     <icon>https://ilfat-galiev.im/img/favicon.ico</icon>
     <rights>Copyright © 2024 Ilfat Galiev.</rights>
+    <entry>
+        <title type="html"><![CDATA[Charticulator GeoJSON sublayout]]></title>
+        <id>https://ilfat-galiev.im/charticulator-geo</id>
+        <link href="https://ilfat-galiev.im/charticulator-geo"/>
+        <updated>2024-11-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[GeoJSON is a format for encoding a variety of geographic data structures.]]></summary>
+        <content type="html"><![CDATA[<p>GeoJSON is a format for encoding a variety of geographic data structures.</p>
+<div class="language-geojson codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-geojson codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "type": "Feature",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "geometry": {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    "type": "Point",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    "coordinates": [125.6, 10.1]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "properties": {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    "name": "Dinagat Islands"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>The Charticulator has sub-layout features that allow to authors arrange Glyphs on Plot Segments.</p>
+<p>Usually Charticulator uses x or y axes to determine positions of each Glyph.</p>
+<p>Sub-layouts is one approach to integrate third party layouts like <a href="https://d3js.org/d3-geo" target="_blank" rel="noopener noreferrer">d3-geo</a>, <a href="https://d3js.org/d3-hierarchy/tree" target="_blank" rel="noopener noreferrer">d3-hierarchy/tree</a>, <a href="https://d3js.org/d3-hierarchy/pack" target="_blank" rel="noopener noreferrer">d3-hierarchy/pack</a> e.t.c.</p>
+<p><img decoding="async" loading="lazy" alt="Geo sublayout" src="https://ilfat-galiev.im/assets/images/geo-json-452325fdffab2a3fc3f0f04d33a82ba5.png" width="1919" height="912" class="img_ev3q"></p>
+<p>The d3-geo package uses to render GeoJSON into SVG path as part of Plot Segment and positioning Glyphs by given latitude, longitude column bindings.</p>
+<p><img decoding="async" loading="lazy" alt="Geo sublayout" src="https://ilfat-galiev.im/assets/images/geo-json-attributes-43947b78065d4d47ffb9d5bba470bfa0.png" width="279" height="753" class="img_ev3q"></p>
+<p>Geo sub-layout has properties to load GeoJSON file, to specify expression for geo coordinate columns, projections, center of map, rotations, scale and translates rendering SVG on Plot Segment.</p>]]></content>
+        <author>
+            <name>Ilfat Galiev</name>
+            <uri>https://www.linkedin.com/in/ilfat-galiev/</uri>
+        </author>
+        <category label="Charticulator" term="Charticulator"/>
+        <category label="development" term="development"/>
+        <category label="CharticulatorUpdates" term="CharticulatorUpdates"/>
+        <category label="geojson" term="geojson"/>
+        <category label="d3.js" term="d3.js"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Charticulator Treemap sublayout]]></title>
         <id>https://ilfat-galiev.im/charticulator-treemap</id>
@@ -225,41 +250,5 @@ Data can be bind to properties on Attributes panel. It's not necessary to have D
         <category label="Charticulator" term="Charticulator"/>
         <category label="documentation" term="documentation"/>
         <category label="development" term="development"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Charticulator Visual (View)]]></title>
-        <id>https://ilfat-galiev.im/charticulator-view</id>
-        <link href="https://ilfat-galiev.im/charticulator-view"/>
-        <updated>2023-12-11T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The first version of the visual for rendering Charticulator templates has been published in AppSource]]></summary>
-        <content type="html"><![CDATA[<p>The first version of the visual for rendering Charticulator templates has been published in <a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/ilfatgaliev1696579877540.charticulator_visual_community_view" target="_blank" rel="noopener noreferrer">AppSource</a></p>
-<p><img decoding="async" loading="lazy" alt="AppSource search result for Charticulator word" src="https://ilfat-galiev.im/assets/images/appsource-search-83323c3d4d8a6d1742b9893555f64632.png" width="996" height="643" class="img_ev3q"></p>
-<p>The editor version of the visual available on <a href="https://github.com/zBritva/charticulator-visual-community/tree/master/charticulator-visual/docs" target="_blank" rel="noopener noreferrer">GitHub repository page</a> or by <a href="https://ilfat-galiev.im/assets/files/charticulatorVisualCommunity_EDITOR.1.0.5.0-0242205c8fa60bc14c9c03970137c80a.pbiviz" target="_blank">direct link</a></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="getting-started">Getting started<a class="hash-link" aria-label="Direct link to Getting started" title="Direct link to Getting started" href="https://ilfat-galiev.im/charticulator-view#getting-started">​</a></h2>
-<p>To use the visual, you need to create a new chart using either the old Charticulator or a visual with an editor, or import a template that you have (or took from <a href="https://charticulator.com/gallery/index.html" target="_blank" rel="noopener noreferrer">https://charticulator.com/gallery/index.html</a>).</p>
-<p>You also can use <a href="https://ilfat-galiev.im/charticulator/" target="_blank" rel="noopener noreferrer">The New Charticulator App</a> to create chart templates.</p>
-<p><img decoding="async" loading="lazy" alt="The New Charticulator App" src="https://ilfat-galiev.im/assets/images/app-fc5369b8f153fa00886445a2a79b7295.png" width="1380" height="666" class="img_ev3q"></p>
-<p>it's not recommend to use <a href="https://charticulator.com/app/index.html" target="_blank" rel="noopener noreferrer">Old Charticulator App</a> because it doesn't include new features and bug fixes.</p>
-<p>To import the template, create instance of the new visual, assign data from Power BI and switch the visual to edit mode by click on "Edit" on visual menu. You should see button to import the template, click on it and select template file. The visual saves the template in settings immediately.</p>
-<p><img decoding="async" loading="lazy" alt="Importing template" src="https://ilfat-galiev.im/assets/images/import-7cd14fb9958731434595fd3f05c115c1.png" width="1110" height="695" class="img_ev3q"></p>
-<p>Click on "Back to report" to exit from edit mode.</p>
-<p>The visual shows the chart built from template if the visual has all data for template, otherwise it requires to provide columns mapping between data columns and template columns. In this case set column mappings and confirm by clicking on "Confirm".</p>
-<p><img decoding="async" loading="lazy" alt="Mapping Power BI columns to template columns" src="https://ilfat-galiev.im/assets/images/mapping-e457787ef1decc18b48d38ca5fac4554.png" width="1114" height="695" class="img_ev3q"></p>
-<p>After that visual should show the chart built from template and data assigned from Power BI.</p>
-<p><img decoding="async" loading="lazy" alt="Visual sample" src="https://ilfat-galiev.im/assets/images/view-example1-509ceeff690bde560b9aea162c98c3a4.png" width="1366" height="768" class="img_ev3q"></p>
-<p>To build the chart from scratch, create instance of the visual and assign data, then switch the visual to old Charticulator visual or to the new Charticulator with editor.</p>
-<p>After that click on "Edit" in visual menu to switch the visual to editor mode, it launches the Charticulator App for plotting new chart.</p>
-<p>Save the chart and close editor by click on "Back to report", the editor version of the visual will show preview version of chart.</p>
-<p>To save the chart switch back to the view version of the visual and save a report. The visual with editor will not work in Power BI services in view mode of the report.</p>
-<p><img decoding="async" loading="lazy" alt="Switching the visual to View version" src="https://ilfat-galiev.im/assets/images/switch-visual-3202e5243fa9522355178e3ccd178ccf.png" width="491" height="142" class="img_ev3q"></p>
-<h1>Next steps</h1>
-<p>If you have an idea or suggestions, feel free to open a <a href="https://github.com/zBritva/charticulator-visual-community/discussions" target="_blank" rel="noopener noreferrer">discussion on the GitHub repository page</a></p>]]></content>
-        <author>
-            <name>Ilfat Galiev</name>
-            <uri>https://www.linkedin.com/in/ilfat-galiev/</uri>
-        </author>
-        <category label="powerbi" term="powerbi"/>
-        <category label="charticulator" term="charticulator"/>
-        <category label="datavisualization" term="datavisualization"/>
     </entry>
 </feed>
