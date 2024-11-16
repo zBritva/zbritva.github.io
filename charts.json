@@ -113,5 +113,37 @@
             "name": "Mike Carlo",
             "contact": "https://powerbi.tips/"
         }
+    },
+    {
+        "id": "city_locations",
+        "url": "https://ilfat-galiev.im/charts/city_locations.chart",
+        "type": "chart",
+        "source": "cdn",
+        "metadata": {
+            "name": "Geo sup-layout example",
+            "thumbnail": "https://ilfat-galiev.im/images/gallery/city_locations.jpg",
+            "timeCreated": 1724554194242,
+            "timeModified": 1724556972145,
+            "allowDelete": false
+        },
+        "author": {
+            "name": "Ilfat Galiev"
+        }
+    },
+    {
+        "id": "treemap",
+        "url": "https://ilfat-galiev.im/charts/treemap.chart",
+        "type": "chart",
+        "source": "cdn",
+        "metadata": {
+            "name": "Treemap sub-layout example",
+            "thumbnail": "https://ilfat-galiev.im/images/gallery/treemap.jpg",
+            "timeCreated": 1724554194242,
+            "timeModified": 1724556972145,
+            "allowDelete": false
+        },
+        "author": {
+            "name": "Ilfat Galiev"
+        }
     }
 ]

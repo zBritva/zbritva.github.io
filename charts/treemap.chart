@@ -1,0 +1,1194 @@
+{
+  "state": {
+    "version": "2.6.0",
+    "dataset": {
+      "name": "treemap",
+      "tables": [
+        {
+          "name": "treemap",
+          "displayName": "treemap",
+          "columns": [
+            {
+              "name": "CAT1",
+              "displayName": "CAT1",
+              "type": "string",
+              "metadata": {
+                "kind": "categorical",
+                "orderMode": "alphabetically"
+              }
+            },
+            {
+              "name": "CAT2",
+              "displayName": "CAT2",
+              "type": "string",
+              "metadata": {
+                "kind": "categorical",
+                "orderMode": "alphabetically"
+              }
+            },
+            {
+              "name": "VAL",
+              "displayName": "VAL",
+              "type": "number",
+              "metadata": {
+                "kind": "numerical"
+              }
+            }
+          ],
+          "rows": [
+            {
+              "_id": "0",
+              "CAT1": "A",
+              "CAT2": "A1",
+              "VAL": 1
+            },
+            {
+              "_id": "1",
+              "CAT1": "A",
+              "CAT2": "A2",
+              "VAL": 2
+            },
+            {
+              "_id": "2",
+              "CAT1": "B",
+              "CAT2": "B1",
+              "VAL": 3
+            },
+            {
+              "_id": "3",
+              "CAT1": "B",
+              "CAT2": "B2",
+              "VAL": 4
+            },
+            {
+              "_id": "4",
+              "CAT1": "C",
+              "CAT2": "C1",
+              "VAL": 5
+            }
+          ],
+          "type": "Main",
+          "localeNumberFormat": {
+            "decimal": ",",
+            "remove": "."
+          }
+        }
+      ]
+    },
+    "chart": {
+      "_id": "pamjbhazbzb",
+      "classID": "chart.rectangle",
+      "properties": {
+        "name": "Chart",
+        "backgroundColor": null,
+        "backgroundOpacity": 1,
+        "enableContextMenu": true,
+        "exposed": true
+      },
+      "mappings": {
+        "marginTop": {
+          "type": "value",
+          "value": 50
+        },
+        "width": {
+          "type": "value",
+          "value": 800
+        },
+        "height": {
+          "type": "value",
+          "value": 800
+        },
+        "marginLeft": {
+          "type": "value",
+          "value": 50
+        },
+        "marginBottom": {
+          "type": "value",
+          "value": 50
+        },
+        "marginRight": {
+          "type": "value",
+          "value": 50
+        }
+      },
+      "glyphs": [
+        {
+          "_id": "00b7wo48bhqf3",
+          "classID": "glyph.rectangle",
+          "properties": {
+            "name": "Glyph"
+          },
+          "table": "treemap",
+          "marks": [
+            {
+              "_id": "kujqg9utgmp",
+              "classID": "mark.anchor",
+              "properties": {
+                "name": "Anchor"
+              },
+              "mappings": {
+                "x": {
+                  "type": "parent",
+                  "parentAttribute": "icx"
+                },
+                "y": {
+                  "type": "parent",
+                  "parentAttribute": "icy"
+                }
+              }
+            },
+            {
+              "_id": "svgnr37vyuq",
+              "classID": "mark.rect",
+              "properties": {
+                "enableTooltips": true,
+                "enableContextMenu": true,
+                "enableSelection": true,
+                "exposed": true,
+                "visible": true,
+                "strokeStyle": "solid",
+                "shape": "rectangle",
+                "allowFlipping": true,
+                "rx": 0,
+                "ry": 0,
+                "orientation": "vertical",
+                "cometMark": false,
+                "name": "Shape1"
+              },
+              "mappings": {
+                "strokeWidth": {
+                  "type": "value",
+                  "value": 2
+                },
+                "opacity": {
+                  "type": "value",
+                  "value": 1
+                },
+                "visible": {
+                  "type": "value",
+                  "value": true
+                },
+                "x1": {
+                  "type": "parent",
+                  "parentAttribute": "ix1"
+                },
+                "y1": {
+                  "type": "parent",
+                  "parentAttribute": "iy1"
+                },
+                "x2": {
+                  "type": "parent",
+                  "parentAttribute": "ix2"
+                },
+                "y2": {
+                  "type": "parent",
+                  "parentAttribute": "iy2"
+                },
+                "stroke": {
+                  "type": "value",
+                  "value": {
+                    "r": 150,
+                    "g": 150,
+                    "b": 150
+                  }
+                },
+                "gradientRotation": {
+                  "type": "value",
+                  "value": 45
+                },
+                "fill": {
+                  "type": "scale",
+                  "table": "treemap",
+                  "expression": "first(CAT2)",
+                  "valueType": "string",
+                  "scale": "4yzgugbm4zq",
+                  "attribute": "fill",
+                  "valueIndex": null
+                }
+              }
+            },
+            {
+              "_id": "q5tjz1s6mhe",
+              "classID": "mark.text",
+              "properties": {
+                "enableTooltips": true,
+                "enableContextMenu": true,
+                "enableSelection": true,
+                "exposed": true,
+                "alignment": {
+                  "x": "middle",
+                  "y": "top",
+                  "xMargin": 5,
+                  "yMargin": 5
+                },
+                "rotation": 0,
+                "ignorePolarRotation": false,
+                "visible": true,
+                "name": "Text1"
+              },
+              "mappings": {
+                "enableTooltips": {
+                  "type": "value",
+                  "value": true
+                },
+                "enableContextMenu": {
+                  "type": "value",
+                  "value": true
+                },
+                "enableSelection": {
+                  "type": "value",
+                  "value": true
+                },
+                "exposed": {
+                  "type": "value",
+                  "value": true
+                },
+                "text": {
+                  "type": "text",
+                  "table": "treemap",
+                  "textExpression": "${avg(VAL)}{.1f}"
+                },
+                "fontFamily": {
+                  "type": "value",
+                  "value": "Segoe UI"
+                },
+                "fontSize": {
+                  "type": "value",
+                  "value": 12
+                },
+                "color": {
+                  "type": "value",
+                  "value": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0
+                  }
+                },
+                "opacity": {
+                  "type": "value",
+                  "value": 1
+                },
+                "visible": {
+                  "type": "value",
+                  "value": true
+                },
+                "x": {
+                  "type": "parent",
+                  "parentAttribute": "icx"
+                },
+                "y": {
+                  "type": "parent",
+                  "parentAttribute": "icy"
+                }
+              }
+            },
+            {
+              "_id": "27h271mmnnfh",
+              "classID": "mark.text",
+              "properties": {
+                "enableTooltips": true,
+                "enableContextMenu": true,
+                "enableSelection": true,
+                "exposed": true,
+                "alignment": {
+                  "x": "right",
+                  "y": "bottom",
+                  "xMargin": 5.70427310774248,
+                  "yMargin": 3.036477620400583
+                },
+                "rotation": 0,
+                "ignorePolarRotation": false,
+                "visible": true,
+                "name": "Text2"
+              },
+              "mappings": {
+                "enableTooltips": {
+                  "type": "value",
+                  "value": true
+                },
+                "enableContextMenu": {
+                  "type": "value",
+                  "value": true
+                },
+                "enableSelection": {
+                  "type": "value",
+                  "value": true
+                },
+                "exposed": {
+                  "type": "value",
+                  "value": true
+                },
+                "text": {
+                  "type": "text",
+                  "table": "treemap",
+                  "textExpression": "${first(CAT1)}"
+                },
+                "fontFamily": {
+                  "type": "value",
+                  "value": "Segoe UI"
+                },
+                "fontSize": {
+                  "type": "value",
+                  "value": 12
+                },
+                "color": {
+                  "type": "value",
+                  "value": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0
+                  }
+                },
+                "opacity": {
+                  "type": "value",
+                  "value": 1
+                },
+                "visible": {
+                  "type": "value",
+                  "value": true
+                },
+                "x": {
+                  "type": "parent",
+                  "parentAttribute": "icx"
+                },
+                "y": {
+                  "type": "parent",
+                  "parentAttribute": "icy"
+                }
+              }
+            },
+            {
+              "_id": "oq5umplrm2",
+              "classID": "mark.text",
+              "properties": {
+                "enableTooltips": true,
+                "enableContextMenu": true,
+                "enableSelection": true,
+                "exposed": true,
+                "alignment": {
+                  "x": "left",
+                  "y": "bottom",
+                  "xMargin": 3.6068980531183463,
+                  "yMargin": 2.06248437519604
+                },
+                "rotation": 0,
+                "ignorePolarRotation": false,
+                "visible": true,
+                "name": "Text3"
+              },
+              "mappings": {
+                "enableTooltips": {
+                  "type": "value",
+                  "value": true
+                },
+                "enableContextMenu": {
+                  "type": "value",
+                  "value": true
+                },
+                "enableSelection": {
+                  "type": "value",
+                  "value": true
+                },
+                "exposed": {
+                  "type": "value",
+                  "value": true
+                },
+                "text": {
+                  "type": "text",
+                  "table": "treemap",
+                  "textExpression": "${first(CAT2)}"
+                },
+                "fontFamily": {
+                  "type": "value",
+                  "value": "Segoe UI"
+                },
+                "fontSize": {
+                  "type": "value",
+                  "value": 12
+                },
+                "color": {
+                  "type": "value",
+                  "value": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0
+                  }
+                },
+                "opacity": {
+                  "type": "value",
+                  "value": 1
+                },
+                "visible": {
+                  "type": "value",
+                  "value": true
+                },
+                "x": {
+                  "type": "parent",
+                  "parentAttribute": "icx"
+                },
+                "y": {
+                  "type": "parent",
+                  "parentAttribute": "icy"
+                }
+              }
+            }
+          ],
+          "mappings": {},
+          "constraints": []
+        }
+      ],
+      "elements": [
+        {
+          "_id": "k5gf3z72hp",
+          "classID": "plot-segment.cartesian",
+          "properties": {
+            "marginX1": 0,
+            "marginY1": 0,
+            "marginX2": 0,
+            "marginY2": 0,
+            "visible": true,
+            "sublayout": {
+              "type": "treemap",
+              "order": null,
+              "ratioX": 0.1,
+              "ratioY": 0.1,
+              "align": {
+                "x": "start",
+                "y": "start"
+              },
+              "grid": {
+                "direction": "x",
+                "xCount": null,
+                "yCount": null,
+                "gridStartPosition": "LT"
+              },
+              "jitter": {
+                "horizontal": true,
+                "vertical": true
+              },
+              "packing": {
+                "gravityX": 0.1,
+                "gravityY": 0.1,
+                "boxedX": null,
+                "boxedY": null
+              },
+              "treemap": {
+                "gap": 0.1,
+                "dataExpressions": [
+                  {
+                    "expression": "first(CAT1)"
+                  },
+                  {
+                    "expression": "first(CAT2)"
+                  }
+                ],
+                "measureExpression": "first(VAL)",
+                "paddingInner": 0,
+                "paddingOuter": 3
+              },
+              "orderReversed": null
+            },
+            "name": "PlotSegment1",
+            "yData": null,
+            "xData": null
+          },
+          "mappings": {
+            "x1": {
+              "type": "parent",
+              "parentAttribute": "x1"
+            },
+            "y2": {
+              "type": "parent",
+              "parentAttribute": "y2"
+            },
+            "x2": {
+              "type": "parent",
+              "parentAttribute": "x2"
+            },
+            "y1": {
+              "type": "parent",
+              "parentAttribute": "y1"
+            }
+          },
+          "glyph": "00b7wo48bhqf3",
+          "table": "treemap",
+          "filter": null,
+          "order": null
+        }
+      ],
+      "scales": [
+        {
+          "_id": "4yzgugbm4zq",
+          "classID": "scale.categorical<string,color>",
+          "properties": {
+            "enableTooltips": true,
+            "enableContextMenu": true,
+            "enableSelection": true,
+            "exposed": true,
+            "name": "Scale1",
+            "autoDomainMin": true,
+            "autoDomainMax": true,
+            "mapping": {
+              "A1": {
+                "r": 166,
+                "g": 206,
+                "b": 227
+              },
+              "A2": {
+                "r": 31,
+                "g": 120,
+                "b": 180
+              },
+              "B1": {
+                "r": 178,
+                "g": 223,
+                "b": 138
+              },
+              "B2": {
+                "r": 51,
+                "g": 160,
+                "b": 44
+              },
+              "C1": {
+                "r": 251,
+                "g": 154,
+                "b": 153
+              }
+            }
+          },
+          "mappings": {},
+          "inputType": "string",
+          "outputType": "color"
+        }
+      ],
+      "scaleMappings": [
+        {
+          "type": "scale",
+          "table": "treemap",
+          "expression": "first(CAT2)",
+          "valueType": "string",
+          "scale": "4yzgugbm4zq",
+          "attribute": "fill",
+          "valueIndex": null
+        }
+      ],
+      "constraints": [],
+      "resources": []
+    },
+    "chartState": {
+      "elements": [
+        {
+          "attributes": {
+            "x1": -350,
+            "x2": 350,
+            "y1": -350,
+            "y2": 350,
+            "gapX": 4,
+            "gapY": 4,
+            "x": -100,
+            "y": 100
+          },
+          "dataRowIndices": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ]
+          ],
+          "glyphs": [
+            {
+              "marks": [
+                {
+                  "attributes": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                {
+                  "attributes": {
+                    "x1": -63.39999999999998,
+                    "y1": -111.66666666666666,
+                    "x2": 63.39999999999998,
+                    "y2": 111.66666666666666,
+                    "cx": 0,
+                    "cy": 0,
+                    "width": 126.79999999999995,
+                    "height": 223.33333333333331,
+                    "stroke": {
+                      "r": 150,
+                      "g": 150,
+                      "b": 150
+                    },
+                    "fill": {
+                      "r": 166,
+                      "g": 206,
+                      "b": 227
+                    },
+                    "fillStart": null,
+                    "fillStop": null,
+                    "gradientRotation": 45,
+                    "strokeWidth": 2,
+                    "opacity": 1,
+                    "visible": true
+                  }
+                },
+                {
+                  "attributes": {
+                    "x": 0,
+                    "y": 0,
+                    "text": "1.0",
+                    "fontFamily": "Segoe UI",
+                    "fontSize": 12,
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0
+                    },
+                    "backgroundColor": null,
+                    "backgroundColorFilterId": "text-color-filter-5053330639993183",
+                    "visible": true,
+                    "outline": null,
+                    "opacity": 1
+                  }
+                },
+                {
+                  "attributes": {
+                    "x": 0,
+                    "y": 0,
+                    "text": "A",
+                    "fontFamily": "Segoe UI",
+                    "fontSize": 12,
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0
+                    },
+                    "backgroundColor": null,
+                    "backgroundColorFilterId": "text-color-filter-18182746396626424",
+                    "visible": true,
+                    "outline": null,
+                    "opacity": 1
+                  }
+                },
+                {
+                  "attributes": {
+                    "x": 0,
+                    "y": 0,
+                    "text": "A1",
+                    "fontFamily": "Segoe UI",
+                    "fontSize": 12,
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0
+                    },
+                    "backgroundColor": null,
+                    "backgroundColorFilterId": "text-color-filter-46807979893912370",
+                    "visible": true,
+                    "outline": null,
+                    "opacity": 1
+                  }
+                }
+              ],
+              "attributes": {
+                "x": 277.6,
+                "y": 229.33333333333334,
+                "width": 126.79999999999995,
+                "height": 223.33333333333331,
+                "x1": 214.20000000000005,
+                "y1": 117.66666666666669,
+                "x2": 341,
+                "y2": 341,
+                "ix1": -63.39999999999998,
+                "iy1": -111.66666666666666,
+                "ix2": 63.39999999999998,
+                "iy2": 111.66666666666666,
+                "icx": 0,
+                "icy": 0
+              }
+            },
+            {
+              "marks": [
+                {
+                  "attributes": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                {
+                  "attributes": {
+                    "x1": -63.39999999999998,
+                    "y1": -226.33333333333334,
+                    "x2": 63.39999999999998,
+                    "y2": 226.33333333333334,
+                    "cx": 0,
+                    "cy": 0,
+                    "width": 126.79999999999995,
+                    "height": 452.6666666666667,
+                    "stroke": {
+                      "r": 150,
+                      "g": 150,
+                      "b": 150
+                    },
+                    "fill": {
+                      "r": 31,
+                      "g": 120,
+                      "b": 180
+                    },
+                    "fillStart": null,
+                    "fillStop": null,
+                    "gradientRotation": 45,
+                    "strokeWidth": 2,
+                    "opacity": 1,
+                    "visible": true
+                  }
+                },
+                {
+                  "attributes": {
+                    "x": 0,
+                    "y": 0,
+                    "text": "2.0",
+                    "fontFamily": "Segoe UI",
+                    "fontSize": 12,
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0
+                    },
+                    "backgroundColor": null,
+                    "backgroundColorFilterId": "text-color-filter-2207088824140231",
+                    "visible": true,
+                    "outline": null,
+                    "opacity": 1
+                  }
+                },
+                {
+                  "attributes": {
+                    "x": 0,
+                    "y": 0,
+                    "text": "A",
+                    "fontFamily": "Segoe UI",
+                    "fontSize": 12,
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0
+                    },
+                    "backgroundColor": null,
+                    "backgroundColorFilterId": "text-color-filter-7794031541900761",
+                    "visible": true,
+                    "outline": null,
+                    "opacity": 1
+                  }
+                },
+                {
+                  "attributes": {
+                    "x": 0,
+                    "y": 0,
+                    "text": "A2",
+                    "fontFamily": "Segoe UI",
+                    "fontSize": 12,
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0
+                    },
+                    "backgroundColor": null,
+                    "backgroundColorFilterId": "text-color-filter-40945131696779736",
+                    "visible": true,
+                    "outline": null,
+                    "opacity": 1
+                  }
+                }
+              ],
+              "attributes": {
+                "x": 277.6,
+                "y": -114.66666666666666,
+                "width": 126.79999999999995,
+                "height": 452.6666666666667,
+                "x1": 214.20000000000005,
+                "y1": -341,
+                "x2": 341,
+                "y2": 111.66666666666669,
+                "ix1": -63.39999999999998,
+                "iy1": -226.33333333333334,
+                "ix2": 63.39999999999998,
+                "iy2": 226.33333333333334,
+                "icx": 0,
+                "icy": 0
+              }
+            },
+            {
+              "marks": [
+                {
+                  "attributes": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                {
+                  "attributes": {
+                    "x1": -271.6,
+                    "y1": -82.46428571428572,
+                    "x2": 271.6,
+                    "y2": 82.46428571428572,
+                    "cx": 0,
+                    "cy": 0,
+                    "width": 543.2,
+                    "height": 164.92857142857144,
+                    "stroke": {
+                      "r": 150,
+                      "g": 150,
+                      "b": 150
+                    },
+                    "fill": {
+                      "r": 178,
+                      "g": 223,
+                      "b": 138
+                    },
+                    "fillStart": null,
+                    "fillStop": null,
+                    "gradientRotation": 45,
+                    "strokeWidth": 2,
+                    "opacity": 1,
+                    "visible": true
+                  }
+                },
+                {
+                  "attributes": {
+                    "x": 0,
+                    "y": 0,
+                    "text": "3.0",
+                    "fontFamily": "Segoe UI",
+                    "fontSize": 12,
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0
+                    },
+                    "backgroundColor": null,
+                    "backgroundColorFilterId": "text-color-filter-14808565878704338",
+                    "visible": true,
+                    "outline": null,
+                    "opacity": 1
+                  }
+                },
+                {
+                  "attributes": {
+                    "x": 0,
+                    "y": 0,
+                    "text": "B",
+                    "fontFamily": "Segoe UI",
+                    "fontSize": 12,
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0
+                    },
+                    "backgroundColor": null,
+                    "backgroundColorFilterId": "text-color-filter-18739454576288784",
+                    "visible": true,
+                    "outline": null,
+                    "opacity": 1
+                  }
+                },
+                {
+                  "attributes": {
+                    "x": 0,
+                    "y": 0,
+                    "text": "B1",
+                    "fontFamily": "Segoe UI",
+                    "fontSize": 12,
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0
+                    },
+                    "backgroundColor": null,
+                    "backgroundColorFilterId": "text-color-filter-7143056584323968",
+                    "visible": true,
+                    "outline": null,
+                    "opacity": 1
+                  }
+                }
+              ],
+              "attributes": {
+                "x": -69.39999999999998,
+                "y": -30.63095238095235,
+                "width": 543.2,
+                "height": 164.92857142857144,
+                "x1": -341,
+                "y1": -113.09523809523807,
+                "x2": 202.20000000000005,
+                "y2": 51.83333333333337,
+                "ix1": -271.6,
+                "iy1": -82.46428571428572,
+                "ix2": 271.6,
+                "iy2": 82.46428571428572,
+                "icx": 0,
+                "icy": 0
+              }
+            },
+            {
+              "marks": [
+                {
+                  "attributes": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                {
+                  "attributes": {
+                    "x1": -271.6,
+                    "y1": -110.95238095238096,
+                    "x2": 271.6,
+                    "y2": 110.95238095238096,
+                    "cx": 0,
+                    "cy": 0,
+                    "width": 543.2,
+                    "height": 221.90476190476193,
+                    "stroke": {
+                      "r": 150,
+                      "g": 150,
+                      "b": 150
+                    },
+                    "fill": {
+                      "r": 51,
+                      "g": 160,
+                      "b": 44
+                    },
+                    "fillStart": null,
+                    "fillStop": null,
+                    "gradientRotation": 45,
+                    "strokeWidth": 2,
+                    "opacity": 1,
+                    "visible": true
+                  }
+                },
+                {
+                  "attributes": {
+                    "x": 0,
+                    "y": 0,
+                    "text": "4.0",
+                    "fontFamily": "Segoe UI",
+                    "fontSize": 12,
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0
+                    },
+                    "backgroundColor": null,
+                    "backgroundColorFilterId": "text-color-filter-8998832472112277",
+                    "visible": true,
+                    "outline": null,
+                    "opacity": 1
+                  }
+                },
+                {
+                  "attributes": {
+                    "x": 0,
+                    "y": 0,
+                    "text": "B",
+                    "fontFamily": "Segoe UI",
+                    "fontSize": 12,
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0
+                    },
+                    "backgroundColor": null,
+                    "backgroundColorFilterId": "text-color-filter-9297880821481840",
+                    "visible": true,
+                    "outline": null,
+                    "opacity": 1
+                  }
+                },
+                {
+                  "attributes": {
+                    "x": 0,
+                    "y": 0,
+                    "text": "B2",
+                    "fontFamily": "Segoe UI",
+                    "fontSize": 12,
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0
+                    },
+                    "backgroundColor": null,
+                    "backgroundColorFilterId": "text-color-filter-8461336869588316",
+                    "visible": true,
+                    "outline": null,
+                    "opacity": 1
+                  }
+                }
+              ],
+              "attributes": {
+                "x": -69.39999999999998,
+                "y": -230.04761904761904,
+                "width": 543.2,
+                "height": 221.90476190476193,
+                "x1": -341,
+                "y1": -341,
+                "x2": 202.20000000000005,
+                "y2": -119.09523809523807,
+                "ix1": -271.6,
+                "iy1": -110.95238095238096,
+                "ix2": 271.6,
+                "iy2": 110.95238095238096,
+                "icx": 0,
+                "icy": 0
+              }
+            },
+            {
+              "marks": [
+                {
+                  "attributes": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                {
+                  "attributes": {
+                    "x1": -271.6,
+                    "y1": -138.58333333333331,
+                    "x2": 271.6,
+                    "y2": 138.58333333333331,
+                    "cx": 0,
+                    "cy": 0,
+                    "width": 543.2,
+                    "height": 277.16666666666663,
+                    "stroke": {
+                      "r": 150,
+                      "g": 150,
+                      "b": 150
+                    },
+                    "fill": {
+                      "r": 251,
+                      "g": 154,
+                      "b": 153
+                    },
+                    "fillStart": null,
+                    "fillStop": null,
+                    "gradientRotation": 45,
+                    "strokeWidth": 2,
+                    "opacity": 1,
+                    "visible": true
+                  }
+                },
+                {
+                  "attributes": {
+                    "x": 0,
+                    "y": 0,
+                    "text": "5.0",
+                    "fontFamily": "Segoe UI",
+                    "fontSize": 12,
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0
+                    },
+                    "backgroundColor": null,
+                    "backgroundColorFilterId": "text-color-filter-6813270565795091",
+                    "visible": true,
+                    "outline": null,
+                    "opacity": 1
+                  }
+                },
+                {
+                  "attributes": {
+                    "x": 0,
+                    "y": 0,
+                    "text": "C",
+                    "fontFamily": "Segoe UI",
+                    "fontSize": 12,
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0
+                    },
+                    "backgroundColor": null,
+                    "backgroundColorFilterId": "text-color-filter-30036845527420784",
+                    "visible": true,
+                    "outline": null,
+                    "opacity": 1
+                  }
+                },
+                {
+                  "attributes": {
+                    "x": 0,
+                    "y": 0,
+                    "text": "C1",
+                    "fontFamily": "Segoe UI",
+                    "fontSize": 12,
+                    "color": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0
+                    },
+                    "backgroundColor": null,
+                    "backgroundColorFilterId": "text-color-filter-4873113177302397",
+                    "visible": true,
+                    "outline": null,
+                    "opacity": 1
+                  }
+                }
+              ],
+              "attributes": {
+                "x": -69.39999999999998,
+                "y": 202.41666666666669,
+                "width": 543.2,
+                "height": 277.16666666666663,
+                "x1": -341,
+                "y1": 63.83333333333337,
+                "x2": 202.20000000000005,
+                "y2": 341,
+                "ix1": -271.6,
+                "iy1": -138.58333333333331,
+                "ix2": 271.6,
+                "iy2": 138.58333333333331,
+                "icx": 0,
+                "icy": 0
+              }
+            }
+          ]
+        }
+      ],
+      "scales": [
+        {
+          "attributes": {}
+        }
+      ],
+      "scaleMappings": [],
+      "attributes": {
+        "width": 800,
+        "height": 800,
+        "marginLeft": 50,
+        "marginRight": 50,
+        "marginTop": 50,
+        "marginBottom": 50,
+        "cx": 0,
+        "cy": 0,
+        "x1": -350,
+        "y1": -350,
+        "x2": 350,
+        "y2": 350,
+        "ox1": -400,
+        "oy1": -400,
+        "ox2": 400,
+        "oy2": 400
+      }
+    }
+  },
+  "name": "treemap axes"
+}
