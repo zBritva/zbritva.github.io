@@ -64,7 +64,7 @@ Try it for yourself:
 
 [Power BI Visual Editor](https://appsource.microsoft.com/en-US/product/PowerBIVisuals/ilfatgaliev1696579877540.editorvisual)
 
-[HTML/SVG/Handlebars Visual](./handlebarsVisual.1.0.0.0.pbiviz)
+[HTML/SVG/Handlebars Visual](https://appsource.microsoft.com/en-us/product/power-bi-visuals/ilfatgaliev1696579877540.handlebars_visual?tab=Overview)
 
 HTML/SVG/Handlebars Visual is not 100% ready, there is no error output in the UI, to understand what is wrong you need to use browser DevTools if your template is not working.
 

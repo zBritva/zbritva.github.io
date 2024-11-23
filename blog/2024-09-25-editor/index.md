@@ -5,7 +5,7 @@ authors: [ilfat]
 tags: [Charticulator, development, CharticulatorUpdates]
 ---
 
-The [Charticulator App](https://ilfat-galiev.im/charticulator/) can allow to import data from *.csv files, but there is no opportunities to pre edit, ender or edit data on chart development phase.
+The [Charticulator App](https://ilfat-galiev.im/charticulator/) can allow to import data from *.csv files, but there is no opportunities to pre edit, enter or edit data on chart development phase.
 
 ### Charticulator data editor
 

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+tags: [Deneb, Plotly.js, JSON]
 ---
 
 # Power BI Visual Editor

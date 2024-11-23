@@ -4,7 +4,7 @@
 
 # About me
 
-I'm 10+ year experience implementing UI with JavaScript/TypeScript, HTML/CSS and frameworks (React.js, Redux, ExtJS, Angular, 3D.js), moreover experienced in C#, .Net and Node.js for backend development.
+I have 11+ year experience of implementing UI with JavaScript/TypeScript, HTML/CSS and frameworks  such as React.js, Redux, ExtJS, Angular, 3D.js moreover experienced in C#, .Net and Node.js for backend development.
 
 * Certified LookerML Developer and Power BI Data Analyst Associate
 * Led the entire project as project manager and solution architect with a 6-person development team.
@@ -27,4 +27,4 @@ For more than two decades, we have been a trusted partner to global customers wh
 
 Currently working on [Charticulator](docs/category/charticulator) and maintain [PlotlyJS Visual by Akvelon](https://appsource.microsoft.com/en-us/product/power-bi-visuals/akvelon.plotlyjsvisualbyakvelon?tab=Overview).
 
-If you have a question related to PlotlyJS Visual, please contact throw Contact Us form on [Akvelon Inc. website](https://akvelon.com/contact-us/)  
+If you have a question related to PlotlyJS Visual, please contact throw Contact Us form on [Akvelon Inc. website](https://akvelon.com/contact-us/)

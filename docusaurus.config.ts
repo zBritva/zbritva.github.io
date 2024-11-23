@@ -240,6 +240,15 @@ const config: Config = {
     },
     // themes: ['@docusaurus/theme-mermaid']
   } satisfies Preset.ThemeConfig,
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://ilfat-galiev.im',
+      },
+    }
+  ]
 };
 
 export default config;

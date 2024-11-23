@@ -1,10 +1,21 @@
 ---
 sidebar_position: 1
+tags: [Power BI, Power BI Visuals]
 ---
 
 # Visual documentations
 
-All visuals in development phase
+Some visuals in development phase
+
+## Charticulator Visual for Power BI
+
+Charticulator Visual is the no-code way to create custom and reusable chart designs for Power BI.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PA1EW1S3veY?si=rX2Cfjqiu5YLaMee" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[Charticulator Visual Community](https://appsource.microsoft.com/en-us/marketplace/apps?search=Charticulator&page=1)
+
+[Charticulator documentation](./charticulator/intro.md)
 
 ## Power BI Visual Editor
 

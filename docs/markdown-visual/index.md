@@ -1,12 +1,13 @@
 ---
 sidebar_position: 7
+tags: [Power BI Visual, Data visualization, Markdown, Mermaid.js]
 ---
 
 # Markdown & Mermaid Visual
 
 ![Preview](./editor-preview.png)
 
-Markdown viewer and editor for Power BI, powered by [react-md-editor](https://github.com/uiwjs/react-md-editor) and [Mermaid](https://mermaid.js.org/intro/)
+Markdown viewer and editor for Power BI, powered by [react-md-editor](https://github.com/uiwjs/react-md-editor) and [Mermaid.js](https://mermaid.js.org/intro/)
 
 The visual supports most of features described in [Markdown documentation](https://www.markdownguide.org/basic-syntax/).
 
@@ -30,6 +31,18 @@ After editing click on "Save" button and "Back to report" to exit from edit mode
 ### Text style
 
 *cursive* **bold** _italic_
+
+### Images
+
+To use images in markdown, upload the images in `Resources` tab. Click `+` button to select file.
+
+![The visual resources tab](./visual_resources.png)
+
+Then click on `Save resources` button.
+
+After that use resource name in URL part of image syntax:
+
+`![Charticulator visual geo sub-layout example](city_locations_jpg)`
 
 ### Diagrams
 

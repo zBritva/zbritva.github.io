@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+tags: [Handlebars, Power BI Visual, Data visualization, SVG]
 ---
 
 # Getting Started

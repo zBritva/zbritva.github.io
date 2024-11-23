@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+tags: [ECharts, Apache ECharts, Power BI Visual, Data visualization]
 ---
 
 # Apache ECharts visual
@@ -102,7 +103,7 @@ flowchart TD
     end
 ```
 
-1. [Download](https://ilfat-galiev.im/visuals/echartsVisual.1.0.0.0.pbiviz) and import *.pbiviz file
+1. [Download](https://appsource.microsoft.com/en-us/product/PowerBIVisuals/ilfatgaliev1696579877540.echartsvisual) or import visual from AppSource.
 
     ![Importing pbiviz file](step0.png)
 

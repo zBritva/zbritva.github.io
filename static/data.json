@@ -77,5 +77,153 @@
             "name": "Chatham House (2024), ‘resourcetrade.earth’, https://resourcetrade.earth/",
             "contact": "https://resourcetrade.earth/"
         }
+    },
+    {
+        "name": "Mobile, Tablet & Console Operating System Market Share Worldwide",
+        "description": "The market share of mobile operating systems from 2009 to 2024",
+        "tables": [
+            {
+                "name": "os_combined_ww_monthly",
+                "type": "csv/tsv",
+                "url": "https://ilfat-galiev.im/data/os_combined_ww_monthly_200901_202409.csv"
+            }
+        ],
+        "author": {
+            "name": "StatCounter Global Stats",
+            "contact": "https://gs.statcounter.com/os-market-share"
+        }
+    },
+    {
+        "name": "Mobile os market share (2009-2016)",
+        "description": "The market share of mobile operating systems from 2009 to 2016",
+        "tables": [
+            {
+                "name": "mobile_os_market_share",
+                "type": "csv/tsv",
+                "url": "https://ilfat-galiev.im/data/mobile_os_market_share.csv"
+            }
+        ],
+        "author": {
+            "name": "StatCounter Global Stats",
+            "contact": "https://gs.statcounter.com/os-market-share"
+        }
+    },
+    {
+        "name": "Mobile Browser Market Share Worldwide - September 2024",
+        "description": "The market share of mobile browsers from January 2009 to September 2024",
+        "tables": [
+            {
+                "name": "browser_ww_monthly_200901_202409",
+                "type": "csv/tsv",
+                "url": "https://ilfat-galiev.im/data/browser_ww_monthly_200901_202409.csv"
+            }
+        ],
+        "author": {
+            "name": "StatCounter Global Stats",
+            "contact": "https://gs.statcounter.com/browser-market-share"
+        }
+    },
+    {
+        "name": "Mushrooms",
+        "description": "This chart displays the characteristics of mushrooms sampled from the UCI mushroom dataset. Each circle represents a single mushroom sample, colored according to whether it is poisonous. Odors are grouped along the X axis, while cap surface chartacteristics are grouped along the Y axis.",
+        "tables": [
+            {
+                "name": "browser_ww_monthly_200901_202409",
+                "type": "csv/tsv",
+                "url": "https://ilfat-galiev.im/data/mushrooms.csv"
+            }
+        ],
+        "author": {
+            "name": "The Audubon Society Field Guide to North American Mushrooms (1981). G. H. Lincoff (Pres.), New York: Alfred A. Knopf",
+            "contact": "https://archive.ics.uci.edu/dataset/73/mushroom"
+        }
+    },
+    {
+        "name": "cars.json",
+        "description": "Data sample from Vega source code on https://github.com/vega/vega/tree/main/docs/data",
+        "tables": [
+            {
+                "name": "cars",
+                "type": "json",
+                "url": "https://raw.githubusercontent.com/vega/vega/refs/heads/main/docs/data/cars.json"
+            }
+        ]
+    },
+    {
+        "name": "airports.csv",
+        "description": "Data sample from Vega source code on https://github.com/vega/vega/tree/main/docs/data",
+        "tables": [
+            {
+                "name": "airports",
+                "type": "csv",
+                "url": "https://raw.githubusercontent.com/vega/vega/refs/heads/main/docs/data/airports.csv"
+            }
+        ]
+    },
+    {
+        "name": "barley.json",
+        "description": "Data sample from Vega source code on https://github.com/vega/vega/tree/main/docs/data",
+        "tables": [
+            {
+                "name": "barley",
+                "type": "json",
+                "url": "https://raw.githubusercontent.com/vega/vega/refs/heads/main/docs/data/barley.json"
+            }
+        ]
+    },
+    {
+        "name": "countries.json",
+        "description": "Data sample from Vega source code on https://github.com/vega/vega/tree/main/docs/data",
+        "tables": [
+            {
+                "name": "countries",
+                "type": "json",
+                "url": "https://raw.githubusercontent.com/vega/vega/refs/heads/main/docs/data/countries.json"
+            }
+        ]
+    },
+    {
+        "name": "disasters.csv",
+        "description": "Data sample from Vega source code on https://github.com/vega/vega/tree/main/docs/data",
+        "tables": [
+            {
+                "name": "disasters",
+                "type": "json",
+                "url": "https://raw.githubusercontent.com/vega/vega/refs/heads/main/docs/data/disasters.csv"
+            }
+        ]
+    },
+    {
+        "name": "football.json",
+        "description": "Data sample from Vega source code on https://github.com/vega/vega/tree/main/docs/data",
+        "tables": [
+            {
+                "name": "football",
+                "type": "json",
+                "url": "https://raw.githubusercontent.com/vega/vega/refs/heads/main/docs/data/football.json"
+            }
+        ]
+    },
+    {
+        "name": "birdstrikes.csv",
+        "description": "Data sample from Vega source code on https://github.com/vega/vega/tree/main/docs/data",
+        "tables": [
+            {
+                "name": "birdstrikes",
+                "type": "csv",
+                "url": "https://raw.githubusercontent.com/vega/vega/refs/heads/main/docs/data/birdstrikes.csv"
+            }
+        ]
+    },
+    {
+        "name": "stocks.csv",
+        "description": "Data sample from Vega source code on https://github.com/vega/vega/tree/main/docs/data",
+        "tables": [
+            {
+                "name": "stocks",
+                "type": "csv",
+                "url": "https://raw.githubusercontent.com/vega/vega/refs/heads/main/docs/data/stocks.csv"
+            }
+        ]
     }
 ]
