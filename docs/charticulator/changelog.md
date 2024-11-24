@@ -6,8 +6,8 @@ sidebar_position: 20
 
 |*|Editor|View|
 |-|-|-|
-|Published|[1.4.2.0](#1420)|[1.2.3.0](#1230)|
-|In pipeline||[1.5.0.0](#1500)|
+|Published|[1.4.2.0](#1420)|[1.5.0.0](#1500)|
+|In pipeline|||
 |Submitted|[1.5.1.0](#1510)||
 
 Legend:
