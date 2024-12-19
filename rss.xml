@@ -4,11 +4,23 @@
         <title>Ilfat Galiev Blog</title>
         <link>https://ilfat-galiev.im/</link>
         <description>Ilfat Galiev Blog</description>
-        <lastBuildDate>Sun, 03 Nov 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Dec 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>Copyright © 2024 Ilfat Galiev.</copyright>
+        <item>
+            <title><![CDATA[A New Chapter]]></title>
+            <link>https://ilfat-galiev.im/bbibb</link>
+            <guid>https://ilfat-galiev.im/bbibb</guid>
+            <pubDate>Wed, 18 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[This post summarizes my work on the Charticulator App and Power BI visual for 2024. It includes an overview of the new features and a brief history of the project. The project is live, and my focus moving forward will be on improving the documentation and creating tutorials to showcase how to use the new features. Currently, the documentation is outdated and does not cover the latest updates.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.bibb.pro/post/charticulator-visual-community" target="_blank" rel="noopener noreferrer">This post</a> summarizes my work on the Charticulator App and Power BI visual for 2024. It includes an overview of the new features and a brief history of the project. The project is live, and my focus moving forward will be on improving the documentation and creating tutorials to showcase how to use the new features. Currently, the documentation is outdated and does not cover the latest updates.</p>]]></content:encoded>
+            <category>Charticulator</category>
+            <category>development</category>
+            <category>CharticulatorUpdates</category>
+            <category>PowerBI</category>
+        </item>
         <item>
             <title><![CDATA[Charticulator GeoJSON sublayout]]></title>
             <link>https://ilfat-galiev.im/charticulator-geo</link>
@@ -199,18 +211,6 @@ Data can be bind to properties on Attributes panel. It's not necessary to have D
             <category>Charticulator</category>
             <category>development</category>
             <category>CharticulatorUpdates</category>
-        </item>
-        <item>
-            <title><![CDATA[Charticulator documentation]]></title>
-            <link>https://ilfat-galiev.im/charticulator-docs</link>
-            <guid>https://ilfat-galiev.im/charticulator-docs</guid>
-            <pubDate>Mon, 01 Jul 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[The Charticulator documentation has been partially moved to the doc section of the website.]]></description>
-            <content:encoded><![CDATA[<p>The Charticulator documentation has been partially moved to <a href="https://ilfat-galiev.im/docs/category/charticulator/">the doc section of the website</a>.</p>
-<p>The original source documentation is available in the <a href="https://github.com/microsoft/charticulator.com" target="_blank" rel="noopener noreferrer">github repository</a>. It was deployed to <a href="https://charticulator.com/docs/" target="_blank" rel="noopener noreferrer">https://charticulator.com/docs/</a>, which is now unavailable.</p>]]></content:encoded>
-            <category>Charticulator</category>
-            <category>documentation</category>
-            <category>development</category>
         </item>
     </channel>
 </rss>
