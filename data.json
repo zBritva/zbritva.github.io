@@ -1,5 +1,20 @@
 [
     {
+        "name": "us-election-2024",
+        "description": "Electoral results of 2024 United States presidential election",
+        "tables": [
+            {
+                "name": "us-election-2024",
+                "type": "csv/tsv",
+                "url": "https://ilfat-galiev.im/data/us-election-2024.csv"
+            }
+        ],
+        "author": {
+            "name": "Wikipedia. Geo-Coordinates: https://www.gps-coordinates.net/",
+            "contact": "https://en.wikipedia.org/wiki/2024_United_States_presidential_election#Electoral_results"
+        }
+    },
+    {
         "name": "Boston Weather 2015",
         "description": "Data collected from the National Centers for Environmental Information; accessed May. 3th, 2018",
         "tables": [

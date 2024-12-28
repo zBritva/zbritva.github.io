@@ -1,5 +1,21 @@
 [
     {
+        "id": "2024-us-election",
+        "url": "https://ilfat-galiev.im/charts/2024-us-election.chart",
+        "type": "chart",
+        "source": "cdn",
+        "metadata": {
+            "name": "2024 United States presidential election",
+            "thumbnail": "https://ilfat-galiev.im/images/gallery/2024-us-election.jpg.png",
+            "timeCreated": 1724554194242,
+            "timeModified": 1724556972145,
+            "allowDelete": false
+        },
+        "author": {
+            "name": "Ilfat Galiev"
+        }
+    },
+    {
         "id": "oecd_population_2018_1725220272068",
         "url": "https://ilfat-galiev.im/charts/bubble_chart.chart",
         "type": "chart",
