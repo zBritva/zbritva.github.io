@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkilfatgaliev=self.webpackChunkilfatgaliev||[]).push([[6164],{3985:a=>{a.exports=JSON.parse('{"tag":{"label":"Markdown","permalink":"/tags/markdown","allTagsPath":"/tags","count":2,"unlisted":false},"listMetadata":{"permalink":"/tags/markdown","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
