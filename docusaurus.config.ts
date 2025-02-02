@@ -154,6 +154,16 @@ const config: Config = {
               to: "https://github.com/zBritva/charticulator-visual-community/actions/runs/11085759748",
               label: 'Charticulator Visual Community (Editor/View) DEV',
               target: '_blank'
+            },
+            {
+              to: "/visuals/charticulator.charticulator58556A88422D44A99D9BF0052B958F87.1.5.0.0.pbiviz",
+              label: 'Microsoft Charticulator (LEGACY old GUID)',
+              target: '_blank'
+            },
+            {
+              to: "/visuals/charticulator.charticulatorLegacy.1.5.0.0.pbiviz",
+              label: 'Microsoft Charticulator (LEGACY new GUID)',
+              target: '_blank'
             }
           ]
         },

@@ -4,9 +4,9 @@ sidebar_position: 4
 
 # Handlebars helpers
 
-Handlebars lib has [build-in helper functions](https://handlebarsjs.com/guide/builtin-helpers.html). But developer can define own heler functions.
+Handlebars lib has [build-in helper functions](https://handlebarsjs.com/guide/builtin-helpers.html). But developer can define own helper functions.
 
-The visual has own custom helpers.
+[HTML/SVG/Handlebars](./../handelbars-visual/index.md), [Apache ECharts Visual](./../echarts-visual/index.md), and [Markdown & Mermaid Visual](./../markdown-visual/index.md) have custom helpers.
 
 ## Visual helpers
 
@@ -69,7 +69,7 @@ Usage:
 
 Usage:
 
-`{{ var 'rectHeight' (divide (val 'viewport.height') table.rows.length)}}`
+`{{ var 'rectHeight' (divide viewport.height table.rows.length)}}`
 
 Computes height of bars dividing 'viewport.height' to rows count and assigns result to 'rectHeight' variable.
 
@@ -262,12 +262,13 @@ Clears selection on SVG element click.
 `{{{ useSelection @index}}}` creates click handler on element to perform selection
 
 ```svg
-{{#each table.rows}}
-    <rect
-        {{{ useSelection @index}}}
-        ...
-    </rect>
-{{/each}}
+    {{#each table.rows}}
+        <rect
+            {{{ useSelection @index}}}
+        >
+            ...
+        </rect>
+    {{/each}}
 ```
 
 Creates click handler for each rectange element. When user clicks on rectangle call selection with correspond `row`.
@@ -288,3 +289,82 @@ Usage:
 ```
 
 returns color from Power BI palette for each country name.
+
+### Equal
+
+Function compares two values and return true if they are equal
+
+```handlebars
+`{{ eq <value1> <value2> }}`
+```
+
+Example of using in Mermaid.js visual, the link adds only if `Product type` is `Respiratory`.
+
+```mermaid
+flowchart TD
+{{#each table.rows}}
+{{#if (and (eq this.Region "Midwest") (eq this.[Product Type] "Respiratory"))}}
+    {{this.Region}} --> markdown["`{{this.[Product Type]}}`"]
+{{/if}}
+{{/each}}
+```
+
+### Not Equal
+
+Function compares two values and return true if they are NOT equal
+
+```handlebars
+{{ ne <value1> <value2> }}
+```
+
+### Less or equal
+
+Function compares two values and return true if `value1` is less or equal than `value2`
+
+```handlebars
+{{ lte <value1> <value2> }}
+```
+
+### Greater or equal
+
+Function compares two values and return true if `value1` is greater or equal than `value2`
+
+```handlebars
+{{ gte <value1> <value2> }}
+```
+
+### Less
+
+Function compares two values and return true if `value1` is less than `value2`
+
+```handlebars
+{{ lt <value1> <value2> }}
+```
+
+### Greater
+
+Function compares two values and return true if `value1` is greater than `value2`
+
+```handlebars
+{{ gt <value1> <value2> }}
+```
+
+### And
+
+Logical AND statement
+
+```handlebars
+{{ and (gt <value1> <value2>) (lt <value1> <value3>) }}
+```
+
+The statement is true if `value1` greater `value2` AND less than `value3`
+
+### Or
+
+Logical OR statement
+
+```handlebars
+{{ or (gt <value1> <value2>) (lt <value1> <value3>) }}
+```
+
+The statement is true if `value1` greater `value2` OR less than `value3`

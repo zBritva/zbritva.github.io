@@ -4,11 +4,11 @@ sidebar_position: 20
 
 # Visual changelog
 
-|*|Editor|View|
-|-|-|-|
-|Published|[1.4.2.0](#1420)|[1.5.0.0](#1500)|
-|In pipeline|||
-|Submitted|[1.5.1.0](#1510)||
+|*|Editor|View|Comment|
+|-|-|-|-|
+|Published|[1.6.1.0](#1610)|[1.5.2.0](#1520)||
+|In pipeline||[1.6.1.0](#1610)||
+|Submitted||||
 
 Legend:
 
@@ -20,6 +20,16 @@ Legend:
 
 * Consider to add Plot Segment with [D3.js Voronoi diagrams layout](https://d3js.org/d3-delaunay/voronoi)
 * Add [SVG patterns](https://developer.mozilla.org/docs/Web/SVG/Tutorial/Patterns). Sample is in [old repo](https://github.com/microsoft/charticulator/pull/1044)
+* [Power BI Field parameters](https://learn.microsoft.com/en-us/power-bi/guidance/data-translation-implement-field) support
+* Add [d3-contour](https://observablehq.com/collection/@d3/d3-contour)
+
+## 1.6.1.0
+
+* Fix issue with force applying Power BI theme color. (Update colors property is broken in [1.5.2.0](#1520))
+
+## 1.5.2.0
+
+* Fix [chart rendering when mark doesn't have graphics](https://github.com/zBritva/charticulator-visual-community/issues/42#issuecomment-2498598207)
 
 ## 1.5.1.0
 

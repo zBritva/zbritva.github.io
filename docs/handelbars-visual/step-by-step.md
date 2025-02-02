@@ -331,12 +331,14 @@ Add `{{{ useSelection @index}}}` to each rectangle element to handle click on ba
 
 ```html
 <rect
-    {{{ useSelection @index}}}
+    {{{ useSelection @index }}}
     x="0"
     y="{{{ useScale 'Scale Y' this.Country }}}"
     width="{{{ useScale 'Scale X' this.[ Sales] }}}"
     height="{{{ getScale 'Scale Y' 'bandwidth' }}}"
-    fill="{{{ useColor this.Country }}}">    
+    fill="{{{ useColor this.Country }}}"
+>
+
 </rect>
 ```
 

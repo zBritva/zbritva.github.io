@@ -147,3 +147,7 @@ SELECT * FROM Customers;
 Result:
 
 ![Data binding](./data-binding.png)
+
+## Handlebars.js Helpers
+
+The visual uses Handlebars.js for templating and support [built-in](https://handlebarsjs.com/guide/builtin-helpers.html) and [custom helpers](./../handelbars-visual/helpers.md)

@@ -3,7 +3,7 @@ sidebar_position: 4
 tags: [ECharts, Apache ECharts, Power BI Visual, Data visualization]
 ---
 
-# Apache ECharts visual
+# Apache ECharts Visual
 
 ## Description
 

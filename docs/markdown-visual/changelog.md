@@ -6,10 +6,10 @@ sidebar_position: 9
 
 |*|Markdown & Mermaid Visual|
 |-|-|
-|Published|[1.1.1.0](#1110)|
-|In pipeline|[1.3.0.0](#1300)|
-|Submitted||
-|Development|[1.4.0.0](#1400)|
+|Published|[1.3.0.0](#1110)|
+|In pipeline||
+|Submitted|[1.4.0.0](#1400)|
+|Development||
 
 Legend:
 
@@ -24,6 +24,7 @@ Legend:
 * View setting to hide default template message on loading the visual
 * `maxEdges` config parameter is 30000
 * On chart render fails visual renders source (config) of chart
+* Add [Equal, Not Equal, Less, Less or Equal, Greater, Greater or Equal, And, Or](./../handelbars-visual/helpers.md#equal) helper function
 
 ## 1.3.0.0
 

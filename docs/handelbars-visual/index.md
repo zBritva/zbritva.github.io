@@ -109,3 +109,49 @@ usage:
 
 `{{ viewport.width }}`
 
+## Configuration
+
+The visuals's output is HTML content. HTML supports comments tag that doesn't render in browser. The visual uses the first comment tag configuration with [JSON5](https://json5.org/) content.
+
+![Template config](./img/config.png)
+
+### Column aliases
+
+The visual supports defining aliases for columns bound to the visual. It allows to define general column names in the template and columns mapping for template consumers.
+
+```html
+<!--
+{
+    aliases: {
+        Type: "Category",
+        Death: "Measure"
+    }
+}
+-->
+```
+
+In the example above config contains mapping `Type` visual column to `Category` and `Death` visual column to `Measure`. Then new column names can be used in template
+
+```handlebars
+<p>aliases example:</p>
+{{#each table.rows}}
+<p>{{this.Category}}</p>
+{{/each}}
+```
+
+Output is
+
+```html
+<!--
+{
+aliases: {
+ Type: "Category",
+ Death: "Measure"
+}
+}
+-->
+<p>aliases example:</p>
+<p>Disease</p>
+<p>Other</p>
+<p>Wounds</p>
+```

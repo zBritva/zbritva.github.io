@@ -39,7 +39,17 @@ Shape property sets visual representation of shape and has values Rectangle, Tri
 
 ![Shape style settings](./images/rect-styles.png)
 
-Style section has Fill, Gradient start, Gradient end, Gradient rotation, Stroke, Opacity  attributes and Round X, Round Y properties.
+Style section has Fill, Gradient start, Gradient end, Gradient rotation, Stroke, Opacity  attributes and `Round X`, `Round Y`, `Flipping` properties.
+
+*`Round X` and `Round Y` properties applicable for Rectangle shape only.*
+
+`Round X` - the horizontal corner radius of the rectangle.
+
+`Round Y` - the vertical corner radius of the rect rectangle.
+
+`Flipping` - allow to rectangle flip horizontally or vertically. For example, if left side (`x1` attribute) of rectangle has bigger value that right side (`x2` attribute) rectangle is flipped or width attribute has negative value. Unchecking property adds constraint that `width` >= `0` that prevents flipping the rectangle.
+
+#### Shape gradient
 
 ![Shape gradient](./images/rect-gradient.png)
 
@@ -47,7 +57,9 @@ To set gradient attributes, need to remove Fill attribute data binding or value.
 
 ### Symbol
 
-TBD
+Symbol is a graphical object that have list of predefined shapes. Shape has only position and size attributes, there are no width or height.
+
+![Symbol attributes](./images/symbol-atrributes.png)
 
 ### Line
 
