@@ -2,12 +2,46 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ilfat-galiev.im/</id>
     <title>Ilfat Galiev Blog</title>
-    <updated>2025-02-01T00:00:00.000Z</updated>
+    <updated>2025-05-14T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ilfat-galiev.im/"/>
     <subtitle>Ilfat Galiev Blog</subtitle>
     <icon>https://ilfat-galiev.im/img/favicon.ico</icon>
     <rights>Copyright © 2025 Ilfat Galiev.</rights>
+    <entry>
+        <title type="html"><![CDATA[Visual updates and development notes]]></title>
+        <id>https://ilfat-galiev.im/visual-updates</id>
+        <link href="https://ilfat-galiev.im/visual-updates"/>
+        <updated>2025-05-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[✨ Charticulator Updates]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-charticulator-updates">✨ Charticulator Updates<a class="hash-link" aria-label="Direct link to ✨ Charticulator Updates" title="Direct link to ✨ Charticulator Updates" href="https://ilfat-galiev.im/visual-updates#-charticulator-updates">​</a></h3>
+<p>I've made several improvements to the <strong>Charticulator</strong> custom visual for Power BI:</p>
+<ul>
+<li>✅ <strong>Unified</strong> the behavior of the <em>Import Template</em> and <em>Open Chart</em> actions.</li>
+<li>🛠️ <strong>Fixed</strong> an issue where the visual wouldn't load a template into the editor if chart columns were not mapped.</li>
+<li>🎨 <strong>Power BI Theme Support</strong>: The editor now respects the Power BI Desktop <strong>dark theme</strong> (Preview feature).</li>
+<li>🧹 <strong>New Feature</strong>: Added a convenient button for deleting scales directly from the scales panel.</li>
+<li>🎯 <strong>Bug Fix</strong>: The visual now correctly applies Power BI theme colors when rendering.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-apache-echarts-visual">📌 Apache ECharts Visual<a class="hash-link" aria-label="Direct link to 📌 Apache ECharts Visual" title="Direct link to 📌 Apache ECharts Visual" href="https://ilfat-galiev.im/visual-updates#-apache-echarts-visual">​</a></h3>
+<p>Minor but useful updates for the <strong>Apache ECharts</strong> visual:</p>
+<ul>
+<li>
+<p>🧩 The built-in editor layout has been updated—<strong>Save</strong> and <strong>Apply</strong> buttons are now pinned to the top of the viewport for better accessibility.</p>
+<p><img decoding="async" loading="lazy" alt="New Apache ECharts Visual editor layout" src="https://ilfat-galiev.im/assets/images/echart-922dee4cf489efafe8f6cad01a85f6bc.png" width="1313" height="856" class="img_ev3q"></p>
+</li>
+<li>
+<p>📊 The visual now supports <a href="https://ilfat-galiev.im/docs/echarts-visual/#d3js-formatting"><strong>D3.js formatting options</strong></a> for enhanced data presentation flexibility.</p>
+</li>
+</ul>]]></content>
+        <author>
+            <name>Ilfat Galiev</name>
+            <uri>https://www.linkedin.com/in/ilfat-galiev/</uri>
+        </author>
+        <category label="PowerBI" term="PowerBI"/>
+        <category label="development" term="development"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Markdown & Mermaid Diagrams Visual for Power BI – Update 1.4.0]]></title>
         <id>https://ilfat-galiev.im/mermaid</id>
@@ -213,32 +247,5 @@
         </author>
         <category label="charticulator" term="charticulator"/>
         <category label="development" term="development"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Markdown and Mermaid Visual]]></title>
-        <id>https://ilfat-galiev.im/markdown-mermaid-01</id>
-        <link href="https://ilfat-galiev.im/markdown-mermaid-01"/>
-        <updated>2024-08-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Markdown and Mermaid Visual]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="markdown-and-mermaid-visual">Markdown and Mermaid Visual<a class="hash-link" aria-label="Direct link to Markdown and Mermaid Visual" title="Direct link to Markdown and Mermaid Visual" href="https://ilfat-galiev.im/markdown-mermaid-01#markdown-and-mermaid-visual">​</a></h3>
-<p><img decoding="async" loading="lazy" alt="Visual editor preview" src="https://ilfat-galiev.im/assets/images/editor-preview-5987b73fd0aa6673e5ce49802c029d92.png" width="1622" height="742" class="img_ev3q"></p>
-<p>There is POC of the visual for rendering Markdown layout and Mermaid diagrams in Power BI reports.</p>
-<p>The visual has built in editor powered by <a href="https://github.com/uiwjs/react-md-editor" target="_blank" rel="noopener noreferrer">react-md-editor</a> with preview feature.</p>
-<p>Diagrams rendering powered by <a href="https://mermaid.js.org/" target="_blank" rel="noopener noreferrer">Mermaid</a></p>
-<p>Future work:</p>
-<ul>
-<li>Implement click handlers on nodes</li>
-<li>Power BI Data binding to nodes</li>
-</ul>
-<p>The preview version of the visual available in Visuals menu (above)</p>
-<p>Demo:</p>
-<p><img decoding="async" loading="lazy" alt="Preview" src="https://ilfat-galiev.im/assets/images/markdown-mermaid-demo-31cbd2aff0156c9b92926c9ecbb181b5.gif" width="1385" height="732" class="img_ev3q"></p>]]></content>
-        <author>
-            <name>Ilfat Galiev</name>
-            <uri>https://www.linkedin.com/in/ilfat-galiev/</uri>
-        </author>
-        <category label="Mermaid" term="Mermaid"/>
-        <category label="development" term="development"/>
-        <category label="markdown" term="markdown"/>
     </entry>
 </feed>
