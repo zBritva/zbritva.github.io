@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://ilfat-galiev.im/</id>
+    <id>https://ilfat-galiev.im</id>
     <title>Ilfat Galiev Blog</title>
     <updated>2025-05-14T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://ilfat-galiev.im/"/>
+    <link rel="alternate" href="https://ilfat-galiev.im"/>
     <subtitle>Ilfat Galiev Blog</subtitle>
     <icon>https://ilfat-galiev.im/img/favicon.ico</icon>
     <rights>Copyright © 2025 Ilfat Galiev.</rights>
@@ -32,7 +32,7 @@
 <p><img decoding="async" loading="lazy" alt="New Apache ECharts Visual editor layout" src="https://ilfat-galiev.im/assets/images/echart-922dee4cf489efafe8f6cad01a85f6bc.png" width="1313" height="856" class="img_ev3q"></p>
 </li>
 <li>
-<p>📊 The visual now supports <a href="https://ilfat-galiev.im/docs/echarts-visual/#d3js-formatting"><strong>D3.js formatting options</strong></a> for enhanced data presentation flexibility.</p>
+<p>📊 The visual now supports <a href="https://ilfat-galiev.im/docs/echarts-visual#d3js-formatting"><strong>D3.js formatting options</strong></a> for enhanced data presentation flexibility.</p>
 </li>
 </ul>]]></content>
         <author>

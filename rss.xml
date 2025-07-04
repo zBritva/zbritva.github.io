@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Ilfat Galiev Blog</title>
-        <link>https://ilfat-galiev.im/</link>
+        <link>https://ilfat-galiev.im</link>
         <description>Ilfat Galiev Blog</description>
         <lastBuildDate>Wed, 14 May 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -33,7 +33,7 @@
 <p><img decoding="async" loading="lazy" alt="New Apache ECharts Visual editor layout" src="https://ilfat-galiev.im/assets/images/echart-922dee4cf489efafe8f6cad01a85f6bc.png" width="1313" height="856" class="img_ev3q"></p>
 </li>
 <li>
-<p>📊 The visual now supports <a href="https://ilfat-galiev.im/docs/echarts-visual/#d3js-formatting"><strong>D3.js formatting options</strong></a> for enhanced data presentation flexibility.</p>
+<p>📊 The visual now supports <a href="https://ilfat-galiev.im/docs/echarts-visual#d3js-formatting"><strong>D3.js formatting options</strong></a> for enhanced data presentation flexibility.</p>
 </li>
 </ul>]]></content:encoded>
             <category>PowerBI</category>
