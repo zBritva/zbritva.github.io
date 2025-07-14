@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkilfatgaliev=self.webpackChunkilfatgaliev||[]).push([[3857],{3334:l=>{l.exports=JSON.parse('{"tag":{"label":"hello","permalink":"/tags/hello","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/hello","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

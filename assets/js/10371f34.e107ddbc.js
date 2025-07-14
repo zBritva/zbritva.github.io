@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkilfatgaliev=self.webpackChunkilfatgaliev||[]).push([[5210],{29518:s=>{s.exports=JSON.parse('{"tag":{"label":"Plotly.js","permalink":"/docs/tags/plotly-js","allTagsPath":"/docs/tags","count":1,"items":[{"id":"visual-editor/index","title":"Power BI Visual Editor","description":"Purpose","permalink":"/docs/visual-editor/"}],"unlisted":false}}')}}]);

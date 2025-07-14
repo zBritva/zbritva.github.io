@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkilfatgaliev=self.webpackChunkilfatgaliev||[]).push([[6152],{73830:a=>{a.exports=JSON.parse('{"tag":{"label":"ECharts","permalink":"/docs/tags/e-charts","allTagsPath":"/docs/tags","count":1,"items":[{"id":"echarts-visual/index","title":"Apache ECharts Visual","description":"Description","permalink":"/docs/echarts-visual/"}],"unlisted":false}}')}}]);

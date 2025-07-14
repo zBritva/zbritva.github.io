@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkilfatgaliev=self.webpackChunkilfatgaliev||[]).push([[1513],{35073:e=>{e.exports=JSON.parse('{"tag":{"label":"Power BI","permalink":"/docs/tags/power-bi","allTagsPath":"/docs/tags","count":1,"items":[{"id":"index","title":"Visual documentations","description":"Some visuals in development phase","permalink":"/docs/"}],"unlisted":false}}')}}]);

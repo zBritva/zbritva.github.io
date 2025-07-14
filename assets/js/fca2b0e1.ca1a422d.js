@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkilfatgaliev=self.webpackChunkilfatgaliev||[]).push([[6789],{8984:a=>{a.exports=JSON.parse('{"tag":{"label":"geojson","permalink":"/tags/geojson","allTagsPath":"/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/tags/geojson","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
