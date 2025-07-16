@@ -60,7 +60,6 @@ For the date type data value (e.g., "02/24/2021"), Charticulator automatically e
 
 ## Creating a Chart with Links
 
-[Original documentation source](https://charticulator.com/docs/using-in-power-bi.html)
 
 To draw a chart with the links between glyphs in Charticulator, you need two data tables: one for nodes (or entities) and another for links (or relationships) between nodes. Because Power BI visuals expects a single table, you need to create a relationship between these two tables, by following these steps:
 1. Select **Modeling** from the main menu.
@@ -77,3 +76,72 @@ To draw a chart with the links between glyphs in Charticulator, you need two dat
 ![Create relationship](/images/docs/create-relationship.png)
 
 After creating the relationship, do not forget to select both **Don’t summarize** and **Show items with no data** for all columns in the Data and Links sections.
+
+## Visual Settings
+
+These properties control the behavior, appearance, and localization of the Charticulator visual and its editor.
+
+***
+
+### Chart Template
+Controls the core chart design and data mapping.
+
+* **Template:** Stores the `.chart` template file that defines the visual's structure and design.
+* **Column Mapping:** Defines how data columns from your Power BI dataset are mapped to the fields required by the template. This is primarily used for backward compatibility with older templates.
+
+***
+
+### Localization 🌍
+Configure number and currency formatting to match regional standards.
+
+* **Decimal Delimiter:** Sets the character used for the decimal point (e.g., `.` or `,`).
+* **Thousands Delimiter:** Sets the character used for the thousands separator (e.g., `,` or `.`).
+* **Currency:** Defines the currency symbol (e.g., `$`, `€`, `£`) for monetary formats.
+* **Billions Format:** Specifies the suffix for large numbers, allowing a choice between **G** (for giga) or **B** (for billions).
+
+***
+
+### Default Chart Properties
+Sets the default visual properties (such as colors, fonts, and styles) that are applied to any new charts you create from scratch.
+
+***
+
+### Panel Positions
+Customizes the layout of the Glyphs, Layers, and Attributes panels within the Charticulator editor to suit your workflow.
+
+* **Panels on Left:** Places all editing panels on the left side of the canvas.
+
+![Panels are left](./images/panels-left.png)
+    
+* **Panels on Right:** Places all editing panels on the right side of the canvas.
+    
+![Panels are left](./images/panels-left.png)
+
+* **Split Panels:** Places the Dataset panel on the left and the Attributes/Layers panels on the right.
+
+![Panels are split](./images/panels-left-right.png)    
+
+***
+
+### Color Settings 🎨
+Integrate your chart's appearance with the Power BI report theme.
+
+* **Update Colors:** Applies the current Power BI report theme's color palette to the chart, overriding any existing colors defined in the template.
+* **Power BI Theme:** Applies the Power BI report theme (including background and text colors) to the Charticulator editor interface itself.
+* **Invert Text Colors:** When using a dark Power BI theme, this option automatically inverts text colors within the editor for better readability.
+
+***
+
+### Partial Cross-Highlight
+This setting enhances how the visual interacts with other visuals in your report.
+
+* **Add Highlight Columns:** Adds supplementary columns to your dataset that contain highlight values for each measure. This enables **partial cross-highlighting**, where only a segment of a mark (like a portion of a bar) is highlighted instead of the entire object.
+
+***
+
+### Editor & View Settings
+Configure the behavior of the editor interface and the visual canvas.
+
+* **Update Table:** Automatically refreshes the data tables within the Charticulator editor whenever the data is filtered in Power BI or when data columns are assigned or removed.
+* **Hide Editor Preview:** Hides the initial preview image that appears in the editor window before a template is loaded.
+* **Hide Default Template Message:** Hides the message displayed on the Power BI visual canvas when

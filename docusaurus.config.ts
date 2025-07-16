@@ -28,6 +28,7 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  trailingSlash: false,
   markdown: {
     mermaid: true,
   },
@@ -35,6 +36,7 @@ const config: Config = {
     [
       'classic',
       {
+        debug: true,
         // docs: {
         //   sidebarPath: './sidebars.ts',
         //   // Please change this to your repo.
@@ -44,7 +46,7 @@ const config: Config = {
         // },
         docs: {
           id: 'docs',
-          routeBasePath: '/docs',
+          routeBasePath: 'docs',
           // sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -60,6 +62,7 @@ const config: Config = {
         },
         blog: {
           blogSidebarCount: 'ALL',
+          path: './blog',
           routeBasePath: '/',
           showReadingTime: true,
           feedOptions: {
@@ -193,7 +196,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: '/pages/about',
+          href: 'https://ilfat-galiev.im/pages/about',
           label: 'About me',
           position: 'right',
         },
@@ -207,7 +210,7 @@ const config: Config = {
           items: [
             {
               label: 'Visual documentations',
-              to: '/docs/index',
+              to: 'https://ilfat-galiev.im/docs/',
             },
           ],
         },

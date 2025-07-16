@@ -6,8 +6,8 @@ sidebar_position: 20
 
 |*|Editor|View|Comment|
 |-|-|-|-|
-|Published|[1.6.1.0](#1610)|[1.5.2.0](#1520)||
-|In pipeline||[1.6.1.0](#1610)||
+|Published|[1.6.9.0](#1690)|[1.6.6.0](#1660)||
+|In pipeline||||
 |Submitted||||
 
 Legend:
@@ -22,6 +22,49 @@ Legend:
 * Add [SVG patterns](https://developer.mozilla.org/docs/Web/SVG/Tutorial/Patterns). Sample is in [old repo](https://github.com/microsoft/charticulator/pull/1044)
 * [Power BI Field parameters](https://learn.microsoft.com/en-us/power-bi/guidance/data-translation-implement-field) support
 * Add [d3-contour](https://observablehq.com/collection/@d3/d3-contour)
+
+# 1.7.x.x
+
+* Link begin and end marks sizes
+* Mouse cursor property for marks (default, cross, pan)
+* Color picker popover position is fixed
+* Hide Default template until fix loading issue
+
+## 1.6.9.0
+
+* Cubic Bezier Axis Editor for Line Plot Segments
+
+## 1.6.8.0
+
+* Fix error on mapping deleted scale
+* Fix toolbar tooltips
+* Fix error on legend creator if scale was deleted
+* Add text name to "File" button
+* Refactor empty mapping
+* Fix color picker popup component positioning for some color pickers
+
+## 1.6.6.0
+
+* Fixing certification issues
+
+## 1.6.5.0
+
+* Fix issue when the visual doesn't load template into editor if columns weren't mapped to chart.
+* Unify import template and open chart.
+
+## 1.6.4.0
+
+* Fix nested chart editor theme
+
+## 1.6.3.0
+
+* Add button for deleting scales
+* Power BI theme support
+* "Update Colors" property respects scale auto min/max properties  
+
+## 1.6.2.0
+
+* Internal update
 
 ## 1.6.1.0
 

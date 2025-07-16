@@ -41,25 +41,22 @@ Handlebars.js example of using 'column' helper to get column values:
 
 ```json5
 {
- "dataset": {
-  "dimensions": [
-   "Country",
-   " Sales",
-  ],
- },
- "xAxis": {
-  "type": "category",
-  // HBT data: {{{ column 'Country' }}},
- },
- "yAxis": {
-  "type": "value",
- },
- "series": [
-  {
-   // HBT data: {{{ column ' Sales' }}},
-   "type": "line",
+  dataset: {
+    dimensions: ["Country", " Sales"],
   },
- ],
+  xAxis: {
+    type: "category",
+    // HBT data: {{{ column 'Country' }}},
+  },
+  yAxis: {
+    type: "value",
+  },
+  series: [
+    {
+      // HBT data: {{{ column ' Sales' }}},
+      type: "line",
+    },
+  ],
 }
 ```
 
@@ -105,137 +102,151 @@ flowchart TD
 
 1. [Download](https://appsource.microsoft.com/en-us/product/PowerBIVisuals/ilfatgaliev1696579877540.echartsvisual) or import visual from AppSource.
 
-    ![Importing pbiviz file](step0.png)
+   ![Importing pbiviz file](step0.png)
 
 2. Create instance of the visual by clicking on the visual icon
 
-    ![Creating instance of the visual](step1.png)
+   ![Creating instance of the visual](step1.png)
 
 3. Assign data to the visual instance
 
-    ![Assigning data to the visual instance](step2.png)
+   ![Assigning data to the visual instance](step2.png)
 
 4. Resize visual to give more space to visual content and switch to edit mode.
 
-    ![Resized visual](step3.png)
+   ![Resized visual](step3.png)
 
 5. Select the predefined charts from the tree. There are several basic chart examples. The list will be update to add new charts late. [To see all chart types navigate to Examples section of ECharts Documentation](https://echarts.apache.org/examples/en/index.html)
 
 6. The visual in edit mode has tree of charts, preview area and JSON editor
 
-    Preview are shows current chart configuration after pressing "Apply" button
-    ![Visual preview area](step4-preview.png)
+   Preview are shows current chart configuration after pressing "Apply" button
+   ![Visual preview area](step4-preview.png)
 
-    Editor provides basic editing capabilities to edit JSON5 schema with Handlebar templates
-    ![Visual editor area](step4-editor.png)
+   Editor provides basic editing capabilities to edit JSON5 schema with Handlebar templates
+   ![Visual editor area](step4-editor.png)
 
 7. If the visual configuration has error, the visual shows error output instead chart preview.
 
-    ![Visual error view](step5-error-view.png)
+   ![Visual error view](step5-error-view.png)
 
 8. Data binding and handlebars template.
 
-    EChart has [options object](https://echarts.apache.org/en/option.html#title) that contains chart configuration and settings
+   EChart has [options object](https://echarts.apache.org/en/option.html#title) that contains chart configuration and settings
 
-    Options is JavaScript object, but the visual allows use JSON only ([JSON5 format](https://json5.org/)).
+   Options is JavaScript object, but the visual allows use JSON only ([JSON5 format](https://json5.org/)).
 
-    To provide dynamic binding, the visual support Handlebar templates in comment section.
+   To provide dynamic binding, the visual support Handlebar templates in comment section.
 
-    All comments beginning with ` HBT ` (whitespace are required) parses by [Handlebars.js](https://handlebarsjs.com/).
+   All comments beginning with `HBT` (whitespace are required) parses by [Handlebars.js](https://handlebarsjs.com/).
 
-    There you can use [power of Handlebars language](https://handlebarsjs.com/guide/#what-is-handlebars) to generate JSON configuration for the EChart.
+   There you can use [power of Handlebars language](https://handlebarsjs.com/guide/#what-is-handlebars) to generate JSON configuration for the EChart.
 
-    Handlebars provides [builtin expressions](https://handlebarsjs.com/guide/expressions.html#basic-usage) and [helpers](https://handlebarsjs.com/guide/builtin-helpers.html).
+   Handlebars provides [builtin expressions](https://handlebarsjs.com/guide/expressions.html#basic-usage) and [helpers](https://handlebarsjs.com/guide/builtin-helpers.html).
 
-    But the visual defines the set of own helpers like [HTML/SVG/Handlebars Visual](../handelbars-visual/helpers.md) that makes easy to bind data to the JSON file.
+   But the visual defines the set of own helpers like [HTML/SVG/Handlebars Visual](../handelbars-visual/helpers.md) that makes easy to bind data to the JSON file.
 
-    But EChart visual has additional helpers like `column`, `select`, `jsonArray`
+   But EChart visual has additional helpers like `column`, `select`, `jsonArray`
 
-    `column` - returns array of column values for given column name. Example: `{{{ column 'Country' }}}` returns `["Canada","France","Germany","Mexico","United States of America"]`
+   `column` - returns array of column values for given column name. Example: `{{{ column 'Country' }}}` returns `["Canada","France","Germany","Mexico","United States of America"]`
 
-    `select` - returns arrays of columns values for given column names.
+   `select` - returns arrays of columns values for given column names.
 
-    `jsonArray` - wraps input to `[`,`]` brackets.
+   `jsonArray` - wraps input to `[`,`]` brackets.
 
-    Data Mapping example:
+   Data Mapping example:
 
-    ```json5
-    {
-        "xAxis": {
-          "type": "category",
-          // HBT "data": {{{ column 'Country' }}},
-        },
-        "yAxis": {
-          "type": "value"
-        },
-        "series": [
-          {
-            // HBT "data": {{{ column ' Sales' }}},
-            "type": "line"
-          }
-        ]
-      }
-    ```
+   ```json5
+   {
+     xAxis: {
+       type: "category",
+       // HBT "data": {{{ column 'Country' }}},
+     },
+     yAxis: {
+       type: "value",
+     },
+     series: [
+       {
+         // HBT "data": {{{ column ' Sales' }}},
+         type: "line",
+       },
+     ],
+   }
+   ```
 
-    This JSON5 configuration has two templates:
+   This JSON5 configuration has two templates:
 
-    `// HBT "data": {{{ column 'Country' }}},`
+   `// HBT "data": {{{ column 'Country' }}},`
 
-    and
+   and
 
-    `// HBT "data": {{{ column ' Sales' }}},`
+   `// HBT "data": {{{ column ' Sales' }}},`
 
-    Handlebars uses the each template to generate part of content for JSON5. `column` helper returns array of column values. Then the visual removes the comments to leave only part of json. The JSON5 content transforms to
+   Handlebars uses the each template to generate part of content for JSON5. `column` helper returns array of column values. Then the visual removes the comments to leave only part of json. The JSON5 content transforms to
 
-    ```json5
-    {
-        "xAxis": {
-          "type": "category",
-          "data": ["Canada","France","Germany","Mexico","United States of America"],
-        },
-        "yAxis": {
-          "type": "value"
-        },
-        "series": [
-          {
-            "data": ["24887654.88499999","24354172.28000001","23505340.820000004","20949352.109999992","25029830.165000007"],
-            "type": "line"
-          }
-        ]
-      }
-    ```
+   ```json5
+   {
+     xAxis: {
+       type: "category",
+       data: [
+         "Canada",
+         "France",
+         "Germany",
+         "Mexico",
+         "United States of America",
+       ],
+     },
+     yAxis: {
+       type: "value",
+     },
+     series: [
+       {
+         data: [
+           "24887654.88499999",
+           "24354172.28000001",
+           "23505340.820000004",
+           "20949352.109999992",
+           "25029830.165000007",
+         ],
+         type: "line",
+       },
+     ],
+   }
+   ```
 
-    The result config is input object for [options](https://echarts.apache.org/en/option.html#title) parameter of EChart instance.
+   The result config is input object for [options](https://echarts.apache.org/en/option.html#title) parameter of EChart instance.
 
 9. The result
 
-    ![Final result](step6-result.png)
+   ![Final result](step6-result.png)
 
 ## Plotly.js style data binding
 
 The visual supports data binding by `<another property name>src` property:
 
     ```json5
-  {
-      "xAxis": {
-        "type": "category",
-        "data": [],
-        // Binds "Country" column values to data property
-        "datasrc": "Country",
-      },
-      "yAxis": {
-        "type": "value"
-      },
-      "series": [
-        {
-          "data": [],
-        // Binds " Sales" column values to data property
-          "datasrc": " Sales",
-          "type": "line"
-        }
-      ]
-    }
-```
+
+{
+"xAxis": {
+"type": "category",
+"data": [],
+// Binds "Country" column values to data property
+"datasrc": "Country",
+},
+"yAxis": {
+"type": "value"
+},
+"series": [
+{
+"data": [],
+// Binds " Sales" column values to data property
+"datasrc": " Sales",
+"type": "line"
+}
+]
+}
+
+````
 
 ## Resource loader
 
@@ -247,7 +258,7 @@ All loaded resources have resource name. The data of resources can be used by `v
 
 ```handlebarsjs
 {{ val '<resource name>' }}'
-```
+````
 
 Example:
 
@@ -261,29 +272,29 @@ Then `starfield_jpg` value binds to `environment` property.
 
 ```json5
 {
-  "backgroundColor": '#000',
-  "globe": {
-      // HBT "baseTexture": '{{ val 'world_topo_bathy_200401_jpg' }}',
-      // HBT "heightTexture": '{{ val 'world_topo_bathy_200401_jpg' }}',
-      "displacementScale": 0.04,
-      "shading": "realistic",
-      // HBT "environment": '{{ val 'starfield_jpg'}}',
-      "realisticMaterial": {
-        "roughness": 0.9
+  backgroundColor: "#000",
+  globe: {
+    // HBT "baseTexture": '{{ val 'world_topo_bathy_200401_jpg' }}',
+    // HBT "heightTexture": '{{ val 'world_topo_bathy_200401_jpg' }}',
+    displacementScale: 0.04,
+    shading: "realistic",
+    // HBT "environment": '{{ val 'starfield_jpg'}}',
+    realisticMaterial: {
+      roughness: 0.9,
+    },
+    postEffect: {
+      enable: true,
+    },
+    light: {
+      main: {
+        intensity: 5,
+        shadow: true,
       },
-      "postEffect": {
-        "enable": true
+      ambientCubemap: {
+        diffuseIntensity: 0.2,
       },
-      "light": {
-        "main": {
-          "intensity": 5,
-          "shadow": true
-        },
-        "ambientCubemap": {
-          "diffuseIntensity": 0.2
-        }
-      }
-  }
+    },
+  },
 }
 ```
 
@@ -291,3 +302,61 @@ The result:
 
 ![Globe map with textures](./globe.png)
 
+## Formatting
+
+### ECharts formatting
+
+EChart has built in content formatter of tooltip's, axis labels which supports string template.
+
+[xAxis](https://echarts.apache.org/en/option.html#xAxis.axisLabel.formatter)
+[yAxis](https://echarts.apache.org/en/option.html#yAxis.axisLabel.formatter)
+[tooltip](https://echarts.apache.org/en/option.html#xAxis.tooltip.formatter)
+[legend](https://echarts.apache.org/en/option.html#legend.formatter)
+e.t.c. 
+
+### D3.js formatting
+
+The visual supports [D3.js formatting](https://d3js.org/d3-format#format).
+
+```json
+"formatter": {
+  "d3": {
+    "type": "number",
+    "pattern": ".1f"
+  }
+}
+```
+
+where `type` is `number` for numbers or `time` for date/time. By default type is `number`. `pattern` is formatting specifier. [Read more in D3.js docs](https://d3js.org/d3-format#locale_format)
+
+Full example:
+
+```json
+{
+  "dataset": {
+    "dimensions": ["Country", " Sales"]
+  },
+  "xAxis": {
+    "type": "category"
+    // HBT data: {{{ column 'Country' }}},
+  },
+  "yAxis": {
+    "type": "value",
+    "axisLabel": {
+      "formatter": {
+        "d3": {
+          "type": "number",
+          "pattern": ".1f"
+        }
+      }
+    }
+  },
+  "series": [
+    {
+      "name": " Sales",
+      // HBT data: {{{ column ' Sales' }}},
+      "type": "line"
+    }
+  ]
+}
+```

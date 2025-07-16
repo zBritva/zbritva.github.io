@@ -6,7 +6,7 @@ sidebar_position: 4
 
 Handlebars lib has [build-in helper functions](https://handlebarsjs.com/guide/builtin-helpers.html). But developer can define own helper functions.
 
-[HTML/SVG/Handlebars](./../handelbars-visual/index.md), [Apache ECharts Visual](./../echarts-visual/index.md), and [Markdown & Mermaid Visual](./../markdown-visual/index.md) have custom helpers.
+[HTML/SVG/Handlebars](./../handelbars-visual/index.md), [Apache ECharts Visual](/docs/echarts-visual), and [Markdown & Mermaid Visual](./../markdown-visual/index.md) have custom helpers.
 
 ## Visual helpers
 

@@ -1,0 +1,15 @@
+.container {
+    max-width: unset;
+}
+
+/* [class^="docItemCol"] {
+    max-width: 80% !important;
+} */
+
+.parent {
+    display: grid;
+    grid-template-rows: 671px;
+    grid-auto-rows: 671px;
+    grid-template-columns: repeat(auto-fit, minmax(504px, 1fr));
+    gap: 5px;
+}

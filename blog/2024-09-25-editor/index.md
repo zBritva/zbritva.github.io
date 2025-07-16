@@ -1,5 +1,5 @@
 ---
-slug: charticulator-data-editor
+slug: /charticulator-data-editor
 title: Charticulator data editor
 authors: [ilfat]
 tags: [Charticulator, development, CharticulatorUpdates]

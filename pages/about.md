@@ -25,6 +25,6 @@ We leverage the latest advances in software development to create industry-speci
 For more than two decades, we have been a trusted partner to global customers while utilizing the latest technologies.
 [Partner with us and feel the impact of our expertise..](https://akvelon.com/what-we-do/)
 
-Currently working on [Charticulator](docs/category/charticulator) and maintain [PlotlyJS Visual by Akvelon](https://appsource.microsoft.com/en-us/product/power-bi-visuals/akvelon.plotlyjsvisualbyakvelon?tab=Overview).
+Currently working on [Charticulator](https://ilfat-galiev.im/docs/category/charticulator) and maintain [PlotlyJS Visual by Akvelon](https://appsource.microsoft.com/en-us/product/power-bi-visuals/akvelon.plotlyjsvisualbyakvelon?tab=Overview).
 
 If you have a question related to PlotlyJS Visual, please contact throw Contact Us form on [Akvelon Inc. website](https://akvelon.com/contact-us/)

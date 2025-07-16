@@ -1,0 +1,234 @@
+---
+
+---
+
+# Charticulator Community Version History
+
+<meta name="robots" content="noindex" />
+
+## Original project
+
+The original version of the Charticulator was developed by [Donghao Ren](https://www.linkedin.com/in/donghaoren/), [Bongshin Lee](https://www.linkedin.com/in/bongshin-lee-26368194/), and [Matthew Brehmer](https://www.linkedin.com/in/matthewbrehmer/), who [laid the foundations](https://www.microsoft.com/en-us/research/uploads/prod/2018/08/Charticulator-InfoVis2018.pdf) of the idea. You can find the old version of the Charticulator at https://donghaoren.org/charticulator.
+
+### How it started
+
+It past several years after [the first announcement of the visual publication](https://powerbi.microsoft.com/blog/announcing-the-new-charticulator-visual-public-preview/) in April 2021.
+
+I started working on the Charticulator project in January 2020. I got experience with data visualization in Power BI visuals development since I started work at [Akvelon Inc.](https://akvelon.com/) at the beginning of 2017.
+
+The first major feature was the links table in [Power BI Visual Extension](https://github.com/microsoft/charticulator-extensions) of the Charticulator. Most of the work focused on developing the features requested by a small community of users. I appreciate the feedback of [Nick Snapp](https://www.linkedin.com/in/nick-snapp-62207616/), who [challenged the boundaries](https://github.com/microsoft/charticulator/issues?q=is%3Aissue%20author%3Asnapper911T) of the charticulator during the early development period.
+
+### The origin visual
+
+The idea of creating "universal" Power BI visuals was an internal project of [Akvelon Inc.](https://akvelon.com/) We had considered using [Plotly.js](https://plotly.com/javascript/) or [Vega](https://github.com/vega/) (Vega-Lite) as a visualization engine. However, we decided to use Plotly.js instead of Vega because Microsoft [already had a prototype of the visual with Vega](https://github.com/microsoft/vegalite-for-powerbi). I think it was the right decision because Daniel Marsh-Patrick took it and brought us an excellent [Deneb visual](https://deneb-viz.github.io/). Late Akvelon's team published the [integration of Plotly.js into Power BI as a visual](https://appsource.microsoft.com/en-us/product/power-bi-visuals/akvelon.plotlyjsvisualbyakvelon?tab=Overview).
+
+After the announcement of the first version of the visual, I was happy to see how the authors applied it to data visualizations in Power BI.
+
+Often I wondered "Wow, was it possible with Charticulator?". Thanks to everyone who used Charticulator and data visualizations made
+by the visuals and [created materials for learning the Charticulator visual](https://ilfat-galiev.im/docs/category/community-content).
+
+I put on the list YouTube channels that impressed me, but if you have a source or link to any other content related to Charticulator,
+feel free to [contact me](https://www.linkedin.com/in/ilfat-galiev/) to put them on the list.
+Special thanks to [Ruth Pozuelo Martinez](https://www.linkedin.com/in/ruthpozuelo/) for help with [testing and
+feature ideas](https://github.com/microsoft/charticulator/issues?q=is%3Aissue%20author%3Aruthpozuelo%20) for the Charticulator
+
+## Difference from original Charticulator
+
+The visual was split into two different visuals. The Editor has a built-in Charticulator that allows to creation of charts as original visuals. The View has no built in Charticulator and supports only importing/exporting templates and mapping data.
+
+The reasons for that are:
+
+* The View is Power BI certified. And cannot access external resources.
+
+* The View contains less code than the Editor version and the size of the package is significantly smaller. It speeds up loading reports.
+
+* The Editor is not certified and there are no plans for certification.
+
+* The Editor has a public gallery of charts/templates to easily import charts made by the community.
+
+## What is new
+
+The latest update for the original visual was in March 2022 and this version doesn't include several bug fixes and new features described below.
+
+Some features work in [the Charticulator App](https://ilfat-galiev.im/charticulator/) only, but most of the features are also included in new [Charticulator visuals](https://appsource.microsoft.com/en-us/marketplace/apps?search=Charticulator&page=1).
+
+### Dataset editor
+
+The new application has a built-in table editor, that allows you to easily fix outlines in data or create mock data for prototyping charts.
+
+Quick overview of the feature:
+
+Click on "+New" button to create an empty table with one sample column and row.
+
+![creating table](./creating-table-from-scratch.gif)
+
+Use the context menu to add/remove columns and rows.
+
+Or import existing data and edit the data before using it in the application.
+
+![editing table](./editing-data-after-import.gif)
+
+### Public datasets
+
+Another feature is the list of publicly available datasets that can be imported with one click.
+
+![public datasets](./public-datasets.png)
+
+On the list, you can find dataset samples used in most demos of Charticulator and also dataset samples from [the Vega repository](https://github.com/vega/vega/tree/main/docs/data). The list can be filtered by typing the dataset name in the textbox on top of the view.
+
+The feature allows newcomers to start playing with Charticulator without worrying about data samples.
+
+### Public charts
+
+The next feature is a list of public and private charts and templates built by using the Charticulator App.
+
+![chart list](./chart-list.gif)
+
+The chart list can be filtered by using two buttons (Public and Private) and the name of the chart by typing the chart name in the textbox.
+
+The private list is user charts saved in the local browser DB ([IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API)), that the user had before.
+
+Public list is publicly available charts and templates that can be imported by one click.
+
+On importing the template (the file doesn't contain the dataset in the file) the Charticulator requires mapping current data to template columns or importing new data for tables.
+
+![importing template](./importing-template.png)
+
+The public chart list works in the app and visual too.
+
+On importing a chart in the visual, the Editor replaces the dataset given by Power BI, but after saving the chart, Editor Visual requires mapping template columns to visual columns.
+
+![importing chart in the editor](./importing-chart-in-visual.gif)
+
+### Gradient fill
+
+Marks objects have gradient fill attributes with two colors.
+
+![gradient fill](./gradient-fill.png)
+
+To set the gradient need to clear the `Fill` attribute of the mark then three attributes `Gradient start`, `Gradient stop`, and `Gradient rotation` are available for editing. The feature works for Shape mark. Gradient for Links will be add in the first version of 2025.
+
+*In the future, the feature can be extended to use the entire [capabilities of SVG gradient](https://developer.mozilla.org/docs/Web/SVG/Tutorial/Gradients) (offsets, spreads, more than 2 colors e.t.c.)*
+
+### Treemap
+
+Another new feature is Treemap layout powered by D3.js library. Introduced by Ben Shneiderman in 1991, a treemap recursively subdivides area into rectangles according to each node’s associated value.
+
+![Treemap layout](./treemap-layout.png)
+
+The Charticulator uses D3.js library for positioning and sizing glyphs on Plot Segments.
+
+For example, above a glyph contains one Rectangle mark to build a classic treemap visualization.  
+
+![Treemap layout properties](./treemap-layout-properties.png)
+
+Sub-layout properties has `Data Expressions` for build hierarchical structure and `Measure Expression` for values.
+
+The `Add grouping expression` button adds more expression input fields for nested hierarchy.
+
+`Inner padding` and `Outer paddings` are responsible for gap between glyphs.
+
+### GeoJSON support
+
+The next sub-layout is Geo which allows to import [GeoJSON](https://geojson.org/) data to draw maps. It is also powered by the D3.js library.
+
+`Latitude Expression` and `Longitude Expression` define columns for coordinate values and use those values to map glyphs on Plot Segment with a map.
+
+![GeoJSON example](./geo-layout.png)
+
+The properties allow to configure (set [projections](https://d3js.org/d3-geo/projection), rotate, translate, scale) rendering of GeoJSON.
+
+Read more in the [D3.js documentation](https://d3js.org/d3-geo) and [Making maps with D3](https://www.d3indepth.com/geographic/) article for more context.
+
+Future development idea is allow to bind GeoJSON features to glyphs. It brings interactions with map shapes and figures.
+
+### Image opacity changes on selections
+
+Visuals in Power BI change the opacity of other selected elements (bar, circle e.t.c.) on selection by mouse or keyboard to highlight the user selection.
+There was an issue when the Charticulator template had embedded images.
+
+![image filter](./color-filter.gif)
+
+The charticulator changes the opacity of the image to get a similar effect on images too.
+
+### Packing marks inside the glyph
+
+The packing layout positions marks by [Force simulations of D3.js library](https://d3js.org/d3-hierarchy/pack), which implements a velocity Verlet numerical integrator for simulating physical forces on particles (nodes).
+
+![packing borders](./packing-borders.gif)
+
+The new properties of Packing into a container (`Packing X` and `Packing Y`) allow to set borders by glyph size for marks in simulation.
+
+In the above example centers of all circles are inside the glyph area when `Packing X` is enabled (There is enough space vertically, and enabling `Packing Y` doesn't give effect).
+
+### Several Nested Charts in Editor visual
+
+The new Editor visual supports several levels of nested chart (The original version supported only one level of nested chart).
+
+![Nested charts stack](./nested-charst-stack.gif)
+
+Now, users can work with all nested charts in the editor and not need to use Charticulator App to edit several nested charts.
+
+### Polygon marks
+
+The new mark Polygon brings the tool to create any figure on glyphs and charts. Currently, the marks are in the preview feature and not final and have some limitations.
+
+![creating polygon mark](./polygon-mark.gif)
+
+To create a polygon, select the `Polygon` mark in the marks dropdown, then click several times on the chart or glyph editor area to set the vertexes of the polygon. Use double-click by mouse to finish creating the polygon. By default, the Charticulator creates a closed polygon.
+
+On attributes editor you can uncheck the `Closed` property to remove the last edge.
+
+### Lock text rotation on Polar plot segment
+
+Text marks have the property that blocks rotating the text depending on the angle of the glyph on polar coordinates.
+
+![text rotation](./text-rotation.gif)
+
+Checking of `Ignore polar coordinate rotation` on Attributes panel of text mark orients all text by X axis of cartesian coordinates instead polar coordinates.
+
+### Scale editor (Preview)
+
+Scales are the next core item of the Charticulator after constraints. Old Charticulator creates scales implicitly on binding data to mark attributes or to plot axes.
+
+![scale editor](./scale-editor.gif)
+
+The new scale editor allows to explicitly create scale and set parameters. Then scale can be bound to mark attributes in the current chart or nested chart. It helps to solve the problem of scaling the domain of scale in nested charts, because nested charts work with a subset of data and nested chart scale values aren't unique due to using the same ranges. This is very noticeable when binding data to the color of an object.
+
+In the example below [Ruth Pozuelo Martinez shows](https://github.com/microsoft/charticulator/issues/941) that the scale applies to the Y-axis of the plot segment in the nested chart, and objects in some nested chart instances aren't visible.
+
+![nested chart scale issue](./nested-chart-scale-issue1.gif)
+
+In the final version, the lines in nested charts are on the same level, but the values are significantly different
+
+![lines in nested chart issue](./nested-chart-scale-issue2.png)
+
+### Constraints editor
+
+The Constraint solver is a core feature of the Charticulator that is responsible for positioning all objects on canvas.
+
+![Constraints editor](./constraints-editor.png)
+
+Snapping marks by mouse does not always allow users to bind one mark to another properly. Especially when several other objects are close to each other.
+
+![Snapping text to rect](./snapping.png)
+
+To bind the text mark to the center of the Rectangle mark need to use the constraints editor by specifying equality equations between mark attribute values.
+
+### Minor fixes
+
+The Charticulator had several updates and features, but unfortunately, several bugs were also introduced. The visual can work differently because it was developed from scratch without using the original visual code. Some features of the charticulator were created in conflict with other features or internal logic.
+
+## Conclusion
+
+The project is alive and gets updates. I hope to bring the new interest of the Power BI community to Charticulator. I was very excited to watch how the community creates content to learn Charticulator.
+
+I would like to express my gratitude to [Denis Shumilin](https://www.linkedin.com/in/denis-shumilin/) for his attention to Charticulator. Who told me how he uses and promotes Charticulator in his professional circle. And thanks to everyone who reported bugs, requested new features and just continues to use Charticulator in Power BI reports.
+
+Best regards,
+
+Ilfat Galiev
+
+Akvelon Inc.
+
+![Akvelon Inc. logo](./akvelon-logo-svg.svg)

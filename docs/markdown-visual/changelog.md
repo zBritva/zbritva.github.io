@@ -18,6 +18,10 @@ Legend:
 * Submitted - version has been submitted for review
 * Development - the version is in development
 
+## 1.5.0.0
+
+* Update Mermaid Chart to 11.8.0. See [Mermaid supports Treemap Diagrams now!!!](https://docs.mermaidchart.com/blog/posts/mermaid-have-treemap-diagrams-now)
+
 ## 1.4.0.0
 
 * Defining inline styles to override default styles of output HTML

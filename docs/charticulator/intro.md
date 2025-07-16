@@ -1,11 +1,11 @@
 ---
-sidebar_position: 1
+sidebar_position: 5
 ---
 
 # Intro
 
 This page describes four things that you need to learn in order to use Charticulator.
-The documentation based on original source of [Charticulator documentation](https://charticulator.com/docs/getting-started.html) (copy is available on [Donghao Ren website](https://donghaoren.org/charticulator/index.html) the author of Charticulator).
+The documentation based on original source of Charticulator documentation (copy is available on [Donghao Ren website](https://donghaoren.org/charticulator/index.html) the author of Charticulator
 
 This documentation is not complete, but will include new features and changes that aren't included original visual or Charticulator App.
 
