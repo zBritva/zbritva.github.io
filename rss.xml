@@ -14,9 +14,9 @@
             <link>https://ilfat-galiev.im/mermaid-treemap</link>
             <guid>https://ilfat-galiev.im/mermaid-treemap</guid>
             <pubDate>Wed, 16 Jul 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Exciting News! Treemap Diagrams is coming in Mermaid Chart Visuals for Power BI 📊]]></description>
-            <content:encoded><![CDATA[<p>Exciting News! Treemap Diagrams is coming in Mermaid Chart Visuals for Power BI 📊</p>
-<p>I have just rolled out an update to Mermaid Chart Visuals for Power BI The amazing developers at Mermaid have introduced a powerful new diagram type, the Treemap. The update should reach to all end users in two weeks.</p>
+            <description><![CDATA[Exciting News! Treemap Diagrams Now Available in Mermaid Chart Visuals for Power BI 📊]]></description>
+            <content:encoded><![CDATA[<p>Exciting News! Treemap Diagrams Now Available in Mermaid Chart Visuals for Power BI 📊</p>
+<p>I have just rolled out an update to Mermaid Chart Visuals for Power BI The amazing developers at Mermaid have introduced a powerful new diagram type, the Treemap.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-treemap-diagrams">What are Treemap diagrams?<a class="hash-link" aria-label="Direct link to What are Treemap diagrams?" title="Direct link to What are Treemap diagrams?" href="https://ilfat-galiev.im/mermaid-treemap#what-are-treemap-diagrams">​</a></h2>
 <p>For those new to them, Treemap diagrams are way to visualize hierarchical data. A set of nested rectangles where the size of each rectangle is proportional to its value. This makes it incredibly easy to see which categories are the most significant.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="dynamic-data-binding-with-handlebarsjs">Dynamic Data Binding with Handlebars.js<a class="hash-link" aria-label="Direct link to Dynamic Data Binding with Handlebars.js" title="Direct link to Dynamic Data Binding with Handlebars.js" href="https://ilfat-galiev.im/mermaid-treemap#dynamic-data-binding-with-handlebarsjs">​</a></h2>
