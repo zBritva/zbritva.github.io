@@ -4,11 +4,35 @@
         <title>Ilfat Galiev Blog</title>
         <link>https://ilfat-galiev.im</link>
         <description>Ilfat Galiev Blog</description>
-        <lastBuildDate>Wed, 14 May 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Jul 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>Copyright © 2025 Ilfat Galiev.</copyright>
+        <item>
+            <title><![CDATA[New Diagram Type, Treemap]]></title>
+            <link>https://ilfat-galiev.im/mermaid-treemap</link>
+            <guid>https://ilfat-galiev.im/mermaid-treemap</guid>
+            <pubDate>Wed, 16 Jul 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Exciting News! Treemap Diagrams is coming in Mermaid Chart Visuals for Power BI 📊]]></description>
+            <content:encoded><![CDATA[<p>Exciting News! Treemap Diagrams is coming in Mermaid Chart Visuals for Power BI 📊</p>
+<p>I have just rolled out an update to Mermaid Chart Visuals for Power BI The amazing developers at Mermaid have introduced a powerful new diagram type, the Treemap. The update should reach to all end users in two weeks.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-treemap-diagrams">What are Treemap diagrams?<a class="hash-link" aria-label="Direct link to What are Treemap diagrams?" title="Direct link to What are Treemap diagrams?" href="https://ilfat-galiev.im/mermaid-treemap#what-are-treemap-diagrams">​</a></h2>
+<p>For those new to them, Treemap diagrams are way to visualize hierarchical data. A set of nested rectangles where the size of each rectangle is proportional to its value. This makes it incredibly easy to see which categories are the most significant.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="dynamic-data-binding-with-handlebarsjs">Dynamic Data Binding with Handlebars.js<a class="hash-link" aria-label="Direct link to Dynamic Data Binding with Handlebars.js" title="Direct link to Dynamic Data Binding with Handlebars.js" href="https://ilfat-galiev.im/mermaid-treemap#dynamic-data-binding-with-handlebarsjs">​</a></h2>
+<p>To make this even more powerful, the new visual leverages Handlebars.js for data binding. This allows you to use templating to dynamically generate the Treemap syntax directly from your Power BI data. Instead of manually writing out the hierarchy, you can create a template that automatically builds the diagram based on the fields and measures in your dataset, making your reports fully interactive and data-driven.</p>
+<p>Code sample:</p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{{ var 'cat1' (map 'Country' table.rows) }}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{{ var 'cat2' (map 'Segment' table.rows) }}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{{ var 'measure1' (map 'Sales' table.rows) }}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{{ scaleBand 'Category1' (val 'cat1') (val 'cat1')}}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{{ scaleBand 'Category2' (val 'cat2') (val 'cat2')}}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{{ scaleBand 'Measure1' (val 'cat2') (val 'measure1')}}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">```mermaid</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">treemap-beta</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{{#each (getScale 'Category2' 'domain') as |cat2 cat1index| }}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">"{{cat2}}"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        {{#each (getScale 'Category1' 'domain') as |cat1 cat2index|}}    </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    {{#each ../../table.rows as |row rowindex|}}{{#if (eq row.Country cat1)}}{{#if (eq row.Segment cat2)}}"{{cat1}}":{{row.[ Sales]}}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{{else}}{{/if}}{{else}}{{/if}}{{/each}}{{/each}}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{{/each}}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">```</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Result:</p>
+<p><img decoding="async" loading="lazy" alt="Treemap visual in Power BI" src="https://ilfat-galiev.im/assets/images/treemap-1d4926ea400d066a14d35f757fdb94d3.png" width="1309" height="758" class="img_ev3q"></p>
+<p>The source code may seem complex, but I'm working on new helper functions to create a hierarchical data structure to solve this problem</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="simple-powerful-and-customizable">Simple, Powerful, and Customizable<a class="hash-link" aria-label="Direct link to Simple, Powerful, and Customizable" title="Direct link to Simple, Powerful, and Customizable" href="https://ilfat-galiev.im/mermaid-treemap#simple-powerful-and-customizable">​</a></h2>
+<p>One of the best things about the new Treemap diagram is its "refreshingly simple" syntax. With just a few lines of code, you can create a stunning and insightful visualization. Plus, with features like custom styling, value formatting, and theme customization, you have all the tools you need to make your data stories clear and compelling.</p>
+<p>For a deeper dive into the technical details and to see more examples, we highly recommend checking out the original announcement from the Mermaid team.</p>
+<p>Read the original blog post here: <a href="https://docs.mermaidchart.com/blog/posts/mermaid-have-treemap-diagrams-now" target="_blank" rel="noopener noreferrer">Mermaid supports Treemap Diagrams now!!!</a></p>]]></content:encoded>
+            <category>PowerBI</category>
+            <category>development</category>
+        </item>
         <item>
             <title><![CDATA[Visual updates and development notes]]></title>
             <link>https://ilfat-galiev.im/visual-updates</link>
@@ -190,24 +214,6 @@
             <category>Charticulator</category>
             <category>development</category>
             <category>CharticulatorUpdates</category>
-        </item>
-        <item>
-            <title><![CDATA[Polygon mark in Charticulator]]></title>
-            <link>https://ilfat-galiev.im/polygon-mark</link>
-            <guid>https://ilfat-galiev.im/polygon-mark</guid>
-            <pubDate>Sat, 24 Aug 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[The new feature for Charticulator]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-new-feature-for-charticulator">The new feature for Charticulator<a class="hash-link" aria-label="Direct link to The new feature for Charticulator" title="Direct link to The new feature for Charticulator" href="https://ilfat-galiev.im/polygon-mark#the-new-feature-for-charticulator">​</a></h3>
-<p>This is one of the most significant updates for Charticulator. The mark allows to draw arbitrary shape for data visualization. The polygon support snapping to other marks or parent objects and supports basic styling like rectangle, ellipsis or triangle marks.</p>
-<p><img decoding="async" loading="lazy" alt="polygon" src="https://ilfat-galiev.im/assets/images/polygon-4230e7ddd9079332f42871e4cdd6e44e.png" width="1918" height="868" class="img_ev3q"></p>
-<p>The mark doesn't have a icon yet. But already available for testing in application on <a href="https://ilfat-galiev.im/charticulator/" target="_blank" rel="noopener noreferrer">https://ilfat-galiev.im/charticulator/</a> page.</p>
-<p>Current limitations:</p>
-<ul>
-<li>The mark doesn't have internal constraints (no middle points like in line mark)</li>
-<li>Rendering in polar coordinates has not implemented yet</li>
-</ul>]]></content:encoded>
-            <category>charticulator</category>
-            <category>development</category>
         </item>
     </channel>
 </rss>
