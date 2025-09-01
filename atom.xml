@@ -2,12 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ilfat-galiev.im</id>
     <title>Ilfat Galiev Blog</title>
-    <updated>2025-07-16T00:00:00.000Z</updated>
+    <updated>2025-08-31T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ilfat-galiev.im"/>
     <subtitle>Ilfat Galiev Blog</subtitle>
     <icon>https://ilfat-galiev.im/img/favicon.ico</icon>
     <rights>Copyright © 2025 Ilfat Galiev.</rights>
+    <entry>
+        <title type="html"><![CDATA[Charticulator Cubic Bezier editor]]></title>
+        <id>https://ilfat-galiev.im/charticulator-cubic-bezier</id>
+        <link href="https://ilfat-galiev.im/charticulator-cubic-bezier"/>
+        <updated>2025-08-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Introducing the Cubic Bezier Axis Editor in Charticulator for line axis]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introducing-the-cubic-bezier-axis-editor-in-charticulator-for-line-axis">Introducing the Cubic Bezier Axis Editor in Charticulator for line axis<a class="hash-link" aria-label="Direct link to Introducing the Cubic Bezier Axis Editor in Charticulator for line axis" title="Direct link to Introducing the Cubic Bezier Axis Editor in Charticulator for line axis" href="https://ilfat-galiev.im/charticulator-cubic-bezier#introducing-the-cubic-bezier-axis-editor-in-charticulator-for-line-axis">​</a></h2>
+<p>Ever felt like your line charts with custom curve painted by mouse were a bit too... uneven? What if you could bend and shape your chart line axes to create truly unique and compelling visualizations?</p>
+<p>I would like to announce new feature coming to Charticulator: the <strong>Cubic Bezier Axis Editor</strong>. This update gives you precise control to transform your standard line chart axes into beautifully curved paths.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-a-cubic-bezier-curve">What is a Cubic Bezier Curve?<a class="hash-link" aria-label="Direct link to What is a Cubic Bezier Curve?" title="Direct link to What is a Cubic Bezier Curve?" href="https://ilfat-galiev.im/charticulator-cubic-bezier#what-is-a-cubic-bezier-curve">​</a></h3>
+<p>You might have encountered Bezier curves in graphic design software like Adobe Illustrator. In simple terms, a Bezier curve is a smooth, continuous line defined by a set of control points. Think of it like a flexible piece of wire. You have anchor points that define the start and end, and then "handles" that you can pull and push to bend the wire into the exact shape you want.</p>
+<p><img decoding="async" loading="lazy" alt="Charticulator cubic bezier" src="https://ilfat-galiev.im/assets/images/charticulator-cubic-bezier-50ca2e6ced5bc5e39a4cbe43c41ec6ea.gif" width="1035" height="674" class="img_ev3q"></p>
+<p>This update will be rolling out soon, so keep an eye out! I believe this feature will empower you to data visualization with Charticulator.</p>]]></content>
+        <author>
+            <name>Ilfat Galiev</name>
+            <uri>https://www.linkedin.com/in/ilfat-galiev/</uri>
+        </author>
+        <category label="PowerBI" term="PowerBI"/>
+        <category label="development" term="development"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[New Diagram Type, Treemap]]></title>
         <id>https://ilfat-galiev.im/mermaid-treemap</id>
@@ -226,26 +246,6 @@
 <p>The layout of current charts are changed from vertical list to grid to display private and publicly available charts.</p>
 <p><img decoding="async" loading="lazy" alt="Charts list" src="https://ilfat-galiev.im/assets/images/charts-ae0470abc6362646e8ba0b81077662f0.png" width="1919" height="911" class="img_ev3q"></p>
 <p>On <a href="https://github.com/zBritva/charticulator/pull/48" target="_blank" rel="noopener noreferrer">PR48</a> page you can find link to deployment of the latest development branch.</p>]]></content>
-        <author>
-            <name>Ilfat Galiev</name>
-            <uri>https://www.linkedin.com/in/ilfat-galiev/</uri>
-        </author>
-        <category label="Charticulator" term="Charticulator"/>
-        <category label="development" term="development"/>
-        <category label="CharticulatorUpdates" term="CharticulatorUpdates"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Charticulator Gallery]]></title>
-        <id>https://ilfat-galiev.im/charticulator-gallery</id>
-        <link href="https://ilfat-galiev.im/charticulator-gallery"/>
-        <updated>2024-09-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Charticulator Gallery]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="charticulator-gallery">Charticulator Gallery<a class="hash-link" aria-label="Direct link to Charticulator Gallery" title="Direct link to Charticulator Gallery" href="https://ilfat-galiev.im/charticulator-gallery#charticulator-gallery">​</a></h3>
-<p>The <a href="https://ilfat-galiev.im/charticulator/" target="_blank" rel="noopener noreferrer">Charticulator App</a> now has a built-in list of charts (gallery) that can be imported with a single click.</p>
-<p><img decoding="async" loading="lazy" alt="Gallery" src="https://ilfat-galiev.im/assets/images/chart-examples-f1e2715c76f74a7aa734770626820842.png" width="621" height="592" class="img_ev3q"></p>
-<p>There are only few examples in the diagram list so far, but it will be updated soon, and will also support importing templates. If you want to add your own examples, feel free to contact me.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="chart-filter">Chart filter<a class="hash-link" aria-label="Direct link to Chart filter" title="Direct link to Chart filter" href="https://ilfat-galiev.im/charticulator-gallery#chart-filter">​</a></h3>
-<p>The list of charts has a filter of charts by name and type (private, charts that are stored in the browser's indexed database, and public, which are downloaded from a CDN).</p>]]></content>
         <author>
             <name>Ilfat Galiev</name>
             <uri>https://www.linkedin.com/in/ilfat-galiev/</uri>
