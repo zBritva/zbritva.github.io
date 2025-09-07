@@ -15,7 +15,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2W0Q8RHPCT"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-2W0Q8RHPCT",{anonymize_ip:!0})</script>
 <link rel="preconnect" href="https://ilfat-galiev.im"><link rel="stylesheet" href="/assets/css/styles.6f49b101.css">
-<script src="/assets/js/runtime~main.1ee531b8.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.ac04e39b.js" defer="defer"></script>
 <script src="/assets/js/main.e5bd1f3b.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -64,6 +64,64 @@
 </li>
 </ol>
 <p><img decoding="async" loading="lazy" alt="Create relationship" src="/assets/images/create-relationship-5145c9a5a9820f1413bc9e0f15ae4ff4.png" width="746" height="720" class="img_ev3q"></p>
-<p>After creating the relationship, do not forget to select both <strong>Don’t summarize</strong> and <strong>Show items with no data</strong> for all columns in the Data and Links sections.</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/charticulator/reusing_charts"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Reusing charts</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/category/gallery"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Gallery</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a class="table-of-contents__link toc-highlight" href="/docs/charticulator/using_in_power_bi#difference-from-original-version-of-the-visual">Difference from Original version of the visual</a></li><li><a class="table-of-contents__link toc-highlight" href="/docs/charticulator/using_in_power_bi#getting-started">Getting started</a></li><li><a class="table-of-contents__link toc-highlight" href="/docs/charticulator/using_in_power_bi#dont-summarize">Don&#39;t Summarize</a></li><li><a class="table-of-contents__link toc-highlight" href="/docs/charticulator/using_in_power_bi#data-order">Data Order</a></li><li><a class="table-of-contents__link toc-highlight" href="/docs/charticulator/using_in_power_bi#date-vs-date-hierarchy">Date vs. Date Hierarchy</a></li><li><a class="table-of-contents__link toc-highlight" href="/docs/charticulator/using_in_power_bi#creating-a-chart-with-links">Creating a Chart with Links</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://ilfat-galiev.im/docs/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Visual documentations</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Ilfat Galiev. Built with Docusaurus.</div></div></div></footer></div>
+<p>After creating the relationship, do not forget to select both <strong>Don’t summarize</strong> and <strong>Show items with no data</strong> for all columns in the Data and Links sections.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="visual-settings">Visual Settings<a class="hash-link" aria-label="Direct link to Visual Settings" title="Direct link to Visual Settings" href="/docs/charticulator/using_in_power_bi#visual-settings">​</a></h2>
+<p>These properties control the behavior, appearance, and localization of the Charticulator visual and its editor.</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="chart-template">Chart Template<a class="hash-link" aria-label="Direct link to Chart Template" title="Direct link to Chart Template" href="/docs/charticulator/using_in_power_bi#chart-template">​</a></h3>
+<p>Controls the core chart design and data mapping.</p>
+<ul>
+<li><strong>Template:</strong> Stores the <code>.chart</code> template file that defines the visual&#x27;s structure and design.</li>
+<li><strong>Column Mapping:</strong> Defines how data columns from your Power BI dataset are mapped to the fields required by the template. This is primarily used for backward compatibility with older templates.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="localization-">Localization 🌍<a class="hash-link" aria-label="Direct link to Localization 🌍" title="Direct link to Localization 🌍" href="/docs/charticulator/using_in_power_bi#localization-">​</a></h3>
+<p>Configure number and currency formatting to match regional standards.</p>
+<ul>
+<li><strong>Decimal Delimiter:</strong> Sets the character used for the decimal point (e.g., <code>.</code> or <code>,</code>).</li>
+<li><strong>Thousands Delimiter:</strong> Sets the character used for the thousands separator (e.g., <code>,</code> or <code>.</code>).</li>
+<li><strong>Currency:</strong> Defines the currency symbol (e.g., <code>$</code>, <code>€</code>, <code>£</code>) for monetary formats.</li>
+<li><strong>Billions Format:</strong> Specifies the suffix for large numbers, allowing a choice between <strong>G</strong> (for giga) or <strong>B</strong> (for billions).</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="default-chart-properties">Default Chart Properties<a class="hash-link" aria-label="Direct link to Default Chart Properties" title="Direct link to Default Chart Properties" href="/docs/charticulator/using_in_power_bi#default-chart-properties">​</a></h3>
+<p>Sets the default visual properties (such as colors, fonts, and styles) that are applied to any new charts you create from scratch.</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="panel-positions">Panel Positions<a class="hash-link" aria-label="Direct link to Panel Positions" title="Direct link to Panel Positions" href="/docs/charticulator/using_in_power_bi#panel-positions">​</a></h3>
+<p>Customizes the layout of the Glyphs, Layers, and Attributes panels within the Charticulator editor to suit your workflow.</p>
+<ul>
+<li><strong>Panels on Left:</strong> Places all editing panels on the left side of the canvas.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Panels are left" src="/assets/images/panels-left-5d3f50acac84b2763c9298a18b7737ec.png" width="1457" height="887" class="img_ev3q"></p>
+<ul>
+<li><strong>Panels on Right:</strong> Places all editing panels on the right side of the canvas.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Panels are left" src="/assets/images/panels-left-5d3f50acac84b2763c9298a18b7737ec.png" width="1457" height="887" class="img_ev3q"></p>
+<ul>
+<li><strong>Split Panels:</strong> Places the Dataset panel on the left and the Attributes/Layers panels on the right.</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Panels are split" src="/assets/images/panels-left-right-048ee99eda9c3b1a8460c61a8273d457.png" width="1245" height="851" class="img_ev3q"></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="color-settings-">Color Settings 🎨<a class="hash-link" aria-label="Direct link to Color Settings 🎨" title="Direct link to Color Settings 🎨" href="/docs/charticulator/using_in_power_bi#color-settings-">​</a></h3>
+<p>Integrate your chart&#x27;s appearance with the Power BI report theme.</p>
+<ul>
+<li><strong>Update Colors:</strong> Applies the current Power BI report theme&#x27;s color palette to the chart, overriding any existing colors defined in the template.</li>
+<li><strong>Power BI Theme:</strong> Applies the Power BI report theme (including background and text colors) to the Charticulator editor interface itself.</li>
+<li><strong>Invert Text Colors:</strong> When using a dark Power BI theme, this option automatically inverts text colors within the editor for better readability.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="partial-cross-highlight">Partial Cross-Highlight<a class="hash-link" aria-label="Direct link to Partial Cross-Highlight" title="Direct link to Partial Cross-Highlight" href="/docs/charticulator/using_in_power_bi#partial-cross-highlight">​</a></h3>
+<p>This setting enhances how the visual interacts with other visuals in your report.</p>
+<ul>
+<li><strong>Add Highlight Columns:</strong> Adds supplementary columns to your dataset that contain highlight values for each measure. This enables <strong>partial cross-highlighting</strong>, where only a segment of a mark (like a portion of a bar) is highlighted instead of the entire object.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="editor--view-settings">Editor &amp; View Settings<a class="hash-link" aria-label="Direct link to Editor &amp; View Settings" title="Direct link to Editor &amp; View Settings" href="/docs/charticulator/using_in_power_bi#editor--view-settings">​</a></h3>
+<p>Configure the behavior of the editor interface and the visual canvas.</p>
+<ul>
+<li><strong>Update Table:</strong> Automatically refreshes the data tables within the Charticulator editor whenever the data is filtered in Power BI or when data columns are assigned or removed.</li>
+<li><strong>Hide Editor Preview:</strong> Hides the initial preview image that appears in the editor window before a template is loaded.</li>
+<li><strong>Hide Default Template Message:</strong> Hides the message displayed on the Power BI visual canvas when</li>
+</ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/charticulator/reusing_charts"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Reusing charts</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/category/gallery"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Gallery</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a class="table-of-contents__link toc-highlight" href="/docs/charticulator/using_in_power_bi#difference-from-original-version-of-the-visual">Difference from Original version of the visual</a></li><li><a class="table-of-contents__link toc-highlight" href="/docs/charticulator/using_in_power_bi#getting-started">Getting started</a></li><li><a class="table-of-contents__link toc-highlight" href="/docs/charticulator/using_in_power_bi#dont-summarize">Don&#39;t Summarize</a></li><li><a class="table-of-contents__link toc-highlight" href="/docs/charticulator/using_in_power_bi#data-order">Data Order</a></li><li><a class="table-of-contents__link toc-highlight" href="/docs/charticulator/using_in_power_bi#date-vs-date-hierarchy">Date vs. Date Hierarchy</a></li><li><a class="table-of-contents__link toc-highlight" href="/docs/charticulator/using_in_power_bi#creating-a-chart-with-links">Creating a Chart with Links</a></li><li><a class="table-of-contents__link toc-highlight" href="/docs/charticulator/using_in_power_bi#visual-settings">Visual Settings</a><ul><li><a class="table-of-contents__link toc-highlight" href="/docs/charticulator/using_in_power_bi#chart-template">Chart Template</a></li><li><a class="table-of-contents__link toc-highlight" href="/docs/charticulator/using_in_power_bi#localization-">Localization 🌍</a></li><li><a class="table-of-contents__link toc-highlight" href="/docs/charticulator/using_in_power_bi#default-chart-properties">Default Chart Properties</a></li><li><a class="table-of-contents__link toc-highlight" href="/docs/charticulator/using_in_power_bi#panel-positions">Panel Positions</a></li><li><a class="table-of-contents__link toc-highlight" href="/docs/charticulator/using_in_power_bi#color-settings-">Color Settings 🎨</a></li><li><a class="table-of-contents__link toc-highlight" href="/docs/charticulator/using_in_power_bi#partial-cross-highlight">Partial Cross-Highlight</a></li><li><a class="table-of-contents__link toc-highlight" href="/docs/charticulator/using_in_power_bi#editor--view-settings">Editor &amp; View Settings</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://ilfat-galiev.im/docs/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Visual documentations</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Ilfat Galiev. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
